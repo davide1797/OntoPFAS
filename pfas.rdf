@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas"/>
+    <owl:Ontology rdf:about="urn:absolute:ontopfas"/>
     
 
 
@@ -112,10 +112,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#affects -->
+    <!-- urn:absolute:ontopfas#affects -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#affects">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposure"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#affects">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Exposure"/>
         <rdfs:range rdf:resource="https://schema.org/Person"/>
         <rdfs:comment>Relation between a PFAS and people exposed to them</rdfs:comment>
         <rdfs:label>affects</rdfs:label>
@@ -124,11 +124,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#concerns -->
+    <!-- urn:absolute:ontopfas#concerns -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#concerns">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposure"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#concerns">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Exposure"/>
+        <rdfs:range rdf:resource="urn:absolute:ontopfas#PFAS"/>
         <rdfs:comment>Relation indicating what is the PFAS subject of the exposure</rdfs:comment>
         <rdfs:label>concerns</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
@@ -136,11 +136,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#contains -->
+    <!-- urn:absolute:ontopfas#contains -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#contains">
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#contains">
         <rdfs:domain rdf:resource="https://schema.org/Product"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
+        <rdfs:range rdf:resource="urn:absolute:ontopfas#PFAS"/>
         <rdfs:comment>Relation between a commercial product and the PFAS it contains</rdfs:comment>
         <rdfs:label>contains</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
@@ -148,10 +148,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#has_source -->
+    <!-- urn:absolute:ontopfas#has_source -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#has_source">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#has_source">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:comment>Relation to indicate the source of a data</rdfs:comment>
         <rdfs:label>has source</rdfs:label>
@@ -160,10 +160,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#in_environment -->
+    <!-- urn:absolute:ontopfas#in_environment -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#in_environment">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Occupation"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#in_environment">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Occupation"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
         <rdfs:comment>Relation to indicate in which environment the occupation is located</rdfs:comment>
         <rdfs:label>in environment</rdfs:label>
@@ -172,11 +172,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#in_occupation -->
+    <!-- urn:absolute:ontopfas#in_occupation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#in_occupation">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Occupation"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#in_occupation">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
+        <rdfs:range rdf:resource="urn:absolute:ontopfas#Occupation"/>
         <rdfs:comment>Relation to indicate the territory in which a PFAS measurement has been detected</rdfs:comment>
         <rdfs:label>in occupation</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
@@ -184,10 +184,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#is_measured_in -->
+    <!-- urn:absolute:ontopfas#is_measured_in -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#is_measured_in">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#is_measured_in">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:comment>Relation to indicate the geographical position of a PFAS measurement</rdfs:comment>
         <rdfs:label>is measured in</rdfs:label>
@@ -196,11 +196,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#measured_pfas -->
+    <!-- urn:absolute:ontopfas#measured_pfas -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#measured_pfas">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#measured_pfas">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
+        <rdfs:range rdf:resource="urn:absolute:ontopfas#PFAS"/>
         <rdfs:comment>Relation to indicate the detected PFAS</rdfs:comment>
         <rdfs:label>measured PFAS</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
@@ -208,9 +208,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#produces -->
+    <!-- urn:absolute:ontopfas#produces -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#produces">
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#produces">
         <rdfs:domain rdf:resource="https://schema.org/Organization"/>
         <rdfs:range rdf:resource="https://schema.org/Product"/>
         <rdfs:comment>Relation to indicate the production of a PFAS by an organization</rdfs:comment>
@@ -220,9 +220,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#uses -->
+    <!-- urn:absolute:ontopfas#uses -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#uses">
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#uses">
         <rdfs:domain rdf:resource="https://schema.org/Organization"/>
         <rdfs:range rdf:resource="https://schema.org/Product"/>
         <rdfs:comment>Relation to indicate the use of a PFAS by an organization</rdfs:comment>
@@ -243,18 +243,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#alt -->
+    <!-- urn:absolute:ontopfas#alt -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#alt">
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#alt">
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#cas_id -->
+    <!-- urn:absolute:ontopfas#cas_id -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#cas_id">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#cas_id">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#PFAS"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>CAS Registry Number of the chemical substance</rdfs:comment>
         <rdfs:label>cas id</rdfs:label>
@@ -263,26 +263,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#lat -->
+    <!-- urn:absolute:ontopfas#lat -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#lat">
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#lat">
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#long -->
+    <!-- urn:absolute:ontopfas#long -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#long">
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#long">
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#name_functional_group -->
+    <!-- urn:absolute:ontopfas#name_functional_group -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#name_functional_group">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Functional_group"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#name_functional_group">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Functional_group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Name of the functional group</rdfs:comment>
         <rdfs:label>name functional group</rdfs:label>
@@ -291,10 +291,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#number_of_carbons -->
+    <!-- urn:absolute:ontopfas#number_of_carbons -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#number_of_carbons">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Carbon"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#number_of_carbons">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Carbon"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment>number of carbon atoms</rdfs:comment>
         <rdfs:label>number of carbons</rdfs:label>
@@ -303,10 +303,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#precision -->
+    <!-- urn:absolute:ontopfas#precision -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#precision">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#precision">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Value indicating possible ranges like &quot;&lt;&quot; or &quot;&gt;&quot;</rdfs:comment>
         <rdfs:label>precision</rdfs:label>
@@ -315,10 +315,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#time -->
+    <!-- urn:absolute:ontopfas#time -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#time">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#time">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>Timestamp of the measurement</rdfs:comment>
         <rdfs:label>time</rdfs:label>
@@ -327,10 +327,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#unit -->
+    <!-- urn:absolute:ontopfas#unit -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#unit">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#unit">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
         <rdfs:comment>Scale of a value, e.g. 1000 for kilo or 0.001 for mili</rdfs:comment>
         <rdfs:label>unit</rdfs:label>
@@ -339,10 +339,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#value -->
+    <!-- urn:absolute:ontopfas#value -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#value">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:ontopfas#value">
+        <rdfs:domain rdf:resource="urn:absolute:ontopfas#Measurement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
         <rdfs:comment>Detected quantity of a measurement</rdfs:comment>
         <rdfs:label>value</rdfs:label>
@@ -365,7 +365,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_172406 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_172406">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#PFAS"/>
         <oboInOwl:hasDbXref>Wikipedia:Per-_and_polyfluoroalkyl_substances</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>polyfluoroalkyl substances</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -398,7 +398,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24531 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24531">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#PFAS"/>
         <oboInOwl:hasDbXref>Wikipedia:Per-_and_polyfluoroalkyl_substances</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>perfluoroalkyl substances</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -418,7 +418,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_60027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60027">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#PFAS"/>
         <oboInOwl:hasDbXref>Wikipedia:Polymer</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Polymer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -459,7 +459,7 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000003">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposure"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#Exposure"/>
         <oboInOwl:created_by>cmattin</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-09-21T02:48:49Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>exposure_outcome</oboInOwl:hasOBONamespace>
@@ -480,141 +480,13 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000022">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposure"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#Exposure"/>
         <oboInOwl:created_by>http://orcid.org/0000-0002-7463-6306</oboInOwl:created_by>
         <oboInOwl:creation_date>2021-10-20T17:44:37Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>source</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000022</oboInOwl:id>
         <rdfs:comment>Any agent, entity, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event.</rdfs:comment>
         <rdfs:label>Exposure stimulus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Carbon -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Carbon">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <rdfs:comment>Chemical composition of atoms of carbons</rdfs:comment>
-        <rdfs:label>Carbon</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposed -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposed">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
-        <rdfs:comment>People exposed to PFAS</rdfs:comment>
-        <rdfs:label>Exposed</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Exposure">
-        <rdfs:comment>Exposure of people to products containing PFAS</rdfs:comment>
-        <rdfs:label>Exposure</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Functional_group -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Functional_group">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <rdfs:comment>Functional group of the PFAS, responsible for the reactive part</rdfs:comment>
-        <rdfs:label>Functional group</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Long_chain -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Long_chain">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
-        <rdfs:comment>PFAS with more than 7 atoms of carbon</rdfs:comment>
-        <rdfs:label>Long chain</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Measurement">
-        <rdfs:comment>Measurement of a PFAS in a geographical location</rdfs:comment>
-        <rdfs:label>Measurement</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Non_exposed -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Non_exposed">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
-        <rdfs:comment>People not exposed to PFAS</rdfs:comment>
-        <rdfs:label>Non exposed</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Non_polymer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Non_polymer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
-        <rdfs:comment>A non-polymer is a substance composed of small molecules that do not form long chains or networks. These molecules are typically of uniform composition and have a relatively simple and well-defined structure.</rdfs:comment>
-        <rdfs:label>Non polymer</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Occupation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Occupation">
-        <rdfs:comment>Geographical information of the area in which the measurement has been done</rdfs:comment>
-        <rdfs:label>Occupation</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS">
-        <rdfs:comment>Per- and poly- fluoroalkyl substance</rdfs:comment>
-        <rdfs:label>PFAS</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Short_chain -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Short_chain">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#PFAS"/>
-        <rdfs:comment>PFAS with fewer than 7 atoms of carbon</rdfs:comment>
-        <rdfs:label>Short chain</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Vulnerable -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/depierro/ontologies/2025/1/pfas#Vulnerable">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
-        <rdfs:comment>Fragile people who can suffer more from the exposition to PFAS</rdfs:comment>
-        <rdfs:label>Vulnerable</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
     </owl:Class>
     
 
@@ -782,6 +654,134 @@ This class represents the actual dataset as published by the dataset provider. I
         <rdfs:isDefinedBy rdf:resource="https://schema.org/Product"/>
         <rdfs:label>Product</rdfs:label>
         <rdfs:label xml:lang="en">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Carbon -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Carbon">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:comment>Chemical composition of atoms of carbons</rdfs:comment>
+        <rdfs:label>Carbon</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Exposed -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Exposed">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+        <rdfs:comment>People exposed to PFAS</rdfs:comment>
+        <rdfs:label>Exposed</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Exposure -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Exposure">
+        <rdfs:comment>Exposure of people to products containing PFAS</rdfs:comment>
+        <rdfs:label>Exposure</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Functional_group -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Functional_group">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:comment>Functional group of the PFAS, responsible for the reactive part</rdfs:comment>
+        <rdfs:label>Functional group</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Long_chain -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Long_chain">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#PFAS"/>
+        <rdfs:comment>PFAS with more than 7 atoms of carbon</rdfs:comment>
+        <rdfs:label>Long chain</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Measurement -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Measurement">
+        <rdfs:comment>Measurement of a PFAS in a geographical location</rdfs:comment>
+        <rdfs:label>Measurement</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Non_exposed -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Non_exposed">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+        <rdfs:comment>People not exposed to PFAS</rdfs:comment>
+        <rdfs:label>Non exposed</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Non_polymer -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Non_polymer">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#PFAS"/>
+        <rdfs:comment>A non-polymer is a substance composed of small molecules that do not form long chains or networks. These molecules are typically of uniform composition and have a relatively simple and well-defined structure.</rdfs:comment>
+        <rdfs:label>Non polymer</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Occupation -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Occupation">
+        <rdfs:comment>Geographical information of the area in which the measurement has been done</rdfs:comment>
+        <rdfs:label>Occupation</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#PFAS -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#PFAS">
+        <rdfs:comment>Per- and poly- fluoroalkyl substance</rdfs:comment>
+        <rdfs:label>PFAS</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Short_chain -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Short_chain">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontopfas#PFAS"/>
+        <rdfs:comment>PFAS with fewer than 7 atoms of carbon</rdfs:comment>
+        <rdfs:label>Short chain</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ontopfas#Vulnerable -->
+
+    <owl:Class rdf:about="urn:absolute:ontopfas#Vulnerable">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
+        <rdfs:comment>Fragile people who can suffer more from the exposition to PFAS</rdfs:comment>
+        <rdfs:label>Vulnerable</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
     </owl:Class>
 </rdf:RDF>
 
