@@ -11,7 +11,8 @@ Several concepts have been taken from existing ontologies like ChEBI, ExO, ENVO,
 
 
 Authored by:
+Davide Di Pierro davide.di-pierro@umontpellier.fr
 Lylia Abrouk lylia.abrouk@u-bourgogne.fr
 Danai Symeonidou danai.symeonidou@inrae.fr
 Alexis Guyot alexis.guyot@lirmm.fr
-Davide Di Pierro davide.di-pierro@umontpellier.fr
+
