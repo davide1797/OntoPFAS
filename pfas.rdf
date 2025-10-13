@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#"
-     xml:base="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas"
+<rdf:RDF xmlns="urn:absolute:ontopfas#"
+     xml:base="urn:absolute:ontopfas"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,9 +9,10 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:schema="http://schema.org/"
+     xmlns:schema1="http://schema.org/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="urn:absolute:ontopfas">
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <rdfs:label>Ontology for PFAS exposure</rdfs:label>
     </owl:Ontology>
     
@@ -37,6 +38,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
     
 
 
@@ -147,209 +154,461 @@
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#accumulate -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#affects -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#accumulate">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PCO_0000031"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#affects -->
-
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#affects">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#affects">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isAffectedBy"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ExO_0000042"/>
-        <rdfs:comment>Relation between a PFAS and people exposed to them</rdfs:comment>
+        <rdfs:comment>Relation between a PFAS and people exposed to them.</rdfs:comment>
         <rdfs:label>affects</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#causes -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#causes -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#causes">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#causes">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isCausedBy"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ExO_0000003"/>
+        <rdfs:comment>Relation identifying the causes of an outcome due to PFAS exposure.</rdfs:comment>
+        <rdfs:label>causes</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#concerns -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#concerns -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#concerns">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <rdfs:comment>Relation indicating what is the PFAS subject of the exposure</rdfs:comment>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#concerns">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isConcernedBy"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation indicating what is the PFAS subject of the exposure.</rdfs:comment>
         <rdfs:label>concerns</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#contains -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#contains -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#contains">
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#contains">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isContainedIn"/>
         <rdfs:domain rdf:resource="https://schema.org/Product"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <rdfs:comment>Relation between a commercial product and the PFAS it contains</rdfs:comment>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation between a commercial product and the PFAS it contains.</rdfs:comment>
         <rdfs:label>contains</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#evolves -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#evolves -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#evolves">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Precursor"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#evolves">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#originatedFrom"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASPrecursor"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation identifying the evolution of a precursor into a full-fledged PFAS.</rdfs:comment>
+        <rdfs:label>evolves</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_carbon -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasCarbon -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_carbon">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasCarbon">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#carbonPresentIn"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon"/>
+        <rdfs:comment>Relation identifying the number of atoms of carbon in a PFAS molecule.</rdfs:comment>
         <rdfs:label>has carbon</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_connection -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasConnection -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_connection">
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasConnection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment>Relation identifying the existance of a physical connection between two locations.</rdfs:comment>
         <rdfs:label>has connection</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_group -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasGroup -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_group">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Functional_group"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasGroup">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#groupPresentIn"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#FunctionalGroup"/>
+        <rdfs:comment>Relation identifying the functional group present in a PFAS molecule.</rdfs:comment>
         <rdfs:label>has group</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_mobility -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasMobility -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_mobility">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Mobility"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasMobility">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#mobilityPresentIn"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASMobility"/>
+        <rdfs:comment>Relation identifying the level of mobility of a PFAS.</rdfs:comment>
         <rdfs:label>has mobility</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_source -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasSource -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#has_source">
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#hasSource">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isSourceOf"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <rdfs:comment>Relation to indicate the source of a data</rdfs:comment>
+        <rdfs:comment>Relation to indicate the source of a data.</rdfs:comment>
         <rdfs:label>has source</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#in_environment -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#inEnvironment -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#in_environment">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#inEnvironment">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#hasOccupation"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
-        <rdfs:comment>Relation to indicate in which environment the occupation is located</rdfs:comment>
+        <rdfs:comment>Relation to indicate in which environment the occupation is located.</rdfs:comment>
         <rdfs:label>in environment</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#in_occupation -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#inOccupation -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#in_occupation">
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#inOccupation">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#hasObservation"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation"/>
-        <rdfs:comment>Relation to indicate the territory in which a PFAS measurement has been detected</rdfs:comment>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation"/>
+        <rdfs:comment>Relation to indicate the territory in which a PFAS measurement has been detected.</rdfs:comment>
         <rdfs:label>in occupation</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#is_measured_in -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#measuredPfas -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#is_measured_in">
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#measuredPfas">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#pfasMeasuredIn"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:comment>Relation to indicate the geographical position of a PFAS measurement</rdfs:comment>
-        <rdfs:label>is measured in</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#is_valid_in -->
-
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#is_valid_in">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Continent"/>
-        <rdfs:label>is valid in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#measured_pfas -->
-
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#measured_pfas">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <rdfs:comment>Relation to indicate the detected PFAS</rdfs:comment>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation to indicate the detected PFAS.</rdfs:comment>
         <rdfs:label>measured PFAS</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#produces -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#produces -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#produces">
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#produces">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#producedBy"/>
         <rdfs:domain rdf:resource="https://schema.org/Organization"/>
         <rdfs:range rdf:resource="https://schema.org/Product"/>
-        <rdfs:comment>Relation to indicate the production of a PFAS by an organization</rdfs:comment>
-        <rdfs:comment>produces</rdfs:comment>
+        <rdfs:comment>Relation to indicate the production of a PFAS by an organization.</rdfs:comment>
+        <rdfs:label>produces</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#restricts -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#restricts -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#restricts">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
-        <rdfs:range rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#restricts">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isRestrictedBy"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation identifying the restriction of a guideline to a PFAS.</rdfs:comment>
+        <rdfs:label>restricts</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#uses -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#uses -->
 
-    <owl:ObjectProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#uses">
+    <owl:ObjectProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#uses">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#usedBy"/>
         <rdfs:domain rdf:resource="https://schema.org/Organization"/>
         <rdfs:range rdf:resource="https://schema.org/Product"/>
-        <rdfs:comment>Relation to indicate the use of a PFAS by an organization</rdfs:comment>
+        <rdfs:comment>Relation to indicate the use of a PFAS by an organization.</rdfs:comment>
         <rdfs:label>uses</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#accumulates -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#accumulates">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#incorporates"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PCO_0000031"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation identifying organisms accumulating into PFAS.</rdfs:comment>
+        <rdfs:label>accumulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#carbonPresentIn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#carbonPresentIn">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation identifying the number of atoms of carbon in a PFAS molecule.</rdfs:comment>
+        <rdfs:label>carbon present in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#continentFollows -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#continentFollows">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isValidInContinent"/>
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Continent"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
+        <rdfs:comment>Relation identifying the validity of a guideline in a continent.</rdfs:comment>
+        <rdfs:label>continent follows</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#environmentFollows -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#environmentFollows">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isValidInEnvironment"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
+        <rdfs:comment>Relation identifying the validity of a guideline in an environment.</rdfs:comment>
+        <rdfs:label>environment follows</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#groupPresentIn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#groupPresentIn">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#FunctionalGroup"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation identifying the functional group present in a PFAS molecule.</rdfs:comment>
+        <rdfs:label>group present in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#hasObservation -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#hasObservation">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:comment>Relation to indicate the territory in which a PFAS measurement has been detected.</rdfs:comment>
+        <rdfs:label>has observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#hasOccupation -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#hasOccupation">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation"/>
+        <rdfs:comment>Relation to indicate in which environment the occupation is located.</rdfs:comment>
+        <rdfs:label>has occupation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#incorporates -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#incorporates">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PCO_0000031"/>
+        <rdfs:comment>Relation identifying organisms accumulating into PFAS.</rdfs:comment>
+        <rdfs:label>incorporates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isAffectedBy">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ExO_0000042"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+        <rdfs:comment>Relation between a PFAS and people exposed to them.</rdfs:comment>
+        <rdfs:label>is affected by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isCausedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isCausedBy">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ExO_0000003"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+        <rdfs:comment>Relation identifying the causes of an outcome due to PFAS exposure.</rdfs:comment>
+        <rdfs:label>is caused by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isConcernedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isConcernedBy">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+        <rdfs:comment>Relation indicating what is the PFAS subject of the exposure.</rdfs:comment>
+        <rdfs:label>is concerned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isContainedIn">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="https://schema.org/Product"/>
+        <rdfs:comment>Relation between a commercial product and the PFAS it contains.</rdfs:comment>
+        <rdfs:label>is contained in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isMeasuredInObservation -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isMeasuredInObservation">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#measuredObservation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment>Relation identifying the location of the observation.</rdfs:comment>
+        <rdfs:label>is measured in observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isRestrictedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isRestrictedBy">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
+        <rdfs:comment>Relation identifying the restriction of a guideline to a PFAS.</rdfs:comment>
+        <rdfs:label>is restricted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isSourceOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isSourceOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:comment>Relation to indicate the source of a data.</rdfs:comment>
+        <rdfs:label>is source of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isValidInContinent -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isValidInContinent">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Continent"/>
+        <rdfs:comment>Relation identifying the validity of a guideline in a continent.</rdfs:comment>
+        <rdfs:label>is valid in continent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#isValidInEnvironment -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isValidInEnvironment">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+        <rdfs:comment>Relation identifying the validity of a guideline in an environment.</rdfs:comment>
+        <rdfs:label>is valid in environment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#measuredObservation -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#measuredObservation">
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:comment>Relation identifying the location of the observation.</rdfs:comment>
+        <rdfs:label>measured observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#mobilityPresentIn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#mobilityPresentIn">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASMobility"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Relation identifying the level of mobility of a PFAS.</rdfs:comment>
+        <rdfs:label>mobility present in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#originatedFrom -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#originatedFrom">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASPrecursor"/>
+        <rdfs:comment>Relation identifying the evolution of a precursor into a full-fledged PFAS.</rdfs:comment>
+        <rdfs:label>originated from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#pfasMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#pfasMeasuredIn">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:comment>Relation to indicate the detected PFAS.</rdfs:comment>
+        <rdfs:label>pfas measured in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#producedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#producedBy">
+        <rdfs:domain rdf:resource="https://schema.org/Product"/>
+        <rdfs:range rdf:resource="https://schema.org/Organization"/>
+        <rdfs:comment>Relation to indicate the production of a PFAS by an organization.</rdfs:comment>
+        <rdfs:label>produced by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ontopfas#usedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#usedBy">
+        <rdfs:domain rdf:resource="https://schema.org/Product"/>
+        <rdfs:range rdf:resource="https://schema.org/Organization"/>
+        <rdfs:comment>Relation to indicate the use of a PFAS by an organization.</rdfs:comment>
+        <rdfs:label>used by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -365,145 +624,141 @@
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#alt -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#alt -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#alt">
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#alt">
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-        <rdfs:comment>Altitude of a geographical point</rdfs:comment>
+        <rdfs:comment>Altitude of a geographical point.</rdfs:comment>
         <rdfs:label>alt</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#cas_id -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#casId -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#cas_id">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#casId">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>CAS Registry Number of the chemical substance</rdfs:comment>
+        <rdfs:comment>CAS Registry Number of the chemical substance.</rdfs:comment>
         <rdfs:label>cas id</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#collection_method -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#collectionMethod -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#collection_method">
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#collectionMethod">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Technique for data collection</rdfs:comment>
+        <rdfs:comment>Technique for data collection.</rdfs:comment>
         <rdfs:label>collection method</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#environment -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#lat -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#environment">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#lat -->
-
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#lat">
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#lat">
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-        <rdfs:comment>Latitude of a geographical point</rdfs:comment>
+        <rdfs:comment>Latitude of a geographical point.</rdfs:comment>
         <rdfs:label>lat</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#limit -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#limit -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#limit">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#limit">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:comment>Maximum amount of PFAS in an environment.</rdfs:comment>
+        <rdfs:label>limit</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#long -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#long -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#long">
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#long">
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-        <rdfs:comment>Longitude of a geographical point</rdfs:comment>
+        <rdfs:comment>Longitude of a geographical point.</rdfs:comment>
         <rdfs:label>long</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#mobility_degree -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#mobilityDegree -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#mobility_degree">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Mobility"/>
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#mobilityDegree">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASMobility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Degree of mobility.</rdfs:comment>
         <rdfs:label>mobility degree</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#name_functional_group -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#nameFunctionalGroup -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#name_functional_group">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Functional_group"/>
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#nameFunctionalGroup">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#FunctionalGroup"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Name of the functional group</rdfs:comment>
+        <rdfs:comment>Name of the functional group.</rdfs:comment>
         <rdfs:label>name functional group</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#number_of_carbons -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#numberOfCarbons -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#number_of_carbons">
-        <rdfs:domain rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon"/>
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#numberOfCarbons">
+        <rdfs:domain rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>number of carbon atoms</rdfs:comment>
+        <rdfs:comment>Number of carbon atoms.</rdfs:comment>
         <rdfs:label>number of carbons</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#ph -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ph -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#ph">
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ph">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>PH level of a substance.</rdfs:comment>
+        <rdfs:label>ph</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#precision -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#precision -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#precision">
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#precision">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Value indicating possible ranges like &quot;&lt;&quot; or &quot;&gt;&quot;</rdfs:comment>
+        <rdfs:comment>Value indicating possible ranges like &quot;&lt;&quot; or &quot;&gt;&quot;.</rdfs:comment>
         <rdfs:label>precision</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#unit -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#unit -->
 
-    <owl:DatatypeProperty rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#unit">
+    <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#unit">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-        <rdfs:comment>Scale of a value, e.g. 1000 for kilo or 0.001 for mili</rdfs:comment>
+        <rdfs:comment>Scale of a value, e.g. 1000 for kilo or 0.001 for mili.</rdfs:comment>
         <rdfs:label>unit</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:DatatypeProperty>
@@ -515,8 +770,8 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/hasSimpleResult">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
+        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:comment xml:lang="en">The simple value of an Observation or Actuation.</rdfs:comment>
         <rdfs:label xml:lang="en">has simple result</rdfs:label>
         <skos:definition xml:lang="en">The simple value of an Observation or Actuation.</skos:definition>
@@ -530,9 +785,9 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/resultTime">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
+        <schema1:domainIncludes rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/Observation"/>
+        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
+        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
         <rdfs:comment xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</rdfs:comment>
         <rdfs:label xml:lang="en">result time</rdfs:label>
         <skos:definition xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</skos:definition>
@@ -551,45 +806,50 @@
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon">
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Carbon">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <rdfs:comment>Chemical composition of atoms of carbons</rdfs:comment>
+        <rdfs:comment>Chemical composition of atoms of carbons.</rdfs:comment>
         <rdfs:label>Carbon</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Continent -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Continent -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Continent"/>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Ether -->
-
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Ether">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Continent">
+        <rdfs:comment>Any of the world&apos;s main continuous expanses of land (Europe, Asia, Africa, North and South America, Australia, Antarctica).</rdfs:comment>
+        <rdfs:label>Continent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposed_Individual -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Ether -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposed_Individual">
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Ether">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Ether PFAS are PFAS compounds that contain one or more ether linkages (–O–) within the fluorinated carbon chain.</rdfs:comment>
+        <rdfs:label>Ether</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ExposedIndividual -->
+
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ExposedIndividual">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000042"/>
-        <rdfs:comment>People exposed to PFAS</rdfs:comment>
+        <rdfs:comment>People exposed to PFAS.</rdfs:comment>
         <rdfs:label>Exposed Individual</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure">
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure">
         <rdfs:comment>Exposure of people to products containing PFAS</rdfs:comment>
         <rdfs:label>Exposure</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
@@ -597,54 +857,53 @@
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Functional_group -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#FunctionalGroup -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Functional_group">
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#FunctionalGroup">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <rdfs:comment>Functional group of the PFAS, responsible for the reactive part</rdfs:comment>
+        <rdfs:comment>Functional group of the PFAS, responsible for the reactive part.</rdfs:comment>
         <rdfs:label>Functional group</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline"/>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Hydrophilic -->
-
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Hydrophilic">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Guideline">
+        <rdfs:comment>Regulation about the presence of the PFAS in the environments.</rdfs:comment>
+        <rdfs:label>Guideline</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Long_chain_pfas -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Hydrophilic -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Long_chain_pfas">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <owl:disjointWith rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Short_chain_PFAS"/>
-        <rdfs:comment>PFAS with more than 7 atoms of carbon</rdfs:comment>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Hydrophilic">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Hydrophilic PFAS (Per- and Polyfluoroalkyl Substances) are PFAS compounds that possess a relatively high affinity for water, primarily due to the presence of polar or ionizable functional groups (such as carboxylic acid –COOH, sulfonic acid –SO₃H, or ether linkages) and/or a short perfluorinated carbon chain.</rdfs:comment>
+        <rdfs:label>Hydrophilic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#LongChainPfas -->
+
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#LongChainPfas">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <owl:disjointWith rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ShortChainPfas"/>
+        <rdfs:comment>PFAS with more than 7 atoms of carbon.</rdfs:comment>
         <rdfs:label>Long chain PFAS</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Mobility -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#NonPolymerPfas -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Mobility"/>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Non_polymer -->
-
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Non_polymer">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <owl:disjointWith rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Polymer_PFAS"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#NonPolymerPfas">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <owl:disjointWith rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PolymerPfas"/>
         <rdfs:comment>A non-polymer is a substance composed of small molecules that do not form long chains or networks. These molecules are typically of uniform composition and have a relatively simple and well-defined structure.</rdfs:comment>
         <rdfs:label>Non polymer PFAS</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
@@ -652,74 +911,103 @@
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation">
-        <rdfs:comment>Geographical information of the area in which the measurement has been done</rdfs:comment>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Occupation">
+        <rdfs:comment>Geographical information of the area in which the measurement has been done.</rdfs:comment>
         <rdfs:label>Occupation</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAA -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASMobility -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAA">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Non_polymer"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24531"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASMobility">
+        <rdfs:comment>Degree of mobility associated with the PFAS.</rdfs:comment>
+        <rdfs:label>Mobility</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASPrecursor -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS">
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PFASPrecursor">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>Precursor PFAS are compounds that can transform — through biological, chemical, or environmental processes — into perfluoroalkyl acids (PFAAs) such as PFOA or PFOS.</rdfs:comment>
+        <rdfs:label>Precursor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfaa -->
+
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfaa">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#NonPolymerPfas"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24531"/>
+        <rdfs:comment>Perfluoroalkyl acids (PFAAs) are a subclass of PFAS that have a fully fluorinated carbon chain (no hydrogen atoms attached to the carbon backbone) ending with a functional acid group — either a carboxylic acid (-COOH) or a sulfonic acid (-SO₃H) group.</rdfs:comment>
+        <rdfs:label>PFAA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas -->
+
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
-        <rdfs:comment>Per- and poly- fluoroalkyl substance</rdfs:comment>
+        <rdfs:comment>Per- and poly- fluoroalkyl substance.</rdfs:comment>
         <rdfs:label>PFAS</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFCA -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfca -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFCA">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAA"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfca">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfaa"/>
+        <rdfs:comment>PFCAs are PFAAs that end with a carboxylic acid functional group (-COOH). Their general formula is CₙF₂ₙ₊₁COOH, where n is typically between 4 and 14.</rdfs:comment>
+        <rdfs:label>PFCA</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFOA -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfoa -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFOA">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Long_chain_pfas"/>
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFCA"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfoa">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#LongChainPfas"/>
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfca"/>
+        <rdfs:comment>PFOA is a specific PFCA with the formula C₇F₁₅COOH (eight carbon atoms).</rdfs:comment>
+        <rdfs:label>PFOA</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFOS -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfos -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFOS">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Long_chain_pfas"/>
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFSA"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfos">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#LongChainPfas"/>
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfsa"/>
+        <rdfs:comment>PFOS is a specific PFSA with the formula C₈F₁₇SO₃H.</rdfs:comment>
+        <rdfs:label>PFOS</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFSA -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfsa -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFSA">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAA"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfsa">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfaa"/>
+        <rdfs:comment>PFSAs are PFAAs that end with a sulfonic acid functional group (-SO₃H). Their general formula is CₙF₂ₙ₊₁SO₃H.</rdfs:comment>
+        <rdfs:label>PFSA</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Polymer_PFAS -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PolymerPfas -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Polymer_PFAS">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#PolymerPfas">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
         <rdfs:comment>A polymer is a substance composed of big molecules form long chains or networks.</rdfs:comment>
         <rdfs:label>Polymer PFAS</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
@@ -727,39 +1015,32 @@
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Precursor -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ShortChainPfas -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Precursor">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-    </owl:Class>
-    
-
-
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Short_chain_PFAS -->
-
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Short_chain_PFAS">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
-        <rdfs:comment>PFAS with fewer than 7 atoms of carbon</rdfs:comment>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ShortChainPfas">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
+        <rdfs:comment>PFAS with fewer than 7 atoms of carbon.</rdfs:comment>
         <rdfs:label>Short chain PFAS</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Ultra_short_chain_PFAS -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#UltraShortChainPfas -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Ultra_short_chain_PFAS">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Short_chain_PFAS"/>
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#UltraShortChainPfas">
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ShortChainPfas"/>
+        <rdfs:comment>PFAS chains with a maximum of 3 atoms of carbon.</rdfs:comment>
         <rdfs:label>Ultra short chain PFAS</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Vulnerable_individual -->
+    <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#VulnerableIndividual -->
 
-    <owl:Class rdf:about="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Vulnerable_individual">
+    <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#VulnerableIndividual">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000042"/>
-        <rdfs:comment>Fragile people who can suffer more from the exposition to PFAS</rdfs:comment>
+        <rdfs:comment>Fragile people who can suffer more from the exposition to PFAS.</rdfs:comment>
         <rdfs:label>Vulnerable Individual</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
@@ -769,7 +1050,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_172406 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_172406">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24531"/>
         <oboInOwl:hasDbXref>Wikipedia:Per-_and_polyfluoroalkyl_substances</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>polyfluoroalkyl substances</oboInOwl:hasExactSynonym>
@@ -777,6 +1058,7 @@
         <oboInOwl:hasRelatedSynonym>PFAS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:172406</oboInOwl:id>
         <oboInOwl:inSubset>http://purl.obolibrary.org/obo/chebi#3_STAR</oboInOwl:inSubset>
+        <rdfs:comment>An organofluorine compound that has multiple fluorine atoms attached to an alkyl chain (but at least one of the carbon atoms in the chain is not fully fluorinated).</rdfs:comment>
         <rdfs:label>Polyfluoroalkyl</rdfs:label>
     </owl:Class>
     
@@ -789,6 +1071,7 @@
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:24431</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:comment>A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</rdfs:comment>
         <rdfs:label>Chemical entity</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -803,7 +1086,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24531 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24531">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#PFAS"/>
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Pfas"/>
         <oboInOwl:hasDbXref>Wikipedia:Per-_and_polyfluoroalkyl_substances</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>perfluoroalkyl substances</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -835,7 +1118,7 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000003">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
         <obo:IAO_0000115>Entity that results from the interaction between and exposure_receptor and an exposure stressor during an exposure event.</obo:IAO_0000115>
         <oboInOwl:created_by>cmattin</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-09-21T02:48:49Z</oboInOwl:creation_date>
@@ -863,7 +1146,7 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000022">
-        <rdfs:subClassOf rdf:resource="file:/home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
+        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
         <oboInOwl:created_by>http://orcid.org/0000-0002-7463-6306</oboInOwl:created_by>
         <oboInOwl:creation_date>2021-10-20T17:44:37Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>source</oboInOwl:hasOBONamespace>
@@ -882,6 +1165,7 @@
         <oboInOwl:creation_date>2011-01-10T09:30:56Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>exposure_receptor</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000042</oboInOwl:id>
+        <rdfs:comment>Being or characteristic of a single thing or person.</rdfs:comment>
         <rdfs:label>Human individual</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -902,6 +1186,7 @@
         <oboInOwl:creation_date>2011-01-10T09:31:27Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>human_attribute</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000043</oboInOwl:id>
+        <rdfs:comment>The individual attribute describing the structure of a living organism.</rdfs:comment>
         <rdfs:label>Anatomy</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -922,6 +1207,7 @@
         <oboInOwl:creation_date>2011-01-11T01:28:26Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>exposure_event</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000076</oboInOwl:id>
+        <rdfs:comment>The total quantity or strength of a substance administered at one time.</rdfs:comment>
         <rdfs:label>Dose</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -941,20 +1227,8 @@
         <oboInOwl:creation_date>2011-01-11T01:29:49Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>exposure_outcome</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000077</oboInOwl:id>
+        <rdfs:comment>Response of the organism.</rdfs:comment>
         <rdfs:label>Biological response</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ExO_0000078 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000078">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000077"/>
-        <oboInOwl:created_by>cmattin</oboInOwl:created_by>
-        <oboInOwl:creation_date>2011-01-11T01:30:06Z</oboInOwl:creation_date>
-        <oboInOwl:hasOBONamespace>exposure_outcome</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>ExO:0000078</oboInOwl:id>
-        <rdfs:label>Molecular response</rdfs:label>
     </owl:Class>
     
 
@@ -968,6 +1242,7 @@
         <oboInOwl:creation_date>2011-01-11T01:30:35Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>exposure_outcome</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000079</oboInOwl:id>
+        <rdfs:comment>A disease is a pattern of abnormal functioning, or abnormal localization of normal functioning, and/or abnormal localization of constituents when compared to other members of that species.</rdfs:comment>
         <rdfs:label>Disease</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -990,6 +1265,7 @@
         <oboInOwl:creation_date>2011-01-11T01:30:47Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>exposure_outcome</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000080</oboInOwl:id>
+        <rdfs:comment>A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease.</rdfs:comment>
         <rdfs:label>Symptom</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -998,19 +1274,6 @@
         <owl:annotatedTarget>A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>SYOExO:14974</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ExO_0000082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000003"/>
-        <oboInOwl:created_by>cmattin</oboInOwl:created_by>
-        <oboInOwl:creation_date>2011-01-11T01:31:15Z</oboInOwl:creation_date>
-        <oboInOwl:hasOBONamespace>exposure_outcome</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>ExO:0000082</oboInOwl:id>
-        <rdfs:label>Public policy</rdfs:label>
-    </owl:Class>
     
 
 
@@ -1023,6 +1286,7 @@
         <oboInOwl:creation_date>2011-01-12T01:34:34Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>exposure_outcome</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000087</oboInOwl:id>
+        <rdfs:comment>The act or fact of interfering so as to modify.</rdfs:comment>
         <rdfs:label>Exposure intervention</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1038,12 +1302,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000077"/>
-        <obo:IAO_0000115>The assemblage of traits or outward appearance of an individual. It is the product of interactions between genes and between genes and the environment.</obo:IAO_0000115>
         <oboInOwl:created_by>cgrondin</oboInOwl:created_by>
         <oboInOwl:creation_date>2017-04-06T03:47:29Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&amp;version=16.07d&amp;code=C16977&amp;ns=NCI_Thesaurus&amp;type=properties&amp;key=1003504562&amp;b=1&amp;n=0&amp;vse=null</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_response</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ExO:0000101</oboInOwl:id>
+        <rdfs:comment>The assemblage of traits or outward appearance of an individual. It is the product of interactions between genes and between genes and the environment.</rdfs:comment>
         <rdfs:label>Phenotype</rdfs:label>
     </owl:Class>
     
@@ -1054,6 +1318,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000031">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A material entity that is one or more organisms, viruses or viroids.</obo:IAO_0000115>
+        <rdfs:comment>A material entity that is one or more organisms, viruses or viroids.</rdfs:comment>
         <rdfs:label xml:lang="en">Organismal entity</rdfs:label>
     </owl:Class>
     
