@@ -414,6 +414,17 @@
     
 
 
+    <!-- urn:absolute:ontopfas#hasMeasuredObservation -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#hasMeasuredObservation">
+        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isMeasuredInLocation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:label>has measured observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- urn:absolute:ontopfas#hasObservation -->
 
     <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#hasObservation">
@@ -491,14 +502,13 @@
     
 
 
-    <!-- urn:absolute:ontopfas#isMeasuredInObservation -->
+    <!-- urn:absolute:ontopfas#isMeasuredInLocation -->
 
-    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isMeasuredInObservation">
-        <owl:inverseOf rdf:resource="urn:absolute:ontopfas#measuredObservation"/>
+    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#isMeasuredInLocation">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:comment>Relation identifying the location of the observation.</rdfs:comment>
-        <rdfs:label>is measured in observation</rdfs:label>
+        <rdfs:label>is measured in location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -543,17 +553,6 @@
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
         <rdfs:comment>Relation identifying the validity of a guideline in an environment.</rdfs:comment>
         <rdfs:label>is valid in environment</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- urn:absolute:ontopfas#measuredObservation -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:ontopfas#measuredObservation">
-        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:comment>Relation identifying the location of the observation.</rdfs:comment>
-        <rdfs:label>measured observation</rdfs:label>
     </owl:ObjectProperty>
     
 
