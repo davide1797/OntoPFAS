@@ -420,6 +420,7 @@
         <owl:inverseOf rdf:resource="urn:absolute:ontopfas#isMeasuredInLocation"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:comment>Relation identifying the location of the observation.</rdfs:comment>
         <rdfs:label>has measured observation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -734,7 +735,7 @@
     <owl:DatatypeProperty rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#ph">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>PH level of a substance.</rdfs:comment>
+        <rdfs:comment>Ph level of a substance.</rdfs:comment>
         <rdfs:label>ph</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -849,7 +850,7 @@
     <!-- file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure -->
 
     <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure">
-        <rdfs:comment>Exposure of people to products containing PFAS</rdfs:comment>
+        <rdfs:comment>Exposure of people to products containing PFAS.</rdfs:comment>
         <rdfs:label>Exposure</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
@@ -1039,7 +1040,7 @@
 
     <owl:Class rdf:about="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#VulnerableIndividual">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000042"/>
-        <rdfs:comment>Fragile people who can suffer more from the exposition to PFAS.</rdfs:comment>
+        <rdfs:comment>Fragile people who can suffer more from the exposure to PFAS.</rdfs:comment>
         <rdfs:label>Vulnerable Individual</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
     </owl:Class>
@@ -1117,7 +1118,6 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000003">
-        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
         <obo:IAO_0000115>Entity that results from the interaction between and exposure_receptor and an exposure stressor during an exposure event.</obo:IAO_0000115>
         <oboInOwl:created_by>cmattin</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-09-21T02:48:49Z</oboInOwl:creation_date>
@@ -1145,7 +1145,6 @@
     <!-- http://purl.obolibrary.org/obo/ExO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000022">
-        <rdfs:subClassOf rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/ontopfas#Exposure"/>
         <oboInOwl:created_by>http://orcid.org/0000-0002-7463-6306</oboInOwl:created_by>
         <oboInOwl:creation_date>2021-10-20T17:44:37Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>source</oboInOwl:hasOBONamespace>
