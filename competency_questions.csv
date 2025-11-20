@@ -17,7 +17,7 @@ What is the functional group of a substance?,"SELECT ?functionalGroup
 WHERE {
   ontopfas:substance ontopfas:functionalGroup ?functionalGroup .
 }",
-Is the molecule ether or hydrophilic? Or none of the two?,"SELECT ?isEther ?isHydrophilic
+Is the molecule ether or hydrophilic?,"SELECT ?isEther ?isHydrophilic
 WHERE {
   ontopfas:substance ontopfas:isEther ?isEther .
   ontopfas:substance ontopfas:isHydrophilic ?isHydrophilic .
@@ -48,7 +48,7 @@ Which activities contribute to the PFAS spreading?,"SELECT DISTINCT ?activity
 WHERE {
   ?activity (prov:used | ro:produces) ?pfas .
 } ",
-Are there new PFAS that have replaced the first ones?,"SELECT
+Are there new PFAS that have replaced previous ones?,"SELECT
   (GROUP_CONCAT(DISTINCT ?old ; separator="", "") AS ?oldPFAS)
   (GROUP_CONCAT(DISTINCT ?current ; separator="", "") AS ?currentPFAS)
 WHERE {
@@ -84,7 +84,7 @@ WHERE {
   }
 }
 ",
-"In which environments has (water, soil, biota) a given PFAS been detected?","SELECT DISTINCT ?environment
+"In which environments (water, soil, biota) has a given PFAS been detected?","SELECT DISTINCT ?environment
 WHERE {
   ?obs a sosa:Observation ; ontopfas:measuredPfas ontopfas:pfas ;
     ontopfas:matrix ?environment .
@@ -109,7 +109,7 @@ WHERE {
 }
 ORDER BY ?time
 ",
-Which human beings are particularly exposed to a given PFAS?,"SELECT ?person
+Which human beings are exposed to a given PFAS?,"SELECT ?person
 WHERE {
   ?exposureStimulus ontopfas:stimulatedBy ontopfas:pfas
   ?exposureStimulus ontopfas:exposureStimulusOf schema:Person .
@@ -153,7 +153,7 @@ WHERE {
     ontopfas:limit ?limit.
   BIND(?value <= ?limit AS ?isRespected)
 }",
-Where is a given PFAS mostly measured?,"SELECT ?loc ?maxP
+Where has a given PFAS been measured with the highest concentration?,"SELECT ?loc ?maxP
 WHERE {
   {
     SELECT ?loc (MAX(?p) AS ?maxP)
@@ -224,13 +224,13 @@ WHERE {
 GROUP BY ?dataset
 ORDER BY DESC(?countM)
 LIMIT 10",
-Which are the functional groups mostly associated with dangerous PFAS?,"SELECT DISTINCT ?functionalGroup
+Which are the functional groups associated with the most dangerous PFAS?,"SELECT DISTINCT ?functionalGroup
 WHERE {
   ?pfas ontopfas:functionalGroup ?functionalGroup ;
   ontopfas:concernLevel “high” .
 }
 ",
-Which industrial sectors are associated to PFAS in a certain place?,"SELECT DISTINCT ?sector
+Which industrial sectors are associated to PFAS in a certain location?,"SELECT DISTINCT ?sector
 WHERE {
   ?activity ontopfas:sector ?sector ; (prov:used | ro:produces) ?pfas .
   ?observation ontopfas:measuredPfas ?pfas ; ontopfas:measuredIn geo:loc .
