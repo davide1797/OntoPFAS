@@ -14,6 +14,10 @@ This ontology mainly represents these three different aspects of the PFAS concer
 
 ![Schema](ontology/schemas/global.png)
 
+<p align="center">
+  <img src="ontology/schemas/global.png" width="300">
+</p>
+
 ## Evaluation
 
 A static evaluation has been assessed by means of the following aspects:
