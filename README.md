@@ -2,7 +2,7 @@
 
 | Prefix | IRI |
 |----------|----------|
-| ontopfas: | https://w3id.org/ontopfas  |
+| ontopfas: | https://w3id.org/OntoPFAS  |
 
 ## Scope 
 
