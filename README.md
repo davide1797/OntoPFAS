@@ -29,7 +29,7 @@ A static evaluation has been assessed by means of the following aspects:
 The repository is comprehensive of the following resources:
 - [functional requirements](ontology/competency_questions.csv) expressed by experts and translated into the form of competency questions,
 - [schemas](ontology/schemas) of the ontology expressed with [Diagrams.net](https://www.drawio.com/),
-- [source](ontology/) of the ontology,
+- [source](ontology/pfas.rdf) of the ontology,
 - [instances](instances/) taken from some dataset of the PDH,
 - [evaluation](evaluation/) results,
 - [documentation](index.html) of the resource.
