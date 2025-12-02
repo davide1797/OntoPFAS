@@ -1,0 +1,16 @@
+- Results for P22: Using different naming conventions in the ontology.
+
+The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as "-" or "_") . Some notions about naming conventions are provided in [2].
+
+*This pitfall applies to the ontology in general instead of specific elements. 
+
+
+- Results for P34: Untyped class.
+
+An ontology element is used as a class without having been explicitly declared as such using the primitives owl:Class or rdfs:Class. This pitfall is related with the common problems listed in [8].
+
+- This pitfall appears in the following elements:
+- http://www.w3.org/2003/11/swrl#Variable
+- http://www.w3.org/2003/11/swrl#AtomList
+- http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+- http://www.w3.org/2003/11/swrl#Imp 
