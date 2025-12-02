@@ -5,12 +5,13 @@
 | ontopfas: | https://w3id.org/OntoPFAS  |
 
 ## Scope 
-
+<p style="text-align: justify;">
 OntoPFAS is a conceptualization of the PFAS domain, concerning its exposure, measurement, and spread aspects. Combining chemical, geographical, and sensor data, it aims to represent a hub for practitioners of different fields willing to contribute with data, models, or artificial intelligence applications. With the parallel development of the [PFAS Data Hub dataset](https://pdh.cnrs.fr/en/datasets/), we set the ground to create a positive synergy between the availability of data and the solutions at disposal.
 
 Many concepts are taken from existing domain ontologies like ChEBI, ExO, ENVO, and SOSA, while also exploiting the most common resources like Schema.org, PROV-O, and DCAT.
 
 This ontology mainly represents these three different aspects of the PFAS concerns: chemistry, measurements, and exposure. The graphical architecture provides an overview of the provided elements.
+</p>
 
 <p align="center">
   <img src="ontology/schemas/schema.png" width="1000">
