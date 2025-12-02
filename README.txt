@@ -1,7 +1,7 @@
 # OntoPFAS: an Ontology for the Forever Chemicals
 
 | Prefix | IRI |
-|----------|----------|----------|
+|----------|----------|
 | ontopfas: | https://w3id.org/ontopfas  |
 
 ## Scope 
