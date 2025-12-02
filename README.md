@@ -12,6 +12,8 @@ Many concepts are taken from existing domain ontologies like ChEBI, ExO, ENVO, a
 
 This ontology mainly represents these three different aspects of the PFAS concerns: chemistry, measurements, and exposure. The graphical architecture provides an overview of the provided elements.
 
+![Schema](ontology/schemas/global.png)
+
 ## Evaluation
 
 A static evaluation has been assessed by means of the following aspects:
