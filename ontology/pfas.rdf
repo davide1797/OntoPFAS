@@ -1,15 +1,19 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="urn:absolute:ontopfas#"
-     xml:base="urn:absolute:ontopfas"
+<rdf:RDF xmlns="https://w3id.org/OntoPFAS#"
+     xml:base="https://w3id.org/OntoPFAS"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:schema="https://schema.org/"
@@ -18,8 +22,21 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ontopfas="https://w3id.org/OntoPFAS#">
     <owl:Ontology rdf:about="https://w3id.org/OntoPFAS#">
+        <owl:versionIRI rdf:resource="https://w3id.org/ontopfas/"/>
+        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
+        <dcterms:accessRights>public</dcterms:accessRights>
+        <dcterms:creator rdf:resource="https://orcid.org/0000-0002-8081-3292"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2025/02/12</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <rdfs:label>Ontology for PFAS exposure</rdfs:label>
+        <dcterms:rights>This ontology is openly available under CC BY 4.0.</dcterms:rights>
+        <dcterms:title>OntoPFAS</dcterms:title>
+        <pav:version>1.0</pav:version>
+        <vann:preferredNamespacePrefix>ontopfass</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/ontopfas/</vann:preferredNamespaceUri>
+        <schema1:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2025/02/12</schema1:dateCreated>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <odrl:hasPolicy rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <prov:wasGeneratedBy rdf:resource="https://github.com/davide1797/OntoPFAS"/>
     </owl:Ontology>
     
 
@@ -59,9 +76,63 @@
     
 
 
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessRights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/pav/version -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/version"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/dateCreated -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/dateCreated"/>
     
 
 
@@ -164,6 +235,41 @@
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/hasPolicy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/hasPolicy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    
+
+
+    <!-- https://schema.org/license -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#datetime -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#datetime"/>
     
 
 

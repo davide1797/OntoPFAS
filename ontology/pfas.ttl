@@ -1,4 +1,4 @@
-@prefix : <urn:absolute:ontopfas#> .
+@prefix : <https://w3id.org/OntoPFAS#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -12,14 +12,27 @@
 @prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix schema1: <http://schema.org/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix ontopfas: <https://w3id.org/OntoPFAS#> .
-@base <urn:absolute:ontopfas#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <https://w3id.org/OntoPFAS#> .
 
 <https://w3id.org/OntoPFAS#> rdf:type owl:Ontology ;
+                              dc:license "https://creativecommons.org/licenses/by/4.0/" ;
+                              dcterms:accessRights "public" ;
+                              dcterms:creator <https://orcid.org/0000-0002-8081-3292> ;
                               dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                              rdfs:label "Ontology for PFAS exposure" .
+                              dcterms:rights "This ontology is openly available under CC BY 4.0." ;
+                              dcterms:title "OntoPFAS" ;
+                              owl:versionIRI <https://w3id.org/ontopfas/> ;
+                              owl:versionInfo 1.0 ;
+                              schema:dateCreated "2025/02/12"^^xsd:datetime ;
+                              dcterms:issued "2025/02/12"^^xsd:datetime ;
+                              <http://purl.org/pav/version> "1.0" ;
+                              vann:preferredNamespacePrefix "ontopfas" ;
+                              vann:preferredNamespaceUri "https://w3id.org/ontopfas/"^^xsd:string ;
+                              <http://www.w3.org/ns/odrl/2/hasPolicy> <https://creativecommons.org/licenses/by/4.0/> ;
+                              <http://www.w3.org/ns/prov#wasGeneratedBy> <https://github.com/davide1797/OntoPFAS> .
 
 #################################################################
 #    Annotation properties
@@ -41,12 +54,32 @@ dc:license rdf:type owl:AnnotationProperty .
 dc:type rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/accessRights
+dcterms:accessRights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/pav/version
+<http://purl.org/pav/version> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/domainIncludes
-schema1:domainIncludes rdf:type owl:AnnotationProperty .
+schema:domainIncludes rdf:type owl:AnnotationProperty .
 
 
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
@@ -111,6 +144,18 @@ skos:notation rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/hasPolicy
+<http://www.w3.org/ns/odrl/2/hasPolicy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/license
+schema:license rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -280,7 +325,7 @@ dc:source rdf:type owl:ObjectProperty ;
 
 
 ###  http://schema.org/homeLocation
-schema1:homeLocation rdf:type owl:ObjectProperty ;
+schema:homeLocation rdf:type owl:ObjectProperty ;
                      owl:inverseOf ontopfas:homeLocationOf ;
                      rdfs:domain schema:Person ;
                      rdfs:range schema:Place ;
@@ -645,7 +690,7 @@ ontopfas:validInPlace rdf:type owl:ObjectProperty ;
 <http://www.w3.org/ns/sosa/hasSimpleResult> rdf:type owl:DatatypeProperty ;
                                             rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
                                             rdfs:range owl:real ;
-                                            schema1:domainIncludes <http://www.w3.org/ns/sosa/Actuation> ,
+                                            schema:domainIncludes <http://www.w3.org/ns/sosa/Actuation> ,
                                                                    <http://www.w3.org/ns/sosa/Observation> ;
                                             rdfs:comment "The simple value of an Observation or Actuation."@en ;
                                             rdfs:label "has simple result"@en ;
@@ -657,7 +702,7 @@ ontopfas:validInPlace rdf:type owl:ObjectProperty ;
 <http://www.w3.org/ns/sosa/resultTime> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
                                        rdfs:range xsd:dateTime ;
-                                       schema1:domainIncludes <file:///home/depierro/Desktop/INRAe/Ontology/Observation> ,
+                                       schema:domainIncludes <file:///home/depierro/Desktop/INRAe/Ontology/Observation> ,
                                                               <http://www.w3.org/ns/sosa/Actuation> ,
                                                               <http://www.w3.org/ns/sosa/Sampling> ;
                                        rdfs:comment "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en ;
@@ -1474,22 +1519,22 @@ ontopfas:VulnerablePerson rdf:type owl:Class ;
 
 
 ###  urn:absolute:ontopfas#Presumptive
-:Presumptive rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
-             rdfs:label "Presumptive" ;
-             owl:versionInfo 1.0 ;
-             skos:definition "Presumptive PFAS observation." .
+<urn:absolute:ontopfas#Presumptive> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+                                    rdfs:label "Presumptive" ;
+                                    owl:versionInfo 1.0 ;
+                                    skos:definition "Presumptive PFAS observation." .
 
 
 #################################################################
 #    Rules
 #################################################################
 
-:person rdf:type swrl:Variable .
+<urn:absolute:ontopfas#person> rdf:type swrl:Variable .
 
-:place rdf:type swrl:Variable .
+<urn:absolute:ontopfas#place> rdf:type swrl:Variable .
 
-:stimulus rdf:type swrl:Variable .
+<urn:absolute:ontopfas#stimulus> rdf:type swrl:Variable .
 
 [ swrla:isRuleEnabled "true"^^xsd:boolean ;
    rdfs:comment "" ;
@@ -1497,15 +1542,15 @@ ontopfas:VulnerablePerson rdf:type owl:Class ;
    rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate schema1:homeLocation ;
-                           swrl:argument1 :person ;
-                           swrl:argument2 :place
+                           swrl:propertyPredicate schema:homeLocation ;
+                           swrl:argument1 <urn:absolute:ontopfas#person> ;
+                           swrl:argument2 <urn:absolute:ontopfas#place>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                                       swrl:propertyPredicate ontopfas:affects ;
-                                      swrl:argument1 :stimulus ;
-                                      swrl:argument2 :place
+                                      swrl:argument1 <urn:absolute:ontopfas#stimulus> ;
+                                      swrl:argument2 <urn:absolute:ontopfas#place>
                                     ] ;
                           rdf:rest rdf:nil
                         ]
@@ -1513,8 +1558,8 @@ ontopfas:VulnerablePerson rdf:type owl:Class ;
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate ontopfas:exposureStimulusOf ;
-                           swrl:argument1 :stimulus ;
-                           swrl:argument2 :person
+                           swrl:argument1 <urn:absolute:ontopfas#stimulus> ;
+                           swrl:argument2 <urn:absolute:ontopfas#person>
                          ] ;
                rdf:rest rdf:nil
              ]
