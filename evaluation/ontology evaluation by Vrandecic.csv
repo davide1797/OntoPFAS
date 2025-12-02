@@ -1,0 +1,10 @@
+Ontology evaluation Vrandečić,
+Feature,Explanation
+accuracy,"The ontology has been developed in collaboration with the experts who have provided their requirements and validated our results. Different perspectives are represented (chemistry, environment, commercial products, exposure), and this is reflected by the different ontologies imported"
+clarity,All the proposed terms are compliant with the literature on the PFAS. All the terms are provided with metadata supporting the clarity (especially labels and definitions)
+adaptability,OntoPFAS can (and will) be easily extended to other perspectives (health above all). The reuse of terms and the collaboration with the experts will continue to guarantee a higher level of compliance with these domains
+completeness,"With respect to the predefined objectives, this ontology answers all the competency questions, and a use case example has been shown"
+efficiency,The ontology is light both with respect to the logical axioms and the expressivity;
+conciseness,"With the reuse of many ontologies, we introduced only the necessary concepts and properties"
+consistency,"The ontology in both versions (w/ and w/o instances) are logically consistent, tested with the HermiT reasoner"
+compliance to experts,"The use of terms taken from the literature makes the resource accessible for other experts. All the major decisions are supported by quoted papers in the communities. This is also guaranteed by our experts, part of different communities (chemistry for environmental science, and geography)"
