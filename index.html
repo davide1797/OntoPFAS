@@ -287,12 +287,25 @@ td {
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
+    "https://schema.org/copyrightNotice": [
+      {
+        "@value": "This ontology is openly available under CC BY 4.0."
+      }
+    ],
+    "https://schema.org/creator": [
+      {
+        "@id": "https://orcid.org/0000-0002-8081-3292"
+      }
+    ],
     "https://schema.org/license": [
       {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       }
     ],
     "https://schema.org/name": [
+      {
+        "@value": "OntoPFAS"
+      },
       {
         "@value": "Ontology for PFAS exposure"
       }
@@ -304,7 +317,7 @@ td {
   <body>
     <div id="content">
       <div class="section" id="metadata">
-        <h1>Ontology for PFAS exposure</h1>
+        <h1>OntoPFASOntology for PFAS exposure</h1>
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -319,7 +332,22 @@ td {
             <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
             </dt>
-            <dd><p>Ontology for PFAS exposure</p></dd>
+            <dd>
+              <ul>
+                <li><p>OntoPFAS</p></li>
+                <li><p>Ontology for PFAS exposure</p></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/creator" title="An entity responsible for making the resource. Defined in DCMI Metadata Terms">Creator</a>
+            </dt>
+            <dd>
+              <span>
+                <a href="https://orcid.org/0000-0002-8081-3292">https://orcid.org/0000-0002-8081-3292</a>
+              </span>
+            </dd>
           </div>
           <div>
             <dt>
@@ -328,6 +356,12 @@ td {
             <dd>
               <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>
             </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/rights" title="Information about rights held in and over the resource. Defined in DCMI Metadata Terms">Rights</a>
+            </dt>
+            <dd><p>This ontology is openly available under CC BY 4.0.</p></dd>
           </div>
         </dl>
       </div>
@@ -6894,7 +6928,7 @@ td {
           <dd>
             <code>http://purl.org/dc/elements/1.1/</code>
           </dd>
-          <dt id="dcterms">dcterms</dt>
+          <dt id="dct">dct</dt>
           <dd>
             <code>http://purl.org/dc/terms/</code>
           </dd>
@@ -6906,6 +6940,10 @@ td {
           <dd>
             <code>http://www.geneontology.org/formats/oboInOwl#</code>
           </dd>
+          <dt id="odrl">odrl</dt>
+          <dd>
+            <code>http://www.w3.org/ns/odrl/2/</code>
+          </dd>
           <dt id="ontopfas">ontopfas</dt>
           <dd>
             <code>https://w3id.org/OntoPFAS#</code>
@@ -6913,6 +6951,14 @@ td {
           <dt id="owl">owl</dt>
           <dd>
             <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="pav">pav</dt>
+          <dd>
+            <code>http://purl.org/pav/</code>
+          </dd>
+          <dt id="prov">prov</dt>
+          <dd>
+            <code>http://www.w3.org/ns/prov#</code>
           </dd>
           <dt id="rdf">rdf</dt>
           <dd>
@@ -7492,7 +7538,7 @@ td {
               <a href="#dc">dc</a>
             </li>
             <li>
-              <a href="#dcterms">dcterms</a>
+              <a href="#dct">dct</a>
             </li>
             <li>
               <a href="#obo">obo</a>
@@ -7501,10 +7547,19 @@ td {
               <a href="#oboInOwl">oboInOwl</a>
             </li>
             <li>
+              <a href="#odrl">odrl</a>
+            </li>
+            <li>
               <a href="#ontopfas">ontopfas</a>
             </li>
             <li>
               <a href="#owl">owl</a>
+            </li>
+            <li>
+              <a href="#pav">pav</a>
+            </li>
+            <li>
+              <a href="#prov">prov</a>
             </li>
             <li>
               <a href="#rdf">rdf</a>
