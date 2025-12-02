@@ -33,7 +33,7 @@ The repository is comprehensive of the following resources:
 - [source](ontology/pfas.rdf) of the ontology (available in RDF and TTL),
 - [instances](instances/) taken from some dataset of the PDH,
 - [evaluation](evaluation/) results,
-- [documentation](index.html) of the resource.
+- [documentation](https://davide1797.github.io/OntoPFAS/) of the resource.
 
 ## Publications
 - Davide Di Pierro, Lylia Abrouk, Alexis Guyot, Danai Symeonidou, Pierre Labadie, Benjamin Lysaniuk: _OntoPFAS: Ontologie des PFAS et de leur exposition._ PFIA 2025: 80. (https://hal.science/hal-05189813v2/file/PFIA_Actes_IC2025.pdf#page=80) (preliminary result)
