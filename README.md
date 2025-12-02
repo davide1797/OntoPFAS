@@ -27,10 +27,12 @@ A static evaluation has been assessed by means of the following aspects:
 ## Content
 
 The repository is comprehensive of the following resources:
-- [functional requirements](ontology/competency_questions.csv) expressed by experts and translated into the form of competency questions
-- [schemas](ontology/schemas) of the ontology expressed with [Diagrams.net](https://www.drawio.com/)
-- [source](ontology/) of the ontology, including a documentation and some instances of the PDH
-- [evaluation](evaluation/) results
+- [functional requirements](ontology/competency_questions.csv) expressed by experts and translated into the form of competency questions,
+- [schemas](ontology/schemas) of the ontology expressed with [Diagrams.net](https://www.drawio.com/),
+- [source](ontology/) of the ontology,
+- [instances](instances/) taken from some dataset of the PDH,
+- [evaluation](evaluation/) results,
+- [documentation](index.html) of the resource.
 
 ## Publications
 - Davide Di Pierro, Lylia Abrouk, Alexis Guyot, Danai Symeonidou, Pierre Labadie, Benjamin Lysaniuk: _OntoPFAS: Ontologie des PFAS et de leur exposition._ PFIA 2025: 80. (https://hal.science/hal-05189813v2/file/PFIA_Actes_IC2025.pdf#page=80) (preliminary result)
