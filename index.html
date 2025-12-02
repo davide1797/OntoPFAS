@@ -1464,12 +1464,6 @@ td {
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/OntoPFAS#value">value</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
                 </ul>
               </td>
             </tr>
@@ -1923,12 +1917,6 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="https://schema.org/homeLocation">homeLocation</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
                       <a href="https://schema.org/containedInPlace">containedInPlace</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
@@ -1936,6 +1924,12 @@ td {
                   <li>
                     <span>
                       <a href="https://schema.org/containsPlace">containsPlace</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://schema.org/homeLocation">homeLocation</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -3838,47 +3832,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="homelocation">
-          <h3>home location
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://schema.org/homeLocation</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-              </th>
-              <td><p>A contact location for a person's residence.</p></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://schema.org/Person">Person</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://schema.org/Place">Place</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="transformsinto">
           <h3>transforms into
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -4067,6 +4020,47 @@ td {
               <td>
                 <span>
                   <a href="https://schema.org/Place">Place</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://schema.org/Place">Place</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="homelocation">
+          <h3>home location
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/homeLocation</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>A contact location for a person's residence.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://schema.org/Person">Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -6545,44 +6539,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="value">
-          <h3>value
-            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/OntoPFAS#value</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-              </th>
-              <td><p>Value of a PFAS observation.</p></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="http://www.w3.org/ns/sosa/Observation">Observation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="http://www.w3.org/2002/07/owl#real">owl:real</a>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="latitude">
           <h3>latitude
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
@@ -6778,6 +6734,19 @@ td {
             </tr>
           </table>
         </div>
+        <div class="property entity" id="issued">
+          <h3>issued
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/issued</code>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div class="property entity" id="license1">
           <h3>license
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
@@ -6830,15 +6799,28 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="domainIncludes">
-          <h3>domain includes
+        <div class="property entity" id="preferredNamespacePrefix">
+          <h3>preferred namespace prefix
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>https://schema.org/domainIncludes</code>
+                <code>http://purl.org/vocab/vann/preferredNamespacePrefix</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="preferredNamespaceUri">
+          <h3>preferred namespace uri
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/vocab/vann/preferredNamespaceUri</code>
               </td>
             </tr>
           </table>
@@ -7073,6 +7055,32 @@ td {
               <th>IRI</th>
               <td>
                 <code>http://www.w3.org/ns/prov#wasGeneratedBy</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="dateCreated">
+          <h3>date created
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/dateCreated</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="domainIncludes">
+          <h3>domain includes
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/domainIncludes</code>
               </td>
             </tr>
           </table>
@@ -7393,9 +7401,6 @@ td {
               <a href="#source">source</a>
             </li>
             <li>
-              <a href="#homelocation">home location</a>
-            </li>
-            <li>
               <a href="#transformsinto">transforms into</a>
             </li>
             <li>
@@ -7409,6 +7414,9 @@ td {
             </li>
             <li>
               <a href="#containsplace">contains place</a>
+            </li>
+            <li>
+              <a href="#homelocation">home location</a>
             </li>
             <li>
               <a href="#activityinenvironment">activity in environment</a>
@@ -7598,9 +7606,6 @@ td {
               <a href="#unit">unit</a>
             </li>
             <li>
-              <a href="#value">value</a>
-            </li>
-            <li>
               <a href="#latitude">latitude</a>
             </li>
             <li>
@@ -7635,6 +7640,9 @@ td {
               <a href="#creator">creator</a>
             </li>
             <li>
+              <a href="#issued">issued</a>
+            </li>
+            <li>
               <a href="#license1">license</a>
             </li>
             <li>
@@ -7647,7 +7655,10 @@ td {
               <a href="#version">version</a>
             </li>
             <li>
-              <a href="#domainIncludes">domain includes</a>
+              <a href="#preferredNamespacePrefix">preferred namespace prefix</a>
+            </li>
+            <li>
+              <a href="#preferredNamespaceUri">preferred namespace uri</a>
             </li>
             <li>
               <a href="#isRuleEnabled">is rule enabled</a>
@@ -7702,6 +7713,12 @@ td {
             </li>
             <li>
               <a href="#wasGeneratedBy">was generated by</a>
+            </li>
+            <li>
+              <a href="#dateCreated">date created</a>
+            </li>
+            <li>
+              <a href="#domainIncludes">domain includes</a>
             </li>
             <li>
               <a href="#license1">license</a>
