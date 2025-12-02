@@ -11,51 +11,51 @@ WHERE {
 ",
 At which family of PFAS does a substance belong to?,"SELECT ?family
 WHERE {
-  ontopfas:substance a ?family . ?family rdfs:subClassOf* ontopfas:Pfas .
+  ontopfas:substance_X a ?family . ?family rdfs:subClassOf* ontopfas:Pfas .
 }",
 What is the functional group of a substance?,"SELECT ?functionalGroup
 WHERE {
-  ontopfas:substance ontopfas:functionalGroup ?functionalGroup .
+  ontopfas:substance_X ontopfas:functionalGroup ?functionalGroup .
 }",
 Is the molecule ether or hydrophilic?,"SELECT ?isEther ?isHydrophilic
 WHERE {
-  ontopfas:substance ontopfas:isEther ?isEther .
-  ontopfas:substance ontopfas:isHydrophilic ?isHydrophilic .
+  ontopfas:substance_X ontopfas:isEther ?isEther .
+  ontopfas:substance_X ontopfas:isHydrophilic ?isHydrophilic .
 }
 ",
 What is the number of atoms of carbon of a given substance?,"SELECT ?numCarbons
 WHERE {
-  ontopfas:substance ontopfas:numberOfCarbons ?numCarbons .
+  ontopfas:substance_X ontopfas:numberOfCarbons ?numCarbons .
 }
 ",
 What is the cas ID of a given substance?,"SELECT ?casId
 WHERE {
-  ontopfas:substance ontopfas:casId ?casId .
+  ontopfas:substance_X ontopfas:casId ?casId .
 }
 ",
 Which are the precursors of a given PFAA?,"SELECT ?precursor
 WHERE {
-  ?precursor sio:SIO_000655 ontopfas:substance .
+  ?precursor sio:SIO_000655 ontopfas:substance_X .
 }
 ",SIO_000655 → transforms into
-How is mobility associated with the number of atoms of carbon?,"SELECT ?mobility ?ncarbons
+How is mobility associated with the number of atoms of carbon in a given environment?,"SELECT ?mobility ?ncarbons
 WHERE {
   ?pfas ontopfas:mobility ?mobility ;
         ontopfas:numberOfCarbons ?ncarbons . 
-  ?mobility ontopfas:mobilityInEnvironment envo:environment .
+  ?mobility ontopfas:mobilityInEnvironment envo:environment_X .
 } ",
 Which activities contribute to the PFAS spreading?,"SELECT DISTINCT ?activity
 WHERE {
   ?activity (prov:used | ro:produces) ?pfas .
 } ",
-Are there new PFAS that have replaced previous ones?,"SELECT
+Are there new PFAS that have replaced previous ones in a given location?,"SELECT
   (GROUP_CONCAT(DISTINCT ?old ; separator="", "") AS ?oldPFAS)
   (GROUP_CONCAT(DISTINCT ?current ; separator="", "") AS ?currentPFAS)
 WHERE {
   {
     SELECT (MAX(?d) AS ?latestDate)
     WHERE {
-      ?obs a sosa:Observation ; ontopfas:measuredIn geo:location ;
+      ?obs a sosa:Observation ; ontopfas:measuredIn geo:location_X ;
            sosa:resultTime ?d .
     }
   }
@@ -63,7 +63,7 @@ WHERE {
   {
     SELECT DISTINCT ?current
     WHERE {
-      ?obs a sosa:Observation ; ontopfas:measuredIn geo:location ;
+      ?obs a sosa:Observation ; ontopfas:measuredIn geo:location_X ;
            sosa:resultTime ?latestDate ; ontopfas:measuredPfas ?current .
     }
   }
@@ -72,13 +72,13 @@ WHERE {
   {
     SELECT DISTINCT ?old
     WHERE {
-      ?obs2 a sosa:Observation ; ontopfas:measuredIn geo:location ;
+      ?obs2 a sosa:Observation ; ontopfas:measuredIn geo:location_X ;
             sosa:resultTime ?d2 ; ontopfas:measuredPfas ?old .
       FILTER(?d2 < ?latestDate)
       FILTER NOT EXISTS {
-        ?obs3 a sosa:Observation ; ontopfas:measuredIn geo:location ;
+        ?obs3 a sosa:Observation ; ontopfas:measuredIn geo:location_X ;
               ontopfas:resultTime ?latestDate ; 
-              Ontopfas:measuredPfas ?old .
+              ontopfas:measuredPfas ?old .
       }
     }
   }
@@ -86,24 +86,24 @@ WHERE {
 ",
 "In which environments (water, soil, biota) has a given PFAS been detected?","SELECT DISTINCT ?environment
 WHERE {
-  ?obs a sosa:Observation ; ontopfas:measuredPfas ontopfas:pfas ;
+  ?obs a sosa:Observation ; ontopfas:measuredPfas ontopfas:pfas_X ;
     ontopfas:matrix ?environment .
 }",
 What are the environments a given PFAS is subject to?,"SELECT ?surroundings 
 WHERE {
-  ?observation ontopfas:measuredPfas ontopfas:pfas ;
+  ?observation ontopfas:measuredPfas ontopfas:pfas_X ;
     ontopfas:matrix ?environment .
   ?environment ro:RO_0002219 ?surroundings .
 }",RO_0002219 → surrounded by
 What is the level of mobility and danger of a given substance in a given environment?,"SELECT ?mobilityDegree ?concernLevel
 WHERE {
-  ontopfas:substance ontopfas:mobility ?pfasMobility ;
+  ontopfas:substance_X ontopfas:mobility ?pfasMobility ;
     ontopfas:concerLevel ?concernLevel .
-  ?pfasMobility ontopfas:mobilityInEnvironment ontopfas:environment .
+  ?pfasMobility ontopfas:mobilityInEnvironment ontopfas:environment_X .
 }",
 How has the concentration of a given PFAS evolved through time in a given position?,"SELECT ?time ?value
 WHERE {
-  ?obs a sosa:Observation ; ontopfas:measuredPfas ontopfas:pfas ; 
+  ?obs a sosa:Observation ; ontopfas:measuredPfas ontopfas:pfas_X ; 
     sosa:resultTime ?time ; sosa:hasSimpleResult ?value ; 
     ontopfas:measuredIn geo:Location .
 }
@@ -111,43 +111,43 @@ ORDER BY ?time
 ",
 Which human beings are exposed to a given PFAS?,"SELECT ?person
 WHERE {
-  ?exposureStimulus ontopfas:stimulatedBy ontopfas:pfas
+  ?exposureStimulus ontopfas:stimulatedBy ontopfas:pfas_X
   ?exposureStimulus ontopfas:exposureStimulusOf schema:Person .
 }
 ",
-What is the PFAS concentration at a given site?,"SELECT (SUM((?v)) AS ?sumV)
+What is the current PFAS concentration at a given site?,"SELECT (SUM((?v)) AS ?sumV)
 WHERE {
   {
     SELECT (MAX(?d) AS ?latestDate)
     WHERE {
-      ?o a sosa:Observation ; ontopfas:site ""site"" ; sosa:resultTime ?d .
+      ?o a sosa:Observation ; ontopfas:site ""site_X"" ; sosa:resultTime ?d .
     }
   }
 
-  ?o a sosa:Observation ; ontopfas:site ""site"" ; 
+  ?o a sosa:Observation ; ontopfas:site ""site_X"" ; 
      sosa:resultTime ?latestDate ; ontopfas:value ?v .
 }",
 What are the possible outcomes of the exposition with a given PFAS?,"SELECT ?outcome
 WHERE {
-  ?stimulus ontopfas:stimulatedBy ontopfas:pfas ; 
+  ?stimulus ontopfas:stimulatedBy ontopfas:pfas_X ; 
             ro:RO_0003302 ?outcome .
 }",RO_0003302 → causes
 What is the limit of a given PFAS for a given place and environment?,"SELECT ?limit
 WHERE {
-  ?regulation ontopfas:validIn schema:place ; ontopfas:validIn envo:zone ;
-    ontopfas:restricts ontopfas:pfas ; ontopfas:limit ?limit .
+  ?regulation ontopfas:validIn schema:place_X ; ontopfas:validIn envo:zone_X ;
+    ontopfas:restricts ontopfas:pfas_X ; ontopfas:limit ?limit .
 }  ",
 Which PFAS are prioritary from the danger point of view?,"SELECT ?pfas
 WHERE {
   ?pfas ontopfas:concernLevel “high” .
 }",
 What is the source of a specific measurement?,"SELECT ?source {
-  sosa:observation dc:source ?dataset .
+  sosa:observation_X dc:source ?dataset .
   ?dataset dcat3:resource_title ?source .
 }",resource_title → title
 "Given a measurement, is its quantity of PFAS beyond the limits accepted by the law?","SELECT ?isRespected
 WHERE {
-  sosa:measurement sosa:hasSimpleResult ?value ;
+  sosa:measurement_X sosa:hasSimpleResult ?value ;
     ontopfas:measuredIn ?place ; ontopfas:measuredIn ?environment .
   ?regulation ontopfas:validIn ?place ; ontopfas:validIn ?environment ; 
     ontopfas:limit ?limit.
@@ -159,7 +159,7 @@ WHERE {
     SELECT ?loc (MAX(?p) AS ?maxP)
     WHERE {
       ?obs ontopfas:location ?loc ;
-           ontopfas:measuredPfas ontopfas:PFAS_X ;
+           ontopfas:measuredPfas ontopfas:pfas_X ;
            ontopfas:value ?p .
     }
     GROUP BY ?loc
@@ -186,13 +186,13 @@ ORDER BY DESC(?countO)
 LIMIT 10",
 Which environments surround a given measurement?,"SELECT ?surrounding
 WHERE {
-  sosa:measurement ontopfas:matrix ?environment .
+  sosa:measurement_X ontopfas:matrix ?environment .
   ?environment ro:RO_0002219 ?surrounding .
 }
 ",RO_0002219 → surrounded by
 Which activities are close to a PFAS measurement?,"SELECT ?activity ?distance
 WHERE {
-  sosa:observation ontopfas:measuredIn ?loc1 .
+  sosa:observation_X ontopfas:measuredIn ?loc1 .
   ?loc1 a geo:Location ; geo:lat ?lat1 ; geo:lon ?lon1 .
 
   ?activity a schema:Organization ; ro:RO_0001025 ?place .
@@ -217,7 +217,7 @@ WHERE {
   )
 
   BIND(2 * fn:atan2(fn:sqrt(?a), fn:sqrt(1 - ?a)) AS ?c)",
-Which is the dataset containing the most measurements?,"SELECT ?dataset (COUNT(?m) AS ?countM)
+Which is the dataset containing most measurements?,"SELECT ?dataset (COUNT(?m) AS ?countM)
 WHERE {
   ?m a sosa:Observation ; dc:source ?dataset .
 }
@@ -233,6 +233,6 @@ WHERE {
 Which industrial sectors are associated to PFAS in a certain location?,"SELECT DISTINCT ?sector
 WHERE {
   ?activity ontopfas:sector ?sector ; (prov:used | ro:produces) ?pfas .
-  ?observation ontopfas:measuredPfas ?pfas ; ontopfas:measuredIn geo:loc .
+  ?observation ontopfas:measuredPfas ?pfas ; ontopfas:measuredIn geo:loc_X .
 }
 ",
