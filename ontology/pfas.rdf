@@ -18,7 +18,6 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:schema1="http://schema.org/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ontopfas="https://w3id.org/OntoPFAS#">
     <owl:Ontology rdf:about="https://w3id.org/OntoPFAS#">
@@ -31,12 +30,12 @@
         <dcterms:rights>This ontology is openly available under CC BY 4.0.</dcterms:rights>
         <dcterms:title>OntoPFAS</dcterms:title>
         <pav:version>1.0</pav:version>
-        <vann:preferredNamespacePrefix>ontopfass</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>ontopfas</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/ontopfas/</vann:preferredNamespaceUri>
-        <schema1:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2025/02/12</schema1:dateCreated>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <odrl:hasPolicy rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <prov:wasGeneratedBy rdf:resource="https://github.com/davide1797/OntoPFAS"/>
+        <schema:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2025/02/12</schema:dateCreated>
     </owl:Ontology>
     
 
@@ -127,18 +126,6 @@
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
-    <!-- http://schema.org/dateCreated -->
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/dateCreated"/>
-    
-
-
-    <!-- http://schema.org/domainIncludes -->
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
     
 
 
@@ -247,6 +234,18 @@
     <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    
+
+
+    <!-- https://schema.org/dateCreated -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/dateCreated"/>
+    
+
+
+    <!-- https://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/domainIncludes"/>
     
 
 
@@ -500,18 +499,6 @@
     
 
 
-    <!-- http://schema.org/homeLocation -->
-
-    <owl:ObjectProperty rdf:about="http://schema.org/homeLocation">
-        <owl:inverseOf rdf:resource="https://w3id.org/OntoPFAS#homeLocationOf"/>
-        <rdfs:domain rdf:resource="https://schema.org/Person"/>
-        <rdfs:range rdf:resource="https://schema.org/Place"/>
-        <rdfs:label>home location</rdfs:label>
-        <skos:definition>A contact location for a person&apos;s residence.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://semanticscience.org/resource/SIO_000655 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000655">
@@ -567,6 +554,18 @@
         <rdfs:range rdf:resource="https://schema.org/Place"/>
         <rdfs:label>contains place</rdfs:label>
         <skos:definition>The basic containment relation between a place and another that it contains.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/homeLocation -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/homeLocation">
+        <owl:inverseOf rdf:resource="https://w3id.org/OntoPFAS#homeLocationOf"/>
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+        <rdfs:label>home location</rdfs:label>
+        <skos:definition>A contact location for a person&apos;s residence.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -988,12 +987,12 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/hasSimpleResult">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
-        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:comment xml:lang="en">The simple value of an Observation or Actuation.</rdfs:comment>
         <rdfs:label xml:lang="en">has simple result</rdfs:label>
         <skos:definition xml:lang="en">The simple value of an Observation or Actuation.</skos:definition>
         <skos:example xml:lang="en">For instance, the values 23 or true.</skos:example>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
     </owl:DatatypeProperty>
     
 
@@ -1003,12 +1002,12 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/resultTime">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <schema1:domainIncludes rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/Observation"/>
-        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
-        <schema1:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
         <rdfs:comment xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</rdfs:comment>
         <rdfs:label xml:lang="en">result time</rdfs:label>
         <skos:definition xml:lang="en">The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.</skos:definition>
+        <schema:domainIncludes rdf:resource="file:///home/depierro/Desktop/INRAe/Ontology/Observation"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
+        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampling"/>
     </owl:DatatypeProperty>
     
 
@@ -1317,18 +1316,6 @@
         <rdfs:label>unit</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <skos:definition>Scale of a value, e.g. 1000 for kilo or 0.001 for mili.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/OntoPFAS#value -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/OntoPFAS#value">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-        <rdfs:label>value</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <skos:definition>Value of a PFAS observation.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -2069,7 +2056,7 @@ This class represents the actual dataset as published by the dataset provider. I
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://schema.org/homeLocation"/>
+                        <swrl:propertyPredicate rdf:resource="https://schema.org/homeLocation"/>
                         <swrl:argument1 rdf:resource="urn:absolute:ontopfas#person"/>
                         <swrl:argument2 rdf:resource="urn:absolute:ontopfas#place"/>
                     </rdf:Description>
