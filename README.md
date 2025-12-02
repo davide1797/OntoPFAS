@@ -27,16 +27,16 @@ A static evaluation has been assessed by means of the following aspects:
 ## Content
 
 The repository is comprehensive of the following resources:
-- [functional requirements]() expressed by experts and translated into the form of competency questions
-- [schemas]() of the ontology expressed with [Diagrams.net](https://www.drawio.com/)
-- [source]() of the ontology, including a documentation and some instances of the PDH
-- [evaluation]() results
+- [functional requirements](ontology/competency_questions.csv) expressed by experts and translated into the form of competency questions
+- [schemas](ontology/schemas) of the ontology expressed with [Diagrams.net](https://www.drawio.com/)
+- [source](ontology/) of the ontology, including a documentation and some instances of the PDH
+- [evaluation](evaluation/) results
 
 ## Publications
-- Davide Di Pierro, Lylia Abrouk, Alexis Guyot, Danai Symeonidou, Pierre Labadie, Benjamin Lysaniuk: _OntoPFAS: Ontologie des PFAS et de leur exposition._ PFIA 2025: 80. (https://hal.science/hal-05189813v2/file/PFIA_Actes_IC2025.pdf#page=80)
+- Davide Di Pierro, Lylia Abrouk, Alexis Guyot, Danai Symeonidou, Pierre Labadie, Benjamin Lysaniuk: _OntoPFAS: Ontologie des PFAS et de leur exposition._ PFIA 2025: 80. (https://hal.science/hal-05189813v2/file/PFIA_Actes_IC2025.pdf#page=80) (preliminary result)
 
 ## Authored by:
-Davide Di Pierro davide.di-pierro@umontpellier.fr
-Lylia Abrouk lylia.abrouk@u-bourgogne.fr
-Danai Symeonidou danai.symeonidou@inrae.fr
+Davide Di Pierro davide.di-pierro@umontpellier.fr <br/>
+Lylia Abrouk lylia.abrouk@u-bourgogne.fr <br/>
+Danai Symeonidou danai.symeonidou@inrae.fr <br/>
 Alexis Guyot alexis.guyot@lirmm.fr
