@@ -19,11 +19,12 @@ This ontology mainly represents these three different aspects of the PFAS concer
 
 ## Evaluation
 
-A static evaluation has been assessed by means of the following aspects:
-- respecting the FAIR principles
-- OntoMetrics to guarantee correct information distribution
-- OOPS to avoid conceptual pitfalls
-- answers to competency questions
+A static evaluation has been assessed by evaluating the following aspects:
+- answers to the competency questions,
+- the correct information distribution measured by the OntoMetrics,
+- the avoidance of conceptual pitfalls measured by OOPS,
+- the respect of the FAIR principles measured by FOOPS,
+- the respect of other proposed [ontology evaluation features](http://simia.net/download/ontology_evaluation.pdf).
 
 ## Content
 
