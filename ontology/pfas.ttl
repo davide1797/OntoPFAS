@@ -1,0 +1,1523 @@
+@prefix : <urn:absolute:ontopfas#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema1: <http://schema.org/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ontopfas: <https://w3id.org/OntoPFAS#> .
+@base <urn:absolute:ontopfas#> .
+
+<https://w3id.org/OntoPFAS#> rdf:type owl:Ontology ;
+                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                              rdfs:label "Ontology for PFAS exposure" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+obo:IAO_0000114 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+dc:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/type
+dc:type rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/domainIncludes
+schema1:domainIncludes rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+oboInOwl:created_by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+oboInOwl:creation_date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+skos:changeNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+skos:editorialNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.allotrope.org/ontologies/property#AFX_0001048
+<http://purl.allotrope.org/ontologies/property#AFX_0001048> rdf:type owl:ObjectProperty ;
+                                                            owl:inverseOf <http://purl.allotrope.org/ontologies/property#AFX_0001049> ;
+                                                            rdfs:domain schema:Product ;
+                                                            rdfs:range ontopfas:Pfas ;
+                                                            rdfs:label "contains" ;
+                                                            skos:definition "The relation between a container and its physical content. A material entity a contains a material entity b if b is located in some cavity of a." .
+
+
+###  http://purl.allotrope.org/ontologies/property#AFX_0001049
+<http://purl.allotrope.org/ontologies/property#AFX_0001049> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain ontopfas:Pfas ;
+                                                            rdfs:range schema:Product ;
+                                                            rdfs:label "contained in" ;
+                                                            skos:definition "Inverse of contains." .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+obo:BFO_0000050 rdf:type owl:ObjectProperty ;
+                owl:inverseOf obo:BFO_0000051 ;
+                rdf:type owl:TransitiveProperty ;
+                rdfs:domain obo:CHEBI_24431 ;
+                rdfs:range obo:CHEBI_24431 ;
+                rdfs:label "part of" ;
+                skos:definition "A core relation that holds between a part and its whole." .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+obo:BFO_0000051 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:domain obo:CHEBI_24431 ;
+                rdfs:range obo:CHEBI_24431 ;
+                rdfs:label "has part" ;
+                skos:definition "A core relation that holds between a part and its whole." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0001015
+obo:RO_0001015 rdf:type owl:ObjectProperty ;
+               owl:inverseOf obo:RO_0001025 ;
+               rdfs:domain schema:Place ;
+               rdfs:range schema:Organization ;
+               rdfs:label "location of" ;
+               skos:definition "A relation between two independent continuants, the target and the location, in which the target is entirely within the location." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0001025
+obo:RO_0001025 rdf:type owl:ObjectProperty ;
+               rdfs:domain schema:Organization ;
+               rdfs:range schema:Place ;
+               rdfs:label "located in" ;
+               skos:definition "A relation between two independent continuants, the target and the location, in which the target is entirely within the location." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002020
+obo:RO_0002020 rdf:type owl:ObjectProperty ;
+               owl:inverseOf ontopfas:transportedBy ;
+               rdfs:domain obo:PCO_0000031 ;
+               rdfs:range ontopfas:Pfas ;
+               rdfs:label "transports" ;
+               skos:definition "Holds between p and c when p is a transport process or transporter activity and the outcome of this p is to move c from one location to another." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002170
+obo:RO_0002170 rdf:type owl:ObjectProperty ,
+                        owl:SymmetricProperty ,
+                        owl:TransitiveProperty ;
+               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+               rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+               rdfs:label "connected to" ;
+               skos:definition "A is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002219
+obo:RO_0002219 rdf:type owl:ObjectProperty ;
+               owl:inverseOf obo:RO_0002221 ;
+               rdfs:domain obo:ENVO_01000408 ;
+               rdfs:range obo:ENVO_01000408 ;
+               rdfs:label "surrounded by" ;
+               skos:definition "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002221
+obo:RO_0002221 rdf:type owl:ObjectProperty ;
+               rdfs:domain obo:ENVO_01000408 ;
+               rdfs:range obo:ENVO_01000408 ;
+               rdfs:label "surrounds" ;
+               skos:definition "inverse of surrounded by." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002309
+obo:RO_0002309 rdf:type owl:ObjectProperty ;
+               owl:inverseOf ontopfas:exposureStimulusOf ;
+               rdfs:domain schema:Person ;
+               rdfs:range obo:ExO_0000022 ;
+               rdfs:label "has exposure stimulus" ;
+               skos:definition "A relationship between an exposure event or process and any agent, stimulus, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002494
+obo:RO_0002494 rdf:type owl:ObjectProperty ;
+               owl:inverseOf <http://semanticscience.org/resource/SIO_000655> ;
+               rdfs:domain ontopfas:Pfaa ;
+               rdfs:range ontopfas:PfasPrecursor ;
+               rdfs:label "transformation of" ;
+               skos:definition "x transformation of y if x is the immediate transformation of y, or is linked to y through a chain of transformation relationships" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003000
+obo:RO_0003000 rdf:type owl:ObjectProperty ;
+               owl:inverseOf obo:RO_0003001 ;
+               rdfs:domain schema:Organization ;
+               rdfs:range schema:Product ;
+               rdfs:comment "Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue." ;
+               rdfs:label "produces" ;
+               skos:definition "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003001
+obo:RO_0003001 rdf:type owl:ObjectProperty ;
+               rdfs:domain schema:Product ;
+               rdfs:range schema:Organization ;
+               rdfs:label "produced by" ;
+               skos:definition "a produced_by b iff some process that occurs_in b has_output a." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0003302
+obo:RO_0003302 rdf:type owl:ObjectProperty ;
+               owl:inverseOf obo:SCDO_1000202 ;
+               rdfs:domain obo:ExO_0000022 ;
+               rdfs:range obo:ExO_0000003 ;
+               rdfs:comment "Genetic variations can span any level of granularity from a full genome or genotype to an individual gene or sequence alteration. These variations can be represented at the physical level (DNA/RNA macromolecules or their parts, as in the ChEBI ontology and Molecular Sequence Ontology) or at the abstract level (generically dependent continuant sequence features that are carried by these macromolecules, as in the Sequence Ontology and Genotype Ontology). The causal relations in this hierarchy can be used in linking either physical or abstract genetic variations to phenotypes or diseases they cause or contribute to. Environmental exposures include those imposed by natural environments, experimentally applied conditions, or clinical interventions." ;
+               rdfs:label "causes" ;
+               skos:definition "A relationship between an entity (e.g. a genotype, genetic variation, chemical, or environmental exposure) and a condition (a phenotype or disease), where the entity has some causal or contributing role that influences the condition." .
+
+
+###  http://purl.obolibrary.org/obo/RO_0017005
+obo:RO_0017005 rdf:type owl:ObjectProperty ;
+               owl:inverseOf ontopfas:measuredIn ;
+               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+               rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
+               rdfs:label "contains measured amount" ;
+               skos:definition "A relation between a container and measurement datum that specifies the actual amount of material in the container." .
+
+
+###  http://purl.obolibrary.org/obo/SCDO_1000202
+obo:SCDO_1000202 rdf:type owl:ObjectProperty ;
+                 rdfs:domain obo:ExO_0000003 ;
+                 rdfs:range obo:ExO_0000022 ;
+                 rdfs:label "caused by" ;
+                 skos:definition "A relationship between a condition (a phenotype or disease) and an entity (e.g. environment) or condition (phenotype or disease) which could be an existing condition or an event, where the entity or second condition has a causal role for the condition being described." .
+
+
+###  http://purl.org/dc/elements/1.1/source
+dc:source rdf:type owl:ObjectProperty ;
+          owl:inverseOf ontopfas:sourceOf ;
+          rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+          rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+          rdfs:comment "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system." ;
+          rdfs:label "source" ;
+          skos:definition "A related resource from which the described resource is derived." .
+
+
+###  http://schema.org/homeLocation
+schema1:homeLocation rdf:type owl:ObjectProperty ;
+                     owl:inverseOf ontopfas:homeLocationOf ;
+                     rdfs:domain schema:Person ;
+                     rdfs:range schema:Place ;
+                     rdfs:label "home location" ;
+                     skos:definition "A contact location for a person's residence." .
+
+
+###  http://semanticscience.org/resource/SIO_000655
+<http://semanticscience.org/resource/SIO_000655> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain ontopfas:PfasPrecursor ;
+                                                 rdfs:range ontopfas:Pfaa ;
+                                                 rdfs:label "transforms into" ;
+                                                 skos:definition "A transitive temporal relation in which an entity mainstains identity from one state to another." .
+
+
+###  http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf ontopfas:usedBy ;
+                                 rdfs:domain schema:Organization ;
+                                 rdfs:range schema:Product ;
+                                 rdfs:label "used" ;
+                                 owl:versionInfo 1.0 ;
+                                 skos:definition "Relation to indicate the use of a PFAS by an organization." .
+
+
+###  http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> rdf:type owl:ObjectProperty ;
+                                            owl:inverseOf ontopfas:attributesTo ;
+                                            rdfs:domain schema:Organization ;
+                                            rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                                            rdfs:label "was attributed to" ;
+                                            skos:definition "Attribution is the ascribing of an entity to an agent." .
+
+
+###  https://schema.org/containedInPlace
+schema:containedInPlace rdf:type owl:ObjectProperty ;
+                        owl:inverseOf schema:containsPlace ;
+                        rdfs:domain schema:Place ;
+                        rdfs:range schema:Place ;
+                        rdfs:label "contained in place" ;
+                        skos:definition "The basic containment relation between a place and one that contains it." .
+
+
+###  https://schema.org/containsPlace
+schema:containsPlace rdf:type owl:ObjectProperty ;
+                     rdfs:domain schema:Place ;
+                     rdfs:range schema:Place ;
+                     rdfs:label "contains place" ;
+                     skos:definition "The basic containment relation between a place and another that it contains." .
+
+
+###  https://w3id.org/OntoPFAS#actiivtyInEnvironment
+ontopfas:actiivtyInEnvironment rdf:type owl:ObjectProperty ;
+                               owl:inverseOf ontopfas:environmentOfActivity ;
+                               rdfs:domain schema:Organization ;
+                               rdfs:range obo:ENVO_01000408 ;
+                               rdfs:label "activity in environment" ;
+                               owl:versionInfo 1.0 ;
+                               skos:definition "Relationship describing the environment surrounding an activity." .
+
+
+###  https://w3id.org/OntoPFAS#affectedBy
+ontopfas:affectedBy rdf:type owl:ObjectProperty ;
+                    owl:inverseOf ontopfas:affects ;
+                    rdfs:domain schema:Place ;
+                    rdfs:range obo:ExO_0000022 ;
+                    rdfs:label "affected by" ;
+                    owl:versionInfo 1.0 ;
+                    skos:definition "Relation between a PFAS and people exposed to them." .
+
+
+###  https://w3id.org/OntoPFAS#affects
+ontopfas:affects rdf:type owl:ObjectProperty ;
+                 rdfs:domain obo:ExO_0000022 ;
+                 rdfs:range schema:Place ;
+                 rdfs:label "affects" ;
+                 owl:versionInfo 1.0 ;
+                 skos:definition "Relation between a PFAS and people exposed to them." .
+
+
+###  https://w3id.org/OntoPFAS#attributesTo
+ontopfas:attributesTo rdf:type owl:ObjectProperty ;
+                      rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+                      rdfs:range schema:Organization ;
+                      rdfs:label "attributes to" ;
+                      owl:versionInfo 1.0 ;
+                      skos:definition "Attribution is the ascribing of an entity to an agent." .
+
+
+###  https://w3id.org/OntoPFAS#directlyConnectedTo
+ontopfas:directlyConnectedTo rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf obo:RO_0002170 ;
+                             rdf:type owl:SymmetricProperty ;
+                             rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                             rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                             rdfs:label "directly connected to" ;
+                             owl:versionInfo 1.0 ;
+                             skos:definition "A is connected to b if and only if a and b are adjacent structures." .
+
+
+###  https://w3id.org/OntoPFAS#environmentOfActivity
+ontopfas:environmentOfActivity rdf:type owl:ObjectProperty ;
+                               rdfs:domain obo:ENVO_01000408 ;
+                               rdfs:range schema:Organization ;
+                               rdfs:label "environment of activity" ;
+                               owl:versionInfo 1.0 ;
+                               skos:definition "Relationship describing the environment surrounding an activity." .
+
+
+###  https://w3id.org/OntoPFAS#environmentOfLocation
+ontopfas:environmentOfLocation rdf:type owl:ObjectProperty ;
+                               owl:inverseOf ontopfas:locationInEnvironment ;
+                               rdfs:domain obo:ENVO_01000408 ;
+                               rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                               rdfs:label "environment of location" ;
+                               owl:versionInfo 1.0 ;
+                               skos:definition "Relation to indicate in which environment the location is present." .
+
+
+###  https://w3id.org/OntoPFAS#environmentOfMobility
+ontopfas:environmentOfMobility rdf:type owl:ObjectProperty ;
+                               owl:inverseOf ontopfas:mobilityInEnvironment ;
+                               rdfs:domain obo:ENVO_01000408 ;
+                               rdfs:range ontopfas:PfasMobility ;
+                               rdfs:label "environment of mobility" ;
+                               owl:versionInfo 1.0 ;
+                               skos:definition "Relation to express the level of mobility within a certain environment." .
+
+
+###  https://w3id.org/OntoPFAS#environmentSubjectTo
+ontopfas:environmentSubjectTo rdf:type owl:ObjectProperty ;
+                              owl:inverseOf ontopfas:validInEnvironment ;
+                              rdfs:domain obo:ENVO_01000408 ;
+                              rdfs:range <https://w3id.org/ocqa/regulation#Regulation> ;
+                              rdfs:label "environment subject to" ;
+                              owl:versionInfo 1.0 ;
+                              skos:definition "Relation identifying the validity of a guideline in an environment." .
+
+
+###  https://w3id.org/OntoPFAS#exposureStimulusOf
+ontopfas:exposureStimulusOf rdf:type owl:ObjectProperty ;
+                            rdfs:domain obo:ExO_0000022 ;
+                            rdfs:range schema:Person ;
+                            rdfs:label "exposure stimulus of" ;
+                            owl:versionInfo 1.0 ;
+                            skos:definition "A relationship between an exposure event or process and any agent, stimulus, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event." .
+
+
+###  https://w3id.org/OntoPFAS#functionalGroup
+ontopfas:functionalGroup rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf obo:BFO_0000050 ;
+                         owl:inverseOf ontopfas:functionalGroupOf ;
+                         rdfs:domain ontopfas:Pfas ;
+                         rdfs:range ontopfas:FunctionalGroup ;
+                         rdfs:label "functional group" ;
+                         owl:versionInfo 1.0 ;
+                         skos:definition "Property to express the functional group of a PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#functionalGroupOf
+ontopfas:functionalGroupOf rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf obo:BFO_0000051 ;
+                           rdfs:domain ontopfas:FunctionalGroup ;
+                           rdfs:range ontopfas:Pfas ;
+                           rdfs:label "functional group of" ;
+                           owl:versionInfo 1.0 ;
+                           skos:definition "Property to express the functional group of a PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#homeLocationOf
+ontopfas:homeLocationOf rdf:type owl:ObjectProperty ;
+                        rdfs:domain schema:Place ;
+                        rdfs:range schema:Person ;
+                        rdfs:label "home location of" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "A contact location for a person's residence." .
+
+
+###  https://w3id.org/OntoPFAS#locationInEnvironment
+ontopfas:locationInEnvironment rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                               rdfs:range obo:ENVO_01000408 ;
+                               rdfs:label "location in environment" ;
+                               owl:versionInfo 1.0 ;
+                               skos:definition "Relation to indicate in which environment the location is present." .
+
+
+###  https://w3id.org/OntoPFAS#matrix
+ontopfas:matrix rdf:type owl:ObjectProperty ;
+                owl:inverseOf ontopfas:matrixOf ;
+                rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+                rdfs:range obo:ENVO_01000408 ;
+                rdfs:label "matrix" ;
+                owl:versionInfo 1.0 ;
+                skos:definition "Relation to indicate the PFAS matrix of an organization or measurement." .
+
+
+###  https://w3id.org/OntoPFAS#matrixOf
+ontopfas:matrixOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain obo:ENVO_01000408 ;
+                  rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
+                  rdfs:label "matrix of" ;
+                  owl:versionInfo 1.0 ;
+                  skos:definition "Relation to indicate the PFAS matrix of an organization or measurement." .
+
+
+###  https://w3id.org/OntoPFAS#measuredIn
+ontopfas:measuredIn rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+                    rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                    rdfs:label "measured in" ;
+                    owl:versionInfo 1.0 ;
+                    skos:definition "A relation between a container and measurement datum that specifies the actual amount of material in the container." .
+
+
+###  https://w3id.org/OntoPFAS#measuredPfas
+ontopfas:measuredPfas rdf:type owl:ObjectProperty ;
+                      owl:inverseOf ontopfas:pfasMeasuredIn ;
+                      rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+                      rdfs:range ontopfas:Pfas ;
+                      rdfs:label "measured PFAS" ;
+                      owl:versionInfo 1.0 ;
+                      skos:definition "Relation to indicate the detected PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#mobility
+ontopfas:mobility rdf:type owl:ObjectProperty ;
+                  owl:inverseOf ontopfas:mobilityOf ;
+                  rdfs:domain ontopfas:Pfas ;
+                  rdfs:range ontopfas:PfasMobility ;
+                  rdfs:label "mobility" ;
+                  owl:versionInfo 1.0 ;
+                  skos:definition "Relation identifying the level of mobility of a PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#mobilityInEnvironment
+ontopfas:mobilityInEnvironment rdf:type owl:ObjectProperty ;
+                               rdfs:domain ontopfas:PfasMobility ;
+                               rdfs:range obo:ENVO_01000408 ;
+                               rdfs:label "mobility in environment" ;
+                               owl:versionInfo 1.0 ;
+                               skos:definition "Relation to express the level of mobility within a certain environment." .
+
+
+###  https://w3id.org/OntoPFAS#mobilityOf
+ontopfas:mobilityOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain ontopfas:PfasMobility ;
+                    rdfs:range ontopfas:Pfas ;
+                    rdfs:label "mobility of" ;
+                    owl:versionInfo 1.0 ;
+                    skos:definition "Relation identifying the level of mobility of a PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#pfasMeasuredIn
+ontopfas:pfasMeasuredIn rdf:type owl:ObjectProperty ;
+                        rdfs:domain ontopfas:Pfas ;
+                        rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
+                        rdfs:label "pfas measured in" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "Relation to indicate the detected PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#placeSubjectTo
+ontopfas:placeSubjectTo rdf:type owl:ObjectProperty ;
+                        owl:inverseOf ontopfas:validInPlace ;
+                        rdfs:domain schema:Place ;
+                        rdfs:range <https://w3id.org/ocqa/regulation#Regulation> ;
+                        rdfs:label "place subject to" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "Relation identifying the validity of a guideline in a continent." .
+
+
+###  https://w3id.org/OntoPFAS#restrictedBy
+ontopfas:restrictedBy rdf:type owl:ObjectProperty ;
+                      owl:inverseOf ontopfas:restricts ;
+                      rdfs:domain ontopfas:Pfas ;
+                      rdfs:range <https://w3id.org/ocqa/regulation#Regulation> ;
+                      rdfs:comment "Relation identifying the restriction of a guideline to a PFAS." ;
+                      rdfs:label "restricted by" ;
+                      owl:versionInfo 1.0 .
+
+
+###  https://w3id.org/OntoPFAS#restricts
+ontopfas:restricts rdf:type owl:ObjectProperty ;
+                   rdfs:domain <https://w3id.org/ocqa/regulation#Regulation> ;
+                   rdfs:range ontopfas:Pfas ;
+                   rdfs:label "restricts" ;
+                   owl:versionInfo 1.0 ;
+                   skos:definition "Relation identifying the restriction of a guideline to a PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#sourceOf
+ontopfas:sourceOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+                  rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
+                  rdfs:comment "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system." ;
+                  rdfs:label "source of" ;
+                  owl:versionInfo 1.0 ;
+                  skos:definition "A related resource from which the described resource is derived." .
+
+
+###  https://w3id.org/OntoPFAS#stimulatedBy
+ontopfas:stimulatedBy rdf:type owl:ObjectProperty ;
+                      owl:inverseOf ontopfas:stimulates ;
+                      rdfs:domain obo:ExO_0000022 ;
+                      rdfs:range ontopfas:Pfas ;
+                      rdfs:label "stimulated by" ;
+                      owl:versionInfo 1.0 ;
+                      skos:definition "Relation indicating what is the exposed PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#stimulates
+ontopfas:stimulates rdf:type owl:ObjectProperty ;
+                    rdfs:domain ontopfas:Pfas ;
+                    rdfs:range obo:ExO_0000022 ;
+                    rdfs:label "stimulates" ;
+                    owl:versionInfo 1.0 ;
+                    skos:definition "Relation indicating what is the exposed PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#transportedBy
+ontopfas:transportedBy rdf:type owl:ObjectProperty ;
+                       rdfs:domain ontopfas:Pfas ;
+                       rdfs:range obo:PCO_0000031 ;
+                       rdfs:label "transported by" ;
+                       owl:versionInfo 1.0 ;
+                       skos:definition "Holds between p and c when p is a transport process or transporter activity and the outcome of this p is to move c from one location to another." .
+
+
+###  https://w3id.org/OntoPFAS#usedBy
+ontopfas:usedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain schema:Product ;
+                rdfs:range schema:Organization ;
+                rdfs:label "used by" ;
+                owl:versionInfo 1.0 ;
+                skos:definition "Relation to indicate the use of a PFAS by an organization." .
+
+
+###  https://w3id.org/OntoPFAS#validInEnvironment
+ontopfas:validInEnvironment rdf:type owl:ObjectProperty ;
+                            rdfs:domain <https://w3id.org/ocqa/regulation#Regulation> ;
+                            rdfs:range obo:ENVO_01000408 ;
+                            rdfs:label "valid in environment" ;
+                            owl:versionInfo 1.0 ;
+                            skos:definition "Relation identifying the validity of a guideline in an environment." .
+
+
+###  https://w3id.org/OntoPFAS#validInPlace
+ontopfas:validInPlace rdf:type owl:ObjectProperty ;
+                      rdfs:domain <https://w3id.org/ocqa/regulation#Regulation> ;
+                      rdfs:range schema:Place ;
+                      rdfs:comment "Relation identifying the validity of a guideline in a place." ;
+                      rdfs:label "valid in place" ;
+                      owl:versionInfo 1.0 .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/ns/sosa/hasSimpleResult
+<http://www.w3.org/ns/sosa/hasSimpleResult> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+                                            rdfs:range owl:real ;
+                                            schema1:domainIncludes <http://www.w3.org/ns/sosa/Actuation> ,
+                                                                   <http://www.w3.org/ns/sosa/Observation> ;
+                                            rdfs:comment "The simple value of an Observation or Actuation."@en ;
+                                            rdfs:label "has simple result"@en ;
+                                            skos:definition "The simple value of an Observation or Actuation."@en ;
+                                            skos:example "For instance, the values 23 or true."@en .
+
+
+###  http://www.w3.org/ns/sosa/resultTime
+<http://www.w3.org/ns/sosa/resultTime> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+                                       rdfs:range xsd:dateTime ;
+                                       schema1:domainIncludes <file:///home/depierro/Desktop/INRAe/Ontology/Observation> ,
+                                                              <http://www.w3.org/ns/sosa/Actuation> ,
+                                                              <http://www.w3.org/ns/sosa/Sampling> ;
+                                       rdfs:comment "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en ;
+                                       rdfs:label "result time"@en ;
+                                       skos:definition "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en .
+
+
+###  https://schema.org/address
+schema:address rdf:type owl:DatatypeProperty ;
+               rdfs:domain schema:Place ;
+               rdfs:range xsd:string ;
+               rdfs:label "address" ;
+               skos:definition "Physical address of the item." .
+
+
+###  https://schema.org/birthDate
+schema:birthDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain schema:Person ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:label "birth date" ;
+                 skos:definition "Date of birth." .
+
+
+###  https://schema.org/gender
+schema:gender rdf:type owl:DatatypeProperty ;
+              rdfs:domain schema:Person ;
+              rdfs:range xsd:string ;
+              rdfs:label "gender" ;
+              skos:definition "Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable for people who are not a binary gender. The gender property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender SportsTeam can be indicated with a text value of \"Mixed\"." .
+
+
+###  https://schema.org/name
+schema:name rdf:type owl:DatatypeProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range xsd:string ;
+            rdfs:label "name" ;
+            skos:definition "Name of the organization." .
+
+
+###  https://w3id.org/OntoPFAS#alt
+ontopfas:alt rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+             rdfs:range owl:real ;
+             rdfs:label "altitude" ;
+             owl:versionInfo 1.0 ;
+             skos:definition "Altitude of a geographical point." .
+
+
+###  https://w3id.org/OntoPFAS#casId
+ontopfas:casId rdf:type owl:DatatypeProperty ;
+               rdfs:domain ontopfas:Pfas ;
+               rdfs:range xsd:string ;
+               rdfs:label "cas id" ;
+               owl:versionInfo 1.0 ;
+               skos:definition "CAS Registry Number of the chemical substance." .
+
+
+###  https://w3id.org/OntoPFAS#concernLevel
+ontopfas:concernLevel rdf:type owl:DatatypeProperty ;
+                      rdfs:domain ontopfas:Pfas ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "concern level" ;
+                      owl:versionInfo 1.0 ;
+                      skos:definition "Level of concern associated with a substance (low, medium, high)." .
+
+
+###  https://w3id.org/OntoPFAS#functionalGroupName
+ontopfas:functionalGroupName rdf:type owl:DatatypeProperty ;
+                             rdfs:domain ontopfas:FunctionalGroup ;
+                             rdfs:range xsd:string ;
+                             rdfs:label "functional group name" ;
+                             owl:versionInfo 1.0 ;
+                             skos:definition "Name of the functional group." .
+
+
+###  https://w3id.org/OntoPFAS#handicap
+ontopfas:handicap rdf:type owl:DatatypeProperty ;
+                  rdfs:domain schema:Person ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "handicap" ;
+                  owl:versionInfo 1.0 ;
+                  skos:definition "Indication about the presence of an handicap." .
+
+
+###  https://w3id.org/OntoPFAS#isEther
+ontopfas:isEther rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ontopfas:Pfas ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:label "is ether" ;
+                 owl:versionInfo 1.0 ;
+                 skos:definition "Capability of a PFAS to move into the air." .
+
+
+###  https://w3id.org/OntoPFAS#isHydrophilic
+ontopfas:isHydrophilic rdf:type owl:DatatypeProperty ;
+                       rdfs:domain ontopfas:Pfas ;
+                       rdfs:range xsd:boolean ;
+                       rdfs:label "is hydrophilic" ;
+                       owl:versionInfo 1.0 ;
+                       skos:definition "Capability of a PFAS to move into the water." .
+
+
+###  https://w3id.org/OntoPFAS#isomer
+ontopfas:isomer rdf:type owl:DatatypeProperty ;
+                rdfs:domain ontopfas:Pfas ;
+                rdfs:range xsd:string ;
+                rdfs:label "isomer" ;
+                owl:versionInfo 1.0 ;
+                skos:definition "Isomer of a PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#limit
+ontopfas:limit rdf:type owl:DatatypeProperty ;
+               rdfs:domain <https://w3id.org/ocqa/regulation#Regulation> ;
+               rdfs:range owl:real ;
+               rdfs:label "limit" ;
+               owl:versionInfo 1.0 ;
+               skos:definition "Maximum amount of PFAS in an environment." .
+
+
+###  https://w3id.org/OntoPFAS#mapsLink
+ontopfas:mapsLink rdf:type owl:DatatypeProperty ;
+                  rdfs:domain schema:Organization ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "maps link" ;
+                  owl:versionInfo 1.0 ;
+                  skos:definition "Google Maps link of an organisation." .
+
+
+###  https://w3id.org/OntoPFAS#mobilityDegree
+ontopfas:mobilityDegree rdf:type owl:DatatypeProperty ;
+                        rdfs:domain ontopfas:PfasMobility ;
+                        rdfs:range xsd:int ;
+                        rdfs:label "mobility degree" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "Degree of mobility." .
+
+
+###  https://w3id.org/OntoPFAS#numberOfCarbons
+ontopfas:numberOfCarbons rdf:type owl:DatatypeProperty ;
+                         rdfs:domain ontopfas:Pfas ;
+                         rdfs:range xsd:int ;
+                         rdfs:label "number of carbons" ;
+                         owl:versionInfo 1.0 ;
+                         skos:definition "Number of atoms of carbons in the molecule." .
+
+
+###  https://w3id.org/OntoPFAS#ph
+ontopfas:ph rdf:type owl:DatatypeProperty ;
+            rdfs:domain obo:CHEBI_24431 ;
+            rdfs:range xsd:int ;
+            rdfs:label "ph" ;
+            owl:versionInfo 1.0 ;
+            skos:definition "Ph level of a substance." .
+
+
+###  https://w3id.org/OntoPFAS#precision
+ontopfas:precision rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "precision" ;
+                   owl:versionInfo 1.0 ;
+                   skos:definition "Value indicating possible ranges like \"<\" or \">\"." .
+
+
+###  https://w3id.org/OntoPFAS#sector
+ontopfas:sector rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:Organization ;
+                rdfs:range xsd:string ;
+                rdfs:label "sector" ;
+                owl:versionInfo 1.0 ;
+                skos:definition "Sector of an organisation." .
+
+
+###  https://w3id.org/OntoPFAS#site
+ontopfas:site rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+              rdfs:range xsd:string ;
+              rdfs:label "site" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "Site associated with the location of an observation." .
+
+
+###  https://w3id.org/OntoPFAS#sourceText
+ontopfas:sourceText rdf:type owl:DatatypeProperty ;
+                    rdfs:domain schema:Organization ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "source text" ;
+                    owl:versionInfo 1.0 ;
+                    skos:definition "Source of the text of an organisation." .
+
+
+###  https://w3id.org/OntoPFAS#sourceType
+ontopfas:sourceType rdf:type owl:DatatypeProperty ;
+                    rdfs:domain schema:Organization ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "source type" ;
+                    owl:versionInfo 1.0 ;
+                    skos:definition "Source of the type of the organisation." .
+
+
+###  https://w3id.org/OntoPFAS#sourceUrl
+ontopfas:sourceUrl rdf:type owl:DatatypeProperty ;
+                   rdfs:domain schema:Organization ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "source url" ;
+                   owl:versionInfo 1.0 ;
+                   skos:definition "URL source of an organisation." .
+
+
+###  https://w3id.org/OntoPFAS#status
+ontopfas:status rdf:type owl:DatatypeProperty ;
+                rdfs:domain schema:Organization ;
+                rdfs:range xsd:string ;
+                rdfs:label "status" ;
+                owl:versionInfo 1.0 ;
+                skos:definition "Current status of the organisation." .
+
+
+###  https://w3id.org/OntoPFAS#type
+ontopfas:type rdf:type owl:DatatypeProperty ;
+              rdfs:domain schema:Organization ;
+              rdfs:range xsd:string ;
+              rdfs:label "type" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "Type of an organisation." .
+
+
+###  https://w3id.org/OntoPFAS#unit
+ontopfas:unit rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+              rdfs:range xsd:string ;
+              rdfs:label "unit" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "Scale of a value, e.g. 1000 for kilo or 0.001 for mili." .
+
+
+###  https://w3id.org/OntoPFAS#value
+ontopfas:value rdf:type owl:DatatypeProperty ;
+               rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+               rdfs:range owl:real ;
+               rdfs:label "value" ;
+               owl:versionInfo 1.0 ;
+               skos:definition "Value of a PFAS observation." .
+
+
+###  https://www.w3.org/2003/01/geo/wgs84_pos#lat
+<https://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                                               rdfs:range owl:real ;
+                                               rdfs:label "latitude" ;
+                                               skos:definition "Latitude of a geographical point." .
+
+
+###  https://www.w3.org/2003/01/geo/wgs84_pos#long
+<https://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                                                rdfs:range owl:real ;
+                                                rdfs:label "longitude" ;
+                                                skos:definition "Longitude of a geographical point." .
+
+
+###  https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title
+<https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:label "title" ;
+                                                              skos:definition "Technique for data collection." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/CHEBI_172406
+obo:CHEBI_172406 rdf:type owl:Class ;
+                 rdfs:subClassOf ontopfas:Pfas ;
+                 owl:disjointWith obo:CHEBI_24531 ;
+                 oboInOwl:hasDbXref "Wikipedia:Per-_and_polyfluoroalkyl_substances" ;
+                 oboInOwl:hasExactSynonym "polyfluoroalkyl substances" ;
+                 oboInOwl:hasOBONamespace "chebi_ontology" ;
+                 oboInOwl:hasRelatedSynonym "PFAS" ;
+                 oboInOwl:id "CHEBI:172406" ;
+                 oboInOwl:inSubset "http://purl.obolibrary.org/obo/chebi#3_STAR" ;
+                 rdfs:comment "An organofluorine compound that has multiple fluorine atoms attached to an alkyl chain (but at least one of the carbon atoms in the chain is not fully fluorinated)." ;
+                 rdfs:label "Polyfluoroalkyl" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24431
+obo:CHEBI_24431 rdf:type owl:Class ;
+                oboInOwl:hasExactSynonym "chemical entity" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:24431" ;
+                oboInOwl:inSubset <http://purl.obolibrary.org/obo/chebi#3_STAR> ;
+                rdfs:comment "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." ;
+                rdfs:label "Chemical entity" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:CHEBI_24431 ;
+   owl:annotatedProperty oboInOwl:hasExactSynonym ;
+   owl:annotatedTarget "chemical entity" ;
+   oboInOwl:hasDbXref "UniProt"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24531
+obo:CHEBI_24531 rdf:type owl:Class ;
+                rdfs:subClassOf ontopfas:Pfas ;
+                oboInOwl:hasDbXref "Wikipedia:Per-_and_polyfluoroalkyl_substances" ;
+                oboInOwl:hasExactSynonym "perfluoroalkyl substances" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "PFAS" ,
+                                           "perfluorinated alkylated substance" ,
+                                           "perfluorinated alkylated substances" ,
+                                           "perfluoroalkyl compound" ,
+                                           "perfluoroalkyl compounds" ;
+                oboInOwl:id "CHEBI:172397" ;
+                oboInOwl:inSubset "http://purl.obolibrary.org/obo/chebi#3_STAR" ;
+                rdfs:comment "A perfluorinated compound in which the carbon chain atoms are completely fluorinated." ;
+                rdfs:label "Perfluoroalkyl" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_83814
+obo:CHEBI_83814 rdf:type owl:Class ;
+                rdfs:subClassOf ontopfas:PfasPrecursor ;
+                oboInOwl:hasDbXref "wikipedia.en:Fluorotelomer" ;
+                oboInOwl:hasExactSynonym "Fluorotelomers" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "fluorotelomers" ;
+                oboInOwl:id "CHEBI:83814" ;
+                oboInOwl:inSubset "http://purl.obolibrary.org/obo/3_STAR" ;
+                rdfs:label "Fluorotelomer" ;
+                skos:definition "Any organofluorine compound that is a oligomer or telomer synthesised by telomerization (a chain transfer reaction to produce an oligomer of a limited size). They are generally used in fire-fighting foams, leather protectants, food packaging and stain resistants." ;
+                skos:notation "CHEBI:83814" .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000408
+obo:ENVO_01000408 rdf:type owl:Class ;
+                  rdfs:comment "Formerly, this class was an experimental class and a subclass of \"environmental feature\". It is now aligned to BFO. The class was not obsoleted as the core semantics maintained their stability through its transition." ;
+                  rdfs:label "Environmental zone" ;
+                  skos:definition "A site which has its extent determined by the presence or influence of one or more components of an environmental system or the processes occurring therein." .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000003
+obo:ExO_0000003 rdf:type owl:Class ;
+                obo:IAO_0000115 "Entity that results from the interaction between and exposure_receptor and an exposure stressor during an exposure event." ;
+                oboInOwl:created_by "cmattin" ;
+                oboInOwl:creation_date "2010-09-21T02:48:49Z" ;
+                oboInOwl:hasOBONamespace "exposure_outcome" ;
+                oboInOwl:hasRelatedSynonym "interaction outcome" ;
+                oboInOwl:id "ExO:0000003" ;
+                rdfs:comment "Entity that results from the interaction between and exposure_receptor and an exposure stressor during an exposure event." ;
+                rdfs:label "Exposure outcome" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:ExO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Entity that results from the interaction between and exposure_receptor and an exposure stressor during an exposure event." ;
+   oboInOwl:hasDbXref "CTD:curators"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:ExO_0000003 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Entity that results from the interaction between and exposure_receptor and an exposure stressor during an exposure event." ;
+   oboInOwl:hasDbXref "CTD:curators"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000022
+obo:ExO_0000022 rdf:type owl:Class ;
+                oboInOwl:created_by "http://orcid.org/0000-0002-7463-6306" ;
+                oboInOwl:creation_date "2021-10-20T17:44:37Z" ;
+                oboInOwl:hasOBONamespace "source" ;
+                oboInOwl:id "ExO:0000022" ;
+                rdfs:comment "Any agent, entity, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event." ;
+                rdfs:label "Exposure stimulus" .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000043
+obo:ExO_0000043 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ExO_0000101 ;
+                obo:IAO_0000115 "The individual attribute describing the structure of a living organism." ;
+                oboInOwl:created_by "cmattin" ;
+                oboInOwl:creation_date "2011-01-10T09:31:27Z" ;
+                oboInOwl:hasOBONamespace "human_attribute" ;
+                oboInOwl:id "ExO:0000043" ;
+                rdfs:comment "The individual attribute describing the structure of a living organism." ;
+                rdfs:label "Anatomy" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:ExO_0000043 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The individual attribute describing the structure of a living organism." ;
+   oboInOwl:hasDbXref "CTD:curators"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000076
+obo:ExO_0000076 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ExO_0000003 ;
+                obo:IAO_0000115 "The total quantity or strength of a substance administered at one time." ;
+                oboInOwl:created_by "cmattin" ;
+                oboInOwl:creation_date "2011-01-11T01:28:26Z" ;
+                oboInOwl:hasOBONamespace "exposure_event" ;
+                oboInOwl:id "ExO:0000076" ;
+                rdfs:comment "The total quantity or strength of a substance administered at one time." ;
+                rdfs:label "Dose" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:ExO_0000076 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The total quantity or strength of a substance administered at one time." ;
+   oboInOwl:hasDbXref "EFO:0000428"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000077
+obo:ExO_0000077 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ExO_0000003 ;
+                oboInOwl:created_by "cmattin" ;
+                oboInOwl:creation_date "2011-01-11T01:29:49Z" ;
+                oboInOwl:hasOBONamespace "exposure_outcome" ;
+                oboInOwl:id "ExO:0000077" ;
+                rdfs:comment "Response of the organism." ;
+                rdfs:label "Biological response" .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000079
+obo:ExO_0000079 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ExO_0000077 ;
+                obo:IAO_0000115 "A disease is a pattern of abnormal functioning, or abnormal localization of normal functioning, and/or abnormal localization of constituents when compared to other members of that species." ;
+                oboInOwl:created_by "cmattin" ;
+                oboInOwl:creation_date "2011-01-11T01:30:35Z" ;
+                oboInOwl:hasOBONamespace "exposure_outcome" ;
+                oboInOwl:id "ExO:0000079" ;
+                rdfs:comment "A disease is a pattern of abnormal functioning, or abnormal localization of normal functioning, and/or abnormal localization of constituents when compared to other members of that species." ;
+                rdfs:label "Disease" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:ExO_0000079 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A disease is a pattern of abnormal functioning, or abnormal localization of normal functioning, and/or abnormal localization of constituents when compared to other members of that species." ;
+   oboInOwl:hasDbXref "DOExO:4" ,
+                      "MSH2010_2010_02_22:D004194" ,
+                      "UMLS:C0012634"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000080
+obo:ExO_0000080 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ExO_0000077 ;
+                obo:IAO_0000115 "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease." ;
+                oboInOwl:created_by "cmattin" ;
+                oboInOwl:creation_date "2011-01-11T01:30:47Z" ;
+                oboInOwl:hasOBONamespace "exposure_outcome" ;
+                oboInOwl:id "ExO:0000080" ;
+                rdfs:comment "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease." ;
+                rdfs:label "Symptom" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:ExO_0000080 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease." ;
+   oboInOwl:hasDbXref "SYOExO:14974"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000087
+obo:ExO_0000087 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ExO_0000003 ;
+                obo:IAO_0000115 "The act or fact of interfering so as to modify." ;
+                oboInOwl:created_by "cmattin" ;
+                oboInOwl:creation_date "2011-01-12T01:34:34Z" ;
+                oboInOwl:hasOBONamespace "exposure_outcome" ;
+                oboInOwl:id "ExO:0000087" ;
+                rdfs:comment "The act or fact of interfering so as to modify." ;
+                rdfs:label "Exposure intervention" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:ExO_0000087 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The act or fact of interfering so as to modify." ;
+   oboInOwl:hasDbXref "CTD:curators"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ExO_0000101
+obo:ExO_0000101 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ExO_0000077 ;
+                oboInOwl:created_by "cgrondin" ;
+                oboInOwl:creation_date "2017-04-06T03:47:29Z" ;
+                oboInOwl:hasDbXref "https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=16.07d&code=C16977&ns=NCI_Thesaurus&type=properties&key=1003504562&b=1&n=0&vse=null" ;
+                oboInOwl:hasOBONamespace "biological_response" ;
+                oboInOwl:id "ExO:0000101" ;
+                rdfs:comment "The assemblage of traits or outward appearance of an individual. It is the product of interactions between genes and between genes and the environment." ;
+                rdfs:label "Phenotype" .
+
+
+###  http://purl.obolibrary.org/obo/PCO_0000031
+obo:PCO_0000031 rdf:type owl:Class ;
+                obo:IAO_0000114 obo:IAO_0000120 ;
+                obo:IAO_0000115 "A material entity that is one or more organisms, viruses or viroids." ;
+                rdfs:comment "A material entity that is one or more organisms, viruses or viroids." ;
+                rdfs:label "Organismal entity"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdf:type owl:Class ;
+                                                       rdfs:label "Location" ;
+                                                       skos:definition "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes." .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
+                                    rdfs:comment """
+1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。
+"""@ja ,
+                                                 """
+A collection of data, published or curated by a single source, and available for access or download in one or more representations.
+"""@en ,
+                                                 """
+En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
+"""@da ,
+                                                 """
+Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.
+"""@cs ,
+                                                 """
+Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati.
+"""@it ,
+                                                 """
+Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.
+"""@es ,
+                                                 """
+Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.
+"""@fr ,
+                                                 """
+Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.
+"""@el ,
+                                                 """
+قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها
+"""@ar ;
+                                    rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+                                    rdfs:label "Conjunto de datos"@es ,
+                                               "Dataset"@en ,
+                                               "Dataset"@it ,
+                                               "Datasæt"@da ,
+                                               "Datová sada"@cs ,
+                                               "Jeu de données"@fr ,
+                                               "Σύνολο Δεδομένων"@el ,
+                                               "قائمة بيانات"@ar ,
+                                               "データセット"@ja ;
+                                    skos:altLabel "Datasamling"@da ;
+                                    skos:changeNote """
+2018-02 - odstraněno tvrzení o podtřídě dctype:Dataset, jelikož rozsah dcat:Dataset zahrnuje několik dalších typů ze slovníku dctype.
+"""@cs ,
+                                                    """
+2018-02 - se eliminó el axioma de subclase con dctype:Dataset porque el alcance de dcat:Dataset incluye muchos otros tipos del vocabulario dctype.
+"""@es ,
+                                                    """
+2018-02 - sottoclasse di dctype:Dataset rimosso perché l'ambito di dcat:Dataset include diversi altri tipi dal vocabolario dctype.
+"""@it ,
+                                                    """
+2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary.
+"""@en ,
+                                                    """
+2018-02 - subklasse af dctype:Dataset fjernet da scope af dcat:Dataset omfatter flere forskellige typer fra dctype-vokabularet.
+"""@da ;
+                                    skos:definition """
+1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。
+"""@ja ,
+                                                    """
+A collection of data, published or curated by a single source, and available for access or download in one or more representations.
+"""@en ,
+                                                    """
+En samling a data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
+"""@da ,
+                                                    """
+Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.
+"""@cs ,
+                                                    """
+Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati.
+"""@it ,
+                                                    """
+Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.
+"""@es ,
+                                                    """
+Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.
+"""@fr ,
+                                                    """
+Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.
+"""@el ,
+                                                    """
+قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها
+"""@ar ;
+                                    skos:editorialNote """
+2020-03-16 A new scopenote added and need to be translated
+"""@en ;
+                                    skos:scopeNote """
+Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier.
+"""@fr ,
+                                                   """
+Denne klasse beskriver det konceptuelle datasæt. En eller flere repræsentationer kan være tilgængelige med forskellige skematiske opsætninger, formater eller serialiseringer.
+"""@da ,
+                                                   """
+Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes.
+"""@da ,
+                                                   """
+Esta clase representa el conjunto de datos publicados. En los casos donde es necesario distinguir entre el conjunto de datos y su entrada en el catálogo de datos, se debe utilizar la clase 'registro del catálogo'.
+"""@es ,
+                                                   """
+Questa classe descrive il dataset dal punto di vista concettuale. Possono essere disponibili una o più rappresentazioni, con diversi layout e formati schematici o serializzazioni.
+"""@it ,
+                                                   """
+Questa classe rappresenta il dataset come pubblicato dall’editore. Nel caso in cui sia necessario operare una distinzione fra i metadati originali del dataset e il record dei metadati ad esso associato nel catalogo (ad esempio, per distinguere la data di modifica del dataset da quella del dataset nel catalogo) si può impiegare la classe catalog record.
+"""@it ,
+                                                   """
+Tato třída reprezentuje datovou sadu tak, jak je publikována poskytovatelem dat. V případě potřeby rozlišení datové sady a jejího katalogizačního záznamu (jelikož metadata jako datum modifikace se mohou lišit) pro něj může být použita třída \"katalogizační záznam\".
+"""@cs ,
+                                                   """
+The notion of dataset in DCAT is broad and inclusive, with the intention of accommodating resource types arising from all communities. Data comes in many forms including numbers, text, pixels, imagery, sound and other multi-media, and potentially other types, any of which might be collected into a dataset.
+"""@en ,
+                                                   """
+This class describes the conceptual dataset. One or more representations might be available, with differing schematic layouts and formats or serializations.
+"""@en ,
+                                                   """
+This class represents the actual dataset as published by the dataset provider. In cases where a distinction between the actual dataset and its entry in the catalog is necessary (because metadata such as modification date and maintainer might differ), the catalog record class can be used for the latter.
+"""@en ,
+                                                   """
+Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη. Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο.
+"""@el ,
+                                                   """
+このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。
+"""@ja .
+
+
+###  http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> rdf:type owl:Class ;
+                                        rdfs:comment "Activity of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."@en ;
+                                        rdfs:label "Observation"@en ;
+                                        skos:definition "Activity of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."@en ;
+                                        skos:example "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake."@en .
+
+
+###  https://schema.org/City
+schema:City rdf:type owl:Class ;
+            rdfs:subClassOf schema:Place ;
+            rdfs:label "City" ;
+            skos:definition "A city or town." .
+
+
+###  https://schema.org/Continent
+schema:Continent rdf:type owl:Class ;
+                 rdfs:subClassOf schema:Place ;
+                 rdfs:label "Continent" ;
+                 skos:definition "One of the continents (for example, Europe or Africa)." .
+
+
+###  https://schema.org/Organization
+schema:Organization rdf:type owl:Class ;
+                    rdfs:isDefinedBy schema:Organization ;
+                    rdfs:label "Activity" ;
+                    skos:definition "An organization such as a school, NGO, corporation, club, etc."@en .
+
+
+###  https://schema.org/Person
+schema:Person rdf:type owl:Class ;
+              rdfs:label "Person" ;
+              skos:definition "A person (alive, dead, undead, or fictional)." .
+
+
+###  https://schema.org/Place
+schema:Place rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+             rdfs:label "Place" ;
+             skos:definition "Physical place (city, region, country, continent)." .
+
+
+###  https://schema.org/Product
+schema:Product rdf:type owl:Class ;
+               rdfs:isDefinedBy schema:Product ;
+               rdfs:label "Product" ;
+               skos:definition "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online."@en .
+
+
+###  https://w3id.org/OntoPFAS#FunctionalGroup
+ontopfas:FunctionalGroup rdf:type owl:Class ;
+                         rdfs:subClassOf obo:CHEBI_24431 ;
+                         rdfs:label "Functional group" ;
+                         owl:versionInfo 1.0 ;
+                         skos:definition "Functional group of the PFAS, responsible for the reactive part." .
+
+
+###  https://w3id.org/OntoPFAS#LongChainPfas
+ontopfas:LongChainPfas rdf:type owl:Class ;
+                       rdfs:subClassOf ontopfas:Pfas ;
+                       owl:disjointWith ontopfas:ShortChainPfas ;
+                       rdfs:label "Long chain Pfas" ;
+                       owl:versionInfo 1.0 ;
+                       skos:definition "PFCA with more than 7 atoms of carbon or PFSA with more than 5 atoms of carbon." .
+
+
+###  https://w3id.org/OntoPFAS#NonPolymerPfas
+ontopfas:NonPolymerPfas rdf:type owl:Class ;
+                        rdfs:subClassOf ontopfas:Pfas ;
+                        owl:disjointWith ontopfas:PolymerPfas ;
+                        rdfs:label "Non polymer Pfas" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "A non-polymer is a substance composed of small molecules that do not form long chains or networks. These molecules are typically of uniform composition and have a relatively simple and well-defined structure." .
+
+
+###  https://w3id.org/OntoPFAS#Pfaa
+ontopfas:Pfaa rdf:type owl:Class ;
+              rdfs:subClassOf obo:CHEBI_24531 ,
+                              ontopfas:NonPolymerPfas ;
+              rdfs:label "Pfaa" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "Perfluoroalkyl acids (PFAAs) are a subclass of PFAS that have a fully fluorinated carbon chain (no hydrogen atoms attached to the carbon backbone) ending with a functional acid group — either a carboxylic acid (-COOH) or a sulfonic acid (-SO₃H) group." .
+
+
+###  https://w3id.org/OntoPFAS#Pfas
+ontopfas:Pfas rdf:type owl:Class ;
+              rdfs:subClassOf obo:CHEBI_24431 ;
+              rdfs:label "Pfas" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "Per- and poly- fluoroalkyl substance." .
+
+
+###  https://w3id.org/OntoPFAS#PfasMobility
+ontopfas:PfasMobility rdf:type owl:Class ;
+                      rdfs:label "Pfas mobility" ;
+                      owl:versionInfo 1.0 ;
+                      skos:definition "Degree of mobility associated with the PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#PfasPrecursor
+ontopfas:PfasPrecursor rdf:type owl:Class ;
+                       rdfs:subClassOf ontopfas:Pfas ;
+                       rdfs:label "Precursor" ;
+                       owl:versionInfo 1.0 ;
+                       skos:definition "Precursor PFAS are compounds that can transform — through biological, chemical, or environmental processes — into perfluoroalkyl acids (PFAAs) such as PFOA or PFOS." .
+
+
+###  https://w3id.org/OntoPFAS#Pfca
+ontopfas:Pfca rdf:type owl:Class ;
+              rdfs:subClassOf ontopfas:Pfaa ;
+              rdfs:label "Pfca" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "PFCAs are PFAAs that end with a carboxylic acid functional group (-COOH). Their general formula is CₙF₂ₙ₊₁COOH, where n is typically between 4 and 14." .
+
+
+###  https://w3id.org/OntoPFAS#Pfoa
+ontopfas:Pfoa rdf:type owl:Class ;
+              rdfs:subClassOf ontopfas:LongChainPfas ,
+                              ontopfas:Pfca ;
+              rdfs:label "Pfoa" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "PFOA is a specific PFCA with the formula C₇F₁₅COOH (eight carbon atoms)." .
+
+
+###  https://w3id.org/OntoPFAS#Pfos
+ontopfas:Pfos rdf:type owl:Class ;
+              rdfs:subClassOf ontopfas:LongChainPfas ,
+                              ontopfas:Pfsa ;
+              rdfs:label "Pfos" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "PFOS is a specific PFSA with the formula C₈F₁₇SO₃H." .
+
+
+###  https://w3id.org/OntoPFAS#Pfsa
+ontopfas:Pfsa rdf:type owl:Class ;
+              rdfs:subClassOf ontopfas:Pfaa ;
+              rdfs:label "Pfsa" ;
+              owl:versionInfo 1.0 ;
+              skos:definition "PFSAs are PFAAs that end with a sulfonic acid functional group (-SO₃H). Their general formula is CₙF₂ₙ₊₁SO₃H." .
+
+
+###  https://w3id.org/OntoPFAS#PolymerPfas
+ontopfas:PolymerPfas rdf:type owl:Class ;
+                     rdfs:subClassOf ontopfas:Pfas ;
+                     rdfs:label "Polymer Pfas" ;
+                     owl:versionInfo 1.0 ;
+                     skos:definition "A polymer is a substance composed of big molecules form long chains or networks." .
+
+
+###  https://w3id.org/OntoPFAS#ShortChainPfas
+ontopfas:ShortChainPfas rdf:type owl:Class ;
+                        rdfs:subClassOf ontopfas:Pfas ;
+                        rdfs:label "Short chain Pfas" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "PFCA with fewer than 8 atoms of carbon or PFSA with fewer than 6 atoms of carbon." .
+
+
+###  https://w3id.org/OntoPFAS#UltraShortChainPfas
+ontopfas:UltraShortChainPfas rdf:type owl:Class ;
+                             rdfs:subClassOf ontopfas:ShortChainPfas ;
+                             rdfs:label "Ultra short chain Pfas" ;
+                             owl:versionInfo 1.0 ;
+                             skos:definition "PFAS chains with a maximum of 3 atoms of carbon." .
+
+
+###  https://w3id.org/OntoPFAS#VulnerablePerson
+ontopfas:VulnerablePerson rdf:type owl:Class ;
+                          rdfs:subClassOf schema:Person ;
+                          rdfs:label "Vulnerable person" ;
+                          owl:versionInfo 1.0 ;
+                          skos:definition "Fragile people who can suffer more from the exposure to PFAS." .
+
+
+###  https://w3id.org/ocqa/regulation#Regulation
+<https://w3id.org/ocqa/regulation#Regulation> rdf:type owl:Class ;
+                                              rdfs:label "Regulation" ;
+                                              skos:definition "Regulation about the presence of the PFAS in the environments." .
+
+
+###  urn:absolute:ontopfas#Presumptive
+:Presumptive rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+             rdfs:label "Presumptive" ;
+             owl:versionInfo 1.0 ;
+             skos:definition "Presumptive PFAS observation." .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:person rdf:type swrl:Variable .
+
+:place rdf:type swrl:Variable .
+
+:stimulus rdf:type swrl:Variable .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "ontopfas:exposureStimulusOf" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate schema1:homeLocation ;
+                           swrl:argument1 :person ;
+                           swrl:argument2 :place
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate ontopfas:affects ;
+                                      swrl:argument1 :stimulus ;
+                                      swrl:argument2 :place
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate ontopfas:exposureStimulusOf ;
+                           swrl:argument1 :stimulus ;
+                           swrl:argument2 :person
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
