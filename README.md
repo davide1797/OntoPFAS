@@ -20,16 +20,16 @@ This ontology mainly represents these three different aspects of the PFAS concer
 ## Evaluation
 
 A static evaluation has been assessed by evaluating the following aspects:
-- answers to the competency questions,
-- the correct information distribution measured by the OntoMetrics,
-- the avoidance of conceptual pitfalls measured by OOPS,
-- the respect of the FAIR principles measured by FOOPS,
+- [answers](ontology/competency_questions.csv) to the competency questions,
+- the correct information distribution measured by the [OntoMetrics](https://ontometrics.informatik.uni-rostock.de/ontologymetrics/),
+- the avoidance of conceptual pitfalls measured by [OOPS](https://oops.linkeddata.es/),
+- the respect of the FAIR principles measured by [FOOPS](https://foops.linkeddata.es/FAIR_validator.html),
 - the respect of other proposed [ontology evaluation features](http://simia.net/download/ontology_evaluation.pdf).
 
 ## Content
 
 The repository is comprehensive of the following resources:
-- [functional requirements](ontology/competency_questions.csv) expressed by experts and translated into the form of competency questions,
+- functional requirements expressed by experts and translated into the form of [competency questions](ontology/competency_questions.csv),
 - [schemas](ontology/schemas) of the ontology expressed with [Diagrams.net](https://www.drawio.com/),
 - [source](ontology/pfas.rdf) of the ontology (available in RDF and TTL),
 - [instances](instances/) taken from some dataset of the PDH,
