@@ -1,0 +1,3721 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://schema/org/> .
+@prefix ns2: <https://w3id.org/OntoPFAS#> .
+@prefix ns3: <https://www.ebi.ac.uk/ols4/ontologies/ro/> .
+@prefix ns4: <https://www.w3.org/TR/vocab-dcat-3/#Property:> .
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+wgs:lat a owl:DatatypeProperty .
+
+wgs:long a owl:DatatypeProperty .
+
+ns1:name a owl:DatatypeProperty .
+
+ns2:type a owl:DatatypeProperty .
+
+ns2:sector a owl:DatatypeProperty .
+
+ns2:source_type a owl:DatatypeProperty .
+
+ns2:source_text a owl:DatatypeProperty .
+
+ns2:source_url a owl:DatatypeProperty .
+
+ns2:maps_link a owl:DatatypeProperty .
+
+ns4:resource_title a owl:DatatypeProperty .
+
+ns3:RO_0001025 a owl:ObjectProperty .
+
+ns1:containedInPlace a owl:ObjectProperty .
+
+dc:source a owl:ObjectProperty .
+
+ns1:Organization_0 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fortier Beaulieu"^^xsd:string ;
+    ns2:source_text "ARS Rhône-Alpes"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:source_url "https://www.auvergne-rhone-alpes.ars.sante.fr/pfas-focus-sur-la-situation-rumilly-haute-savoie"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_0 ;
+    wgs:lat "45.864286"^^xsd:decimal ;
+    wgs:long "5.948318"^^xsd:decimal .
+
+ns1:Organization_1 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Salomon"^^xsd:string ;
+    ns2:source_text "ARS Rhône-Alpes"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:source_url "https://www.auvergne-rhone-alpes.ars.sante.fr/pfas-focus-sur-la-situation-rumilly-haute-savoie"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_0 ;
+    wgs:lat "45.838896"^^xsd:decimal ;
+    wgs:long "5.960591"^^xsd:decimal .
+
+ns1:Organization_10 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Orchidee"^^xsd:string ;
+    ns2:source_text "Orchidee"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://orchidee-fire.com/products-solutions/?_sft_product_cat=foams"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_9 ;
+    wgs:lat "51.036906"^^xsd:decimal ;
+    wgs:long "4.359788"^^xsd:decimal .
+
+ns1:Organization_100 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Wevapress Thermoplastics"^^xsd:string ;
+    ns2:maps_link "https://g.page/wefapress?share"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Wevapress Thermoplastics"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.wefapress.com/en/plastic-producing-company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_94 ;
+    wgs:lat "52.029083"^^xsd:decimal ;
+    wgs:long "6.826575"^^xsd:decimal .
+
+ns1:Organization_101 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_95 ;
+    wgs:lat "46.879408"^^xsd:decimal ;
+    wgs:long "19.614607"^^xsd:decimal .
+
+ns1:Organization_102 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_96 ;
+    wgs:lat "47.036607"^^xsd:decimal ;
+    wgs:long "19.544912"^^xsd:decimal .
+
+ns1:Organization_103 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Saint-Gobain"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Saint-Gobain"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.saint-gobain.com/sites/saint-gobain.com/files/rapport_annuel_2013_en.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_97 ;
+    wgs:lat "52.644493"^^xsd:decimal ;
+    wgs:long "-9.481274"^^xsd:decimal .
+
+ns1:Organization_104 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "3P Produits Plastiques Performants"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "3P "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.3pcorporate.com//wp-content/uploads/2021/10/3P-multisite_Certificate-ISO9001-2020_2023-2020.pdf "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_98 ;
+    wgs:lat "45.474566"^^xsd:decimal ;
+    wgs:long "9.332529"^^xsd:decimal .
+
+ns1:Organization_105 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Ammeraal Beltech"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Ammeraal Beltech"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.ammeraalbeltech.com/it-it/prodotti/nastri-in-ptfe/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_99 ;
+    wgs:lat "44.573096"^^xsd:decimal ;
+    wgs:long "11.247393"^^xsd:decimal .
+
+ns1:Organization_106 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "CHT Bezema"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/paFVW5dcrVeJYrfq8"^^xsd:string ;
+    ns2:source_text "CHT Bezema Sesto Ulteriano"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.cht.com/en/cht-group/locations/italy-104/cht-italia-srl-lainate-mi "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_100 ;
+    wgs:lat "45.397781"^^xsd:decimal ;
+    wgs:long "9.250283"^^xsd:decimal .
+
+ns1:Organization_107 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "FELIS Srl Unipersonal"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Felis"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.ptfe-felis.it/en/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_101 ;
+    wgs:lat "45.822737"^^xsd:decimal ;
+    wgs:long "13.469727"^^xsd:decimal .
+
+ns1:Organization_108 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_102 ;
+    wgs:lat "44.812469"^^xsd:decimal ;
+    wgs:long "7.263993"^^xsd:decimal .
+
+ns1:Organization_109 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_103 ;
+    wgs:lat "44.900488"^^xsd:decimal ;
+    wgs:long "7.367698"^^xsd:decimal .
+
+ns1:Organization_11 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Shamrock Technologies"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Shamrock"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221215221147/https://shamrock-technologies.inhroffice.com/nl/job/239230"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_10 ;
+    wgs:lat "50.787406"^^xsd:decimal ;
+    wgs:long "5.527537"^^xsd:decimal .
+
+ns1:Organization_110 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_104 ;
+    wgs:lat "45.6251"^^xsd:decimal ;
+    wgs:long "9.89915"^^xsd:decimal .
+
+ns1:Organization_111 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Guarniflon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Guarniflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.guarniflon.com/en/about-us"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_105 ;
+    wgs:lat "45.637033"^^xsd:decimal ;
+    wgs:long "9.892425"^^xsd:decimal .
+
+ns1:Organization_112 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Huntsman"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/QaX3USLjyT2n9p728 "^^xsd:string ;
+    ns2:source_text "Huntsman"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_106 ;
+    wgs:lat "45.79324"^^xsd:decimal ;
+    wgs:long "8.698828"^^xsd:decimal .
+
+ns1:Organization_113 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "ITAflon"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/9fXTz2gASyJrqVcY6 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "ITAflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.itaflon.com/en/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_107 ;
+    wgs:lat "45.682403"^^xsd:decimal ;
+    wgs:long "9.788023"^^xsd:decimal .
+
+ns1:Organization_114 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "L.M.P. Fluorcarbon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "L.M.P. Fluorcarbon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://lmp.it/en/index.html#products"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_108 ;
+    wgs:lat "45.850034"^^xsd:decimal ;
+    wgs:long "8.636575"^^xsd:decimal .
+
+ns1:Organization_115 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Maflon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Maflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.maflon.com/index.php?option=com_content&view=article&id=17&Itemid=109"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_105 ;
+    wgs:lat "45.634911"^^xsd:decimal ;
+    wgs:long "9.890708"^^xsd:decimal .
+
+ns1:Organization_116 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "MCM"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/3UaT6AK5oP1rRvg19"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "MCM"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://mcm-spa.it/en/products/productlist/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_109 ;
+    wgs:lat "45.699362"^^xsd:decimal ;
+    wgs:long "9.950757"^^xsd:decimal .
+
+ns1:Organization_117 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Near Chimica"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/QUKGwJSE3d8ZnR9e6"^^xsd:string ;
+    ns2:source_text "Near Chimica"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.teknofluor.it/eng/product/flexible-tubes/ptfe-tubes/ptfe-tubes/224b60d4efa6d661ffd84080250d5655/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_110 ;
+    wgs:lat "45.614122"^^xsd:decimal ;
+    wgs:long "8.939652"^^xsd:decimal .
+
+ns1:Organization_118 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "ProFoam"^^xsd:string ;
+    ns2:source_text "ProFoam"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.profoam.it/it/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_111 ;
+    wgs:lat "45.444638"^^xsd:decimal ;
+    wgs:long "8.568244"^^xsd:decimal .
+
+ns1:Organization_119 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Rhütten"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Rhütten"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.rhutten.com/about-us/?lang=en"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_112 ;
+    wgs:lat "43.148209"^^xsd:decimal ;
+    wgs:long "13.22589"^^xsd:decimal .
+
+ns1:Organization_12 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Synthomer"^^xsd:string ;
+    ns2:source_text "Synthomer Evergem"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.synthomer.com/media/zj4fsxu5/certificatede012296_iso14001_synthomer-a8b12ed26138412db87603b87c3d087e.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_11 ;
+    wgs:lat "51.098489"^^xsd:decimal ;
+    wgs:long "3.688144"^^xsd:decimal .
+
+ns1:Organization_120 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Ricci"^^xsd:string ;
+    ns2:source_text "Ricci"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://riccichemicals.com/textile-industry/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_113 ;
+    wgs:lat "45.640501"^^xsd:decimal ;
+    wgs:long "8.916757"^^xsd:decimal .
+
+ns1:Organization_121 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "SABO Foam"^^xsd:string ;
+    ns2:source_text "SABO Foam"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.sabofoam.com/afff-foam-concentrates.php"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_114 ;
+    wgs:lat "45.563879"^^xsd:decimal ;
+    wgs:long "9.704419"^^xsd:decimal .
+
+ns1:Organization_122 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Serto"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/4gkoYttk8Hp3bypF7"^^xsd:string ;
+    ns2:source_text "Serto"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.serto.com/en/products/product-range/tubes-hoses/plastic-tubes/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_115 ;
+    wgs:lat "45.709002"^^xsd:decimal ;
+    wgs:long "9.576362"^^xsd:decimal .
+
+ns1:Organization_123 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Teknofluor"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Teknofluor"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.teknofluor.it/eng/product/flexible-tubes/ptfe-tubes/ptfe-tubes/224b60d4efa6d661ffd84080250d5655/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_116 ;
+    wgs:lat "45.435922"^^xsd:decimal ;
+    wgs:long "9.176926"^^xsd:decimal .
+
+ns1:Organization_124 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Weilburger coatings"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/Dgmx4RqWhF9Qgmns6"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Weilburger coatings"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.weilburger.com/en/products"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_117 ;
+    wgs:lat "45.69567"^^xsd:decimal ;
+    wgs:long "9.518439"^^xsd:decimal .
+
+ns1:Organization_125 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "3M"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/z5dYoRaZxkK7WeSd8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "3M"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.3mdeutschland.de/3M/de_DE/presse-de/pressemeldungen/ganzemeldung/?storyid=eb9b8bf0-f7a6-4503-b43e-0c33f03d6eca"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_118 ;
+    wgs:lat "50.871865"^^xsd:decimal ;
+    wgs:long "6.034522"^^xsd:decimal .
+
+ns1:Organization_126 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Byk"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/RgPdqxLt5DqDYxH66"^^xsd:string ;
+    ns2:source_text "Byk"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.byk.com/en/products/additives-by-name/aquacer-1550-r"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_119 ;
+    wgs:lat "52.241122"^^xsd:decimal ;
+    wgs:long "6.203543"^^xsd:decimal .
+
+ns1:Organization_127 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Byk"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/KjFPG4fP47Uq5A6p8"^^xsd:string ;
+    ns2:source_text "Byk"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.byk.com/en/products/additives-by-name/aquacer-1550-r"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_120 ;
+    wgs:lat "52.360759"^^xsd:decimal ;
+    wgs:long "6.502344"^^xsd:decimal .
+
+ns1:Organization_128 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Byk"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/KvSqVMRNrZv3ayhQ7"^^xsd:string ;
+    ns2:source_text "Byk"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.byk.com/en/products/additives-by-name/aquacer-1550-r"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_121 ;
+    wgs:lat "52.387906"^^xsd:decimal ;
+    wgs:long "7.012872"^^xsd:decimal .
+
+ns1:Organization_129 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Daikin Chemical "^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/2DmvovjBwJUTScGd6"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluoroeslastomers"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.daikinchem.de/sites/default/files/pdf/ISO/DCN%20ISO45001-EN_exp.20220212.pdf "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_122 ;
+    wgs:lat "51.781977"^^xsd:decimal ;
+    wgs:long "5.537346"^^xsd:decimal .
+
+ns1:Organization_13 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "UNITEQ"^^xsd:string ;
+    ns2:source_text "UNITEQ"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://uniteq.biz/products/water-additives/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_12 ;
+    wgs:lat "50.412454"^^xsd:decimal ;
+    wgs:long "4.014267"^^xsd:decimal .
+
+ns1:Organization_130 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluortech"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/Fluortech+B.V./@52.2926378,-13.3481808,5z/data=!4m10!1m2!2m1!1sptfe!3m6!1s0x47cf540834d780c3:0x4d24505127ac2902!8m2!3d52.6888587!4d4.8345!15sCgRwdGZlWgYiBHB0ZmWSAQxtYW51ZmFjdHVyZXLgAQA!16s%2Fg%2F1xb2ctw3"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluortech"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221123125245/https://fluortech.nl/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_123 ;
+    wgs:lat "52.689088"^^xsd:decimal ;
+    wgs:long "4.834707"^^xsd:decimal .
+
+ns1:Organization_131 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Polycomp"^^xsd:string ;
+    ns2:source_text "Polycomp"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.polycomp.nl/compounds/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_124 ;
+    wgs:lat "52.108141"^^xsd:decimal ;
+    wgs:long "6.325583"^^xsd:decimal .
+
+ns1:Organization_132 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Polyfluor Plastics"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/qAgJ9MkyhFxRoxV27 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Polyfluor Plastics "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.polyfluor.nl/en/materials/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_125 ;
+    wgs:lat "51.584554"^^xsd:decimal ;
+    wgs:long "4.827653"^^xsd:decimal .
+
+ns1:Organization_133 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Ridderflex & Plastics"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/Ridderflex+%26+Plastics+B.V./@52.2926378,-13.3481808,5z/data=!4m10!1m2!2m1!1sptfe!3m6!1s0x47c42db0265723bb:0xc3458ba812a46b94!8m2!3d51.8778958!4d4.6158061!15sCgRwdGZlWgYiBHB0ZmWSARhydWJiZXJfcHJvZHVjdHNfc3VwcGxpZXLgAQA!16s%2Fg%2F1tjbrb9z"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Ridderflex & Plastics BV"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221123133653/https://www.ridderflex.nl/ptfe-polytetrafluorethyleen "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_126 ;
+    wgs:lat "51.877892"^^xsd:decimal ;
+    wgs:long "4.615736"^^xsd:decimal .
+
+ns1:Organization_134 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Sun Chemical"^^xsd:string ;
+    ns2:source_text "Sun Chemical Weesp"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.dic-global.com/en/about/overseas.html#netherlands"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_127 ;
+    wgs:lat "52.312281"^^xsd:decimal ;
+    wgs:long "5.046217"^^xsd:decimal .
+
+ns1:Organization_135 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Tanatex"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/2Pn5eMN4zt6deKmKA "^^xsd:string ;
+    ns2:source_text "Tanatex"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_128 ;
+    wgs:lat "52.028655"^^xsd:decimal ;
+    wgs:long "5.64469"^^xsd:decimal .
+
+ns1:Organization_136 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Nordic Fire "^^xsd:string ;
+    ns2:source_text "Nordic Fire "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.nordicfs.no/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_129 ;
+    wgs:lat "60.406329"^^xsd:decimal ;
+    wgs:long "5.000822"^^xsd:decimal .
+
+ns1:Organization_137 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "EDER"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "EDER"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://eder-belts.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_130 ;
+    wgs:lat "52.492528"^^xsd:decimal ;
+    wgs:long "17.416588"^^xsd:decimal .
+
+ns1:Organization_138 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Plastics constructions"^^xsd:string ;
+    ns2:maps_link "https://g.page/plastic-construction?share"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Plastics constructions"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://g.page/plastic-construction?share"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_131 ;
+    wgs:lat "51.739427"^^xsd:decimal ;
+    wgs:long "19.60494"^^xsd:decimal .
+
+ns1:Organization_139 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluorocarbons"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/LXAt2StQXoEbs4GS7"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluorocarbons"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://fluorocarbon.co.uk/about-us/company-history"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_132 ;
+    wgs:lat "43.958247"^^xsd:decimal ;
+    wgs:long "25.346356"^^xsd:decimal .
+
+ns1:Organization_14 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Vaneflon"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/UJWzwDTGbTUKXFvY6 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Vaneflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.vaneflon.be/en/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_13 ;
+    wgs:lat "51.078627"^^xsd:decimal ;
+    wgs:long "4.140121"^^xsd:decimal .
+
+ns1:Organization_140 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Maceplast"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Maceplast"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://maceplast.ro/ro/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_133 ;
+    wgs:lat "44.578952"^^xsd:decimal ;
+    wgs:long "26.081791"^^xsd:decimal .
+
+ns1:Organization_141 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Dastaflon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Dastaflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://dastaflon.si/en/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_134 ;
+    wgs:lat "46.137968"^^xsd:decimal ;
+    wgs:long "14.401167"^^xsd:decimal .
+
+ns1:Organization_142 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "3P Productos Plásticos Performantes"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "3P "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.3pcorporate.com//wp-content/uploads/2021/10/3P-multisite_Certificate-ISO9001-2020_2023-2020.pdf "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_135 ;
+    wgs:lat "39.471674"^^xsd:decimal ;
+    wgs:long "-0.538828"^^xsd:decimal .
+
+ns1:Organization_143 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_136 ;
+    wgs:lat "41.566989"^^xsd:decimal ;
+    wgs:long "2.244043"^^xsd:decimal .
+
+ns1:Organization_144 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Huntsman"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/yGqMaDFE12bTTPea8"^^xsd:string ;
+    ns2:source_text "Huntsman"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_137 ;
+    wgs:lat "42.798772"^^xsd:decimal ;
+    wgs:long "-1.672548"^^xsd:decimal .
+
+ns1:Organization_145 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Perimeter Solutions Auxquimica"^^xsd:string ;
+    ns2:source_text "Perimeter Solutions Auxquimica"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.perimeter-solutions.com/en/class-b-foam-emea/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_138 ;
+    wgs:lat "43.27271"^^xsd:decimal ;
+    wgs:long "-5.830644"^^xsd:decimal .
+
+ns1:Organization_146 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Sabo Española"^^xsd:string ;
+    ns2:source_text "SABO Foam"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.sabo-esp.com/en/productos/espumogeno/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_139 ;
+    wgs:lat "41.467301"^^xsd:decimal ;
+    wgs:long "2.165926"^^xsd:decimal .
+
+ns1:Organization_147 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "SAFI FÁBRICA DE VÁLVULAS"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/zThzWzaiovcdDK7GA"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "SAFI"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.safi-valves.com/fr/reseau-et-contact/reseau-international"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_140 ;
+    wgs:lat "41.230558"^^xsd:decimal ;
+    wgs:long "1.531983"^^xsd:decimal .
+
+ns1:Organization_148 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Trumpler"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/Jp9w3eXW8derNoUA7"^^xsd:string ;
+    ns2:source_text "Trumpler"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_141 ;
+    wgs:lat "41.527525"^^xsd:decimal ;
+    wgs:long "2.143413"^^xsd:decimal .
+
+ns1:Organization_149 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "VS Focum"^^xsd:string ;
+    ns2:source_text "VS Focum"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://vsfocum.com/foams/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_142 ;
+    wgs:lat "43.314351"^^xsd:decimal ;
+    wgs:long "-5.816608"^^xsd:decimal .
+
+ns1:Organization_15 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Wevapress Thermoplastics"^^xsd:string ;
+    ns2:maps_link "https://g.page/wefapress?share"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Wevapress Thermoplastics"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.wefapress.com/en/plastic-producing-company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_14 ;
+    wgs:lat "50.905096"^^xsd:decimal ;
+    wgs:long "3.409846"^^xsd:decimal .
+
+ns1:Organization_150 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fomtec"^^xsd:string ;
+    ns2:source_text "Fomtec"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fomtec.com/category/fire-fighting-foam/fluorinated/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_143 ;
+    wgs:lat "56.081544"^^xsd:decimal ;
+    wgs:long "12.729126"^^xsd:decimal .
+
+ns1:Organization_151 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "CHT Bezema"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/GpEaddVeAWhiCKVf6"^^xsd:string ;
+    ns2:source_text "CHT Bezema Montlingen"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.cht.com/en/cht-group/locations/switzerland-41/cht-switzerland-ag-montlingen"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_144 ;
+    wgs:lat "47.347048"^^xsd:decimal ;
+    wgs:long "9.590064"^^xsd:decimal .
+
+ns1:Organization_152 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Metaflon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Metaflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://metaflon.ch/plastic-chipping/?lang=en"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_145 ;
+    wgs:lat "47.701337"^^xsd:decimal ;
+    wgs:long "8.498678"^^xsd:decimal .
+
+ns1:Organization_153 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Serto"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/4KWjSGLVBQ3RDWA9A  "^^xsd:string ;
+    ns2:source_text "Serto"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.serto.com/en/products/product-range/tubes-hoses/plastic-tubes/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_146 ;
+    wgs:lat "47.574028"^^xsd:decimal ;
+    wgs:long "8.919385"^^xsd:decimal .
+
+ns1:Organization_154 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "3F"^^xsd:string ;
+    ns2:source_text "3F"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.3fff.co.uk/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_147 ;
+    wgs:lat "52.504114"^^xsd:decimal ;
+    wgs:long "-0.682637"^^xsd:decimal .
+
+ns1:Organization_155 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Aflex Hose"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Aflex Hose"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.aflex-hose.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_148 ;
+    wgs:lat "53.678695"^^xsd:decimal ;
+    wgs:long "-1.765953"^^xsd:decimal .
+
+ns1:Organization_156 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "AFT Fluorotec"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/AFT+Fluorotec+Coatings/@51.800186,-0.1922163,17z/data=!4m9!1m2!2m1!1sAFT+Fluorotec+Coatings+Manufacturing+Site+!3m5!1s0x4876276c417a1b65:0xdd2c20d11504e8d2!8m2!3d51.8001404!4d-0.1885459!15sCilBRlQgRmx1b3JvdGVjIENvYXRpbmdzIE1hbnVmYWN0dXJpbmcgU2l0ZZIBG3BsYXN0aWNfZmFicmljYXRpb25fY29tcGFueeABAA"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "AFT Fluorotec Ltd"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221123134309/https://www.fluorotec.com/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_149 ;
+    wgs:lat "51.800193"^^xsd:decimal ;
+    wgs:long "-0.188601"^^xsd:decimal .
+
+ns1:Organization_157 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "AFT Fluorotec"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "AFT Fluorotec"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fluorotec.com/who-we-are/about-aft-fluorotec/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_150 ;
+    wgs:lat "51.803137"^^xsd:decimal ;
+    wgs:long "-0.18859"^^xsd:decimal .
+
+ns1:Organization_158 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Angus Fire"^^xsd:string ;
+    ns2:source_text "Angus Fire"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://angusfire.co.uk/products/foam-concentrates/guidance-documents/material-safety-data-sheets/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_151 ;
+    wgs:lat "54.116355"^^xsd:decimal ;
+    wgs:long "-2.510397"^^xsd:decimal .
+
+ns1:Organization_159 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Apollo Scientific"^^xsd:string ;
+    ns2:source_text "Apollo Scientific"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://store.apolloscientific.co.uk/category/chemicals/fluorinated-building-blocks "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_152 ;
+    wgs:lat "53.452304"^^xsd:decimal ;
+    wgs:long "-2.133067"^^xsd:decimal .
+
+ns1:Organization_16 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Xtraflex"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Xtraflex"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://xtraflex.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_15 ;
+    wgs:lat "51.149487"^^xsd:decimal ;
+    wgs:long "4.538507"^^xsd:decimal .
+
+ns1:Organization_160 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Beldam Crossley"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Beldam Crossley"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.beldamcrossley.co.uk/products/ptfe-teflon-seals/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_153 ;
+    wgs:lat "53.578043"^^xsd:decimal ;
+    wgs:long "-2.527057"^^xsd:decimal .
+
+ns1:Organization_161 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Byk"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/hq8Lbcwcv7YtsWD28     "^^xsd:string ;
+    ns2:source_text "Byk"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.byk.com/en/products/additives-by-name/aquacer-1550-r"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_154 ;
+    wgs:lat "53.385026"^^xsd:decimal ;
+    wgs:long "-2.714929"^^xsd:decimal .
+
+ns1:Organization_162 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "CHT Bezema"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/YmEjJYwrh4FVaQi39 "^^xsd:string ;
+    ns2:source_text "CHT Bezema Bridgwater"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.cht.com/en/cht-group/locations/united-kingdom-74/cht-uk-bridgwater-ltd-bridgwater"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_155 ;
+    wgs:lat "51.111148"^^xsd:decimal ;
+    wgs:long "-2.988487"^^xsd:decimal .
+
+ns1:Organization_163 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Duraflon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Duraflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://duraflon.co.uk/index.html"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_156 ;
+    wgs:lat "53.308427"^^xsd:decimal ;
+    wgs:long "-2.263086"^^xsd:decimal .
+
+ns1:Organization_164 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Elekem"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Elekem"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.elekem.com/ptfe/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_157 ;
+    wgs:lat "53.70693"^^xsd:decimal ;
+    wgs:long "-2.328226"^^xsd:decimal .
+
+ns1:Organization_165 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluorocarbons"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/VNHAbwWXroWiR9gv8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluorocarbons"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://fluorocarbon.co.uk/about-us/company-history"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_158 ;
+    wgs:lat "53.350861"^^xsd:decimal ;
+    wgs:long "-1.411185"^^xsd:decimal .
+
+ns1:Organization_166 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluorocarbons"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/vchb6A8z4YKLUWNg6"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluorocarbons"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://fluorocarbon.co.uk/about-us/company-history"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_159 ;
+    wgs:lat "51.796542"^^xsd:decimal ;
+    wgs:long "-0.06472"^^xsd:decimal .
+
+ns1:Organization_167 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fothergill Group"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fothergill Group"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fothergillgroup.com/history/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_160 ;
+    wgs:lat "53.629973"^^xsd:decimal ;
+    wgs:long "-2.133638"^^xsd:decimal .
+
+ns1:Organization_168 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg Sealing Technologies"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_161 ;
+    wgs:lat "55.024687"^^xsd:decimal ;
+    wgs:long "-1.497828"^^xsd:decimal .
+
+ns1:Organization_169 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Grange Tubes"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Grange Tubes"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.grange-tubes.co.uk/Info"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_162 ;
+    wgs:lat "54.194438"^^xsd:decimal ;
+    wgs:long "-2.910945"^^xsd:decimal .
+
+ns1:Organization_17 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_16 ;
+    wgs:lat "50.135407"^^xsd:decimal ;
+    wgs:long "15.77715"^^xsd:decimal .
+
+ns1:Organization_170 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Green Tweed"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Green Tweed UK"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.gtweed.com/wp-content/uploads/2022/03/AS9100-Certificate.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_163 ;
+    wgs:lat "52.881195"^^xsd:decimal ;
+    wgs:long "-1.145936"^^xsd:decimal .
+
+ns1:Organization_171 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Holscot Fluoropolymers"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/wrjZreyCU96ZxxA96"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Holscot Fluoropolymers"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20220815163539/https://holscot.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_164 ;
+    wgs:lat "51.826255"^^xsd:decimal ;
+    wgs:long "-2.511712"^^xsd:decimal .
+
+ns1:Organization_172 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Holscot Fluoropolymers"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/uYorfqUrVYyVRozR6 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Holscot Fluoropolymers"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20220815163539/https://holscot.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_165 ;
+    wgs:lat "52.926121"^^xsd:decimal ;
+    wgs:long "-0.604567"^^xsd:decimal .
+
+ns1:Organization_173 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Holscot Fluoropolymers"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/oTfgYJ8r9btAwdes6 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Holscot Fluoropolymers"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20220815163539/https://holscot.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_166 ;
+    wgs:lat "56.197186"^^xsd:decimal ;
+    wgs:long "-3.007234"^^xsd:decimal .
+
+ns1:Organization_174 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "M&I Materials "^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/Yvv7qFN7yPXs68SX8"^^xsd:string ;
+    ns2:sector "Manufacture of refined petroleum products"^^xsd:string ;
+    ns2:source_text "M&I Materials "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://apiezon.com/products/vacuum-greases/apiezon-pfpe-501-grease/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_167 ;
+    wgs:lat "53.463065"^^xsd:decimal ;
+    wgs:long "-2.327566"^^xsd:decimal .
+
+ns1:Organization_175 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Oiltechnic "^^xsd:string ;
+    ns2:source_text "Oiltechnic "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.firefightingfoam.com/fire-fighting-foam/aberdeen-fire-fighting-foam/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_168 ;
+    wgs:lat "56.834634"^^xsd:decimal ;
+    wgs:long "-2.281609"^^xsd:decimal .
+
+ns1:Organization_176 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE Applied Coatings"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/PTFE+Applied+Coatings/@50.825304,-0.4254107,13z/data=!4m9!1m2!2m1!1sptfe+applied+coatings!3m5!1s0x4875c4fbd19357ed:0x6ecaad12fcbbb416!8m2!3d50.8253033!4d-0.3573795!15sChVwdGZlIGFwcGxpZWQgY29hdGluZ3OSARJwcmVjaXNpb25fZW5naW5lZXLgAQA "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE Applied Coatings"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221123133037/https://www.fluoroprecision.co.uk/about-fluoro-precision-ptfe-teflon-xylan-coating"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_169 ;
+    wgs:lat "50.825324"^^xsd:decimal ;
+    wgs:long "-0.357368"^^xsd:decimal .
+
+ns1:Organization_177 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE Coatings"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/PTFE+Coatings+LTD/@52.2926378,-13.3481808,5z/data=!4m10!1m2!2m1!1sptfe!3m6!1s0x4875b636b1891dbd:0x923ef548ebe8c177!8m2!3d50.9947109!4d-0.6092126!15sCgRwdGZlkgERY2hlbWljYWxfaW5kdXN0cnngAQA!16s%2Fg%2F11b6b2z916"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE Coatings"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20220320093157/https://www.ptfecoatings.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_170 ;
+    wgs:lat "50.994713"^^xsd:decimal ;
+    wgs:long "-0.609215"^^xsd:decimal .
+
+ns1:Organization_178 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE Developments"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE Developments"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.ptfe-developments.co.uk/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_153 ;
+    wgs:lat "53.609263"^^xsd:decimal ;
+    wgs:long "-2.407541"^^xsd:decimal .
+
+ns1:Organization_179 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFEFLEX"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFEFLEX"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://ptfeflex.uk.com/products/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_148 ;
+    wgs:lat "53.679437"^^xsd:decimal ;
+    wgs:long "-1.736321"^^xsd:decimal .
+
+ns1:Organization_18 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Huntsman"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/ieUDLd7tnKeLs3DY9"^^xsd:string ;
+    ns2:source_text "Huntsman"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_17 ;
+    wgs:lat "50.76385"^^xsd:decimal ;
+    wgs:long "15.054459"^^xsd:decimal .
+
+ns1:Organization_180 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "SAFI"^^xsd:string ;
+    ns2:maps_link "https://g.page/SAFI-Valves?share "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "SAFI"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.safi-valves.com/fr/reseau-et-contact/reseau-international"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_171 ;
+    wgs:lat "50.716664"^^xsd:decimal ;
+    wgs:long "-2.072072"^^xsd:decimal .
+
+ns1:Organization_181 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Sun Chemical"^^xsd:string ;
+    ns2:source_text "Sun Chemical Slough"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.dic-global.com/en/about/overseas.html#uk"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_172 ;
+    wgs:lat "51.548758"^^xsd:decimal ;
+    wgs:long "-0.567634"^^xsd:decimal .
+
+ns1:Organization_182 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Techbelt"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Techbelt"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.techbelt.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_173 ;
+    wgs:lat "53.692791"^^xsd:decimal ;
+    wgs:long "-1.843939"^^xsd:decimal .
+
+ns1:Organization_183 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Tyco"^^xsd:string ;
+    ns2:source_text "Tyco"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.tyco-fire.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_174 ;
+    wgs:lat "53.406939"^^xsd:decimal ;
+    wgs:long "-2.186103"^^xsd:decimal .
+
+ns1:Organization_184 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Victrex"^^xsd:string ;
+    ns2:source_text "Victrex"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.victrexplc.com/about/our-history/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_175 ;
+    wgs:lat "53.885444"^^xsd:decimal ;
+    wgs:long "-3.001529"^^xsd:decimal .
+
+ns1:Organization_185 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Victrex "^^xsd:string ;
+    ns2:source_text "Victrex "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.victrexplc.com/about/our-history/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_176 ;
+    wgs:lat "51.748342"^^xsd:decimal ;
+    wgs:long "-2.29445"^^xsd:decimal .
+
+ns1:Organization_186 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Victrex "^^xsd:string ;
+    ns2:source_text "Victrex "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.victrexplc.com/about/our-history/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_177 ;
+    wgs:lat "53.440712"^^xsd:decimal ;
+    wgs:long "-1.36346"^^xsd:decimal .
+
+ns1:Organization_187 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Victrex Seal Sands"^^xsd:string ;
+    ns2:source_text "Victrex Seal Sands"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.victrexplc.com/about/our-history/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_178 ;
+    wgs:lat "54.61016"^^xsd:decimal ;
+    wgs:long "-1.170287"^^xsd:decimal .
+
+ns1:Organization_188 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Whitfield"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Whitfield"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fluoroprecision.co.uk/about-fluoro-precision-ptfe-teflon-xylan-coating/whitford-worldwide-ptfe-coatings "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_179 ;
+    wgs:lat "53.348085"^^xsd:decimal ;
+    wgs:long "-2.678003"^^xsd:decimal .
+
+ns1:Organization_189 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "Merck KGaA"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/26CB8EjzoYe1N7No7"^^xsd:string ;
+    ns2:source_text "Merck KGaA"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_180 ;
+    wgs:lat "49.895136"^^xsd:decimal ;
+    wgs:long "8.65309"^^xsd:decimal .
+
+ns1:Organization_19 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Serto"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/kSSx2qLogru7HzJi6"^^xsd:string ;
+    ns2:source_text "Serto"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.serto.com/en/products/product-range/tubes-hoses/plastic-tubes/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_18 ;
+    wgs:lat "49.414849"^^xsd:decimal ;
+    wgs:long "13.318492"^^xsd:decimal .
+
+ns1:Organization_190 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "W. L. Gore"^^xsd:string ;
+    ns2:source_text "W. L. Gore"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_181 ;
+    wgs:lat "47.894347"^^xsd:decimal ;
+    wgs:long "11.846351"^^xsd:decimal .
+
+ns1:Organization_191 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "W. L. Gore"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/escVW468GdGNBAFe9"^^xsd:string ;
+    ns2:source_text "W. L. Gore"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_182 ;
+    wgs:lat "48.074409"^^xsd:decimal ;
+    wgs:long "11.724017"^^xsd:decimal .
+
+ns1:Organization_192 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "W. L. Gore"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/7AmpKYxwegd9Hyg7A"^^xsd:string ;
+    ns2:source_text "W. L. Gore"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_183 ;
+    wgs:lat "49.10503"^^xsd:decimal ;
+    wgs:long "10.966911"^^xsd:decimal .
+
+ns1:Organization_193 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns2:maps_link "https://goo.gl/maps/iKoqTtvgiVpLSimW6"^^xsd:string ;
+    ns2:source_text "Evonik"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://drive.google.com/file/d/1M2eNGCcwsWsJERX-LzofTYmPii9ge7xC/view?usp=share_link"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_184 ;
+    wgs:lat "49.442606"^^xsd:decimal ;
+    wgs:long "8.666119"^^xsd:decimal .
+
+ns1:Organization_194 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns2:maps_link "https://goo.gl/maps/JAEd5weUfNFbBAX89"^^xsd:string ;
+    ns2:source_text "Evonik"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://drive.google.com/file/d/1M2eNGCcwsWsJERX-LzofTYmPii9ge7xC/view?usp=share_link"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_185 ;
+    wgs:lat "50.118893"^^xsd:decimal ;
+    wgs:long "8.965212"^^xsd:decimal .
+
+ns1:Organization_195 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns2:maps_link "https://goo.gl/maps/yLNUQcRrGciQSAuZ6"^^xsd:string ;
+    ns2:source_text "Evonik"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://drive.google.com/file/d/1M2eNGCcwsWsJERX-LzofTYmPii9ge7xC/view?usp=share_link"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_186 ;
+    wgs:lat "47.568499"^^xsd:decimal ;
+    wgs:long "7.805155"^^xsd:decimal .
+
+ns1:Organization_196 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "Merck"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/NHY1r4sKkHYeoM5Q8"^^xsd:string ;
+    ns2:source_text "Merck"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_187 ;
+    wgs:lat "51.905094"^^xsd:decimal ;
+    wgs:long "-8.278939"^^xsd:decimal .
+
+ns1:Organization_197 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "W. L. Gore"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/sPdjrmdHBMLKrA2z8"^^xsd:string ;
+    ns2:source_text "W. L. Gore"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_188 ;
+    wgs:lat "50.852041"^^xsd:decimal ;
+    wgs:long "5.99347"^^xsd:decimal .
+
+ns1:Organization_198 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "W. L. Gore"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/2dvZdNaMmJPAhsnm6"^^xsd:string ;
+    ns2:source_text "W. L. Gore"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_189 ;
+    wgs:lat "55.880124"^^xsd:decimal ;
+    wgs:long "-3.54072"^^xsd:decimal .
+
+ns1:Organization_199 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "W. L. Gore"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/gpkStDw8VxyzrGQT7"^^xsd:string ;
+    ns2:source_text "W. L. Gore"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_190 ;
+    wgs:lat "56.46129"^^xsd:decimal ;
+    wgs:long "-3.046195"^^xsd:decimal .
+
+ns1:Organization_2 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Tefal"^^xsd:string ;
+    ns2:source_text "Géorisques"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:source_url "https://www.georisques.gouv.fr/risques/registre-des-emissions-polluantes/etablissement/details/293#/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_1 ;
+    wgs:lat "46.566759"^^xsd:decimal ;
+    wgs:long "4.90498"^^xsd:decimal .
+
+ns1:Organization_20 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Wacker Chemie "^^xsd:string ;
+    ns2:sector "Manufacture of plastics in primary forms"^^xsd:string ;
+    ns2:source_text "Wacker Pilsen"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.wacker.com/cms/en-us/about-wacker/wacker-at-a-glance/production-sites/pilsen.html"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_19 ;
+    wgs:lat "49.728706"^^xsd:decimal ;
+    wgs:long "13.315763"^^xsd:decimal .
+
+ns1:Organization_200 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Lenzing Plastics"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/Vod2t7nB9Tk1YH3X7"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_191 ;
+    wgs:lat "47.975337"^^xsd:decimal ;
+    wgs:long "13.615337"^^xsd:decimal .
+
+ns1:Organization_201 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Gunnar Haagensen"^^xsd:string ;
+    ns2:maps_link "https://g.page/gunnar-haagensen?share"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_192 ;
+    wgs:lat "55.885751"^^xsd:decimal ;
+    wgs:long "12.348006"^^xsd:decimal .
+
+ns1:Organization_202 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Approflon"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/nGLuen1fnMmwhTZu9"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_193 ;
+    wgs:lat "45.829161"^^xsd:decimal ;
+    wgs:long "5.010525"^^xsd:decimal .
+
+ns1:Organization_203 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "BAYERNOIL Raffinerie"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_194 ;
+    wgs:lat "48.765234"^^xsd:decimal ;
+    wgs:long "11.593201"^^xsd:decimal .
+
+ns1:Organization_204 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "BAYERNOIL Raffinerie"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_195 ;
+    wgs:lat "48.786494"^^xsd:decimal ;
+    wgs:long "11.761767"^^xsd:decimal .
+
+ns1:Organization_205 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Exolum Mannheim GmbH"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_196 ;
+    wgs:lat "49.421623"^^xsd:decimal ;
+    wgs:long "8.507796"^^xsd:decimal .
+
+ns1:Organization_206 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Gunvor Raffinerie Ingolstadt"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_197 ;
+    wgs:lat "48.793441"^^xsd:decimal ;
+    wgs:long "11.480458"^^xsd:decimal .
+
+ns1:Organization_207 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "HES Tank Terminal GmbH/HES Wilhelmshaven Tank Terminal GmbH"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_198 ;
+    wgs:lat "53.608678"^^xsd:decimal ;
+    wgs:long "8.08786"^^xsd:decimal .
+
+ns1:Organization_208 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Magdeburger Umschlag und Tanklager Dettmer GmbH"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_199 ;
+    wgs:lat "52.194844"^^xsd:decimal ;
+    wgs:long "11.677709"^^xsd:decimal .
+
+ns1:Organization_209 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_1> ;
+    ns1:name "Covestro"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/2RHZUCxXkKmCP3BB6"^^xsd:string ;
+    ns2:source_text "Email from the company (Covestro)"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_200 ;
+    wgs:lat "51.36872"^^xsd:decimal ;
+    wgs:long "6.663077"^^xsd:decimal .
+
+ns1:Organization_21 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Linatex"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Linatex"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://linatex.dk/r-and-d/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_20 ;
+    wgs:lat "55.721933"^^xsd:decimal ;
+    wgs:long "12.42718"^^xsd:decimal .
+
+ns1:Organization_210 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Alfa"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/44wQcetXK1oTUhBFA"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_99 ;
+    wgs:lat "44.549992"^^xsd:decimal ;
+    wgs:long "11.271323"^^xsd:decimal .
+
+ns1:Organization_211 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Binox"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/Bw1FZEhWWSGuoMVC8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_201 ;
+    wgs:lat "45.657766"^^xsd:decimal ;
+    wgs:long "10.127349"^^xsd:decimal .
+
+ns1:Organization_212 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Caast"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/7GWiypJV5fAozzpT8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_202 ;
+    wgs:lat "45.680388"^^xsd:decimal ;
+    wgs:long "9.178193"^^xsd:decimal .
+
+ns1:Organization_213 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Cavagna"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/6PopkMsmhMPZ6HZo6 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_203 ;
+    wgs:lat "45.481878"^^xsd:decimal ;
+    wgs:long "10.385941"^^xsd:decimal .
+
+ns1:Organization_214 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "CDR"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/dN1zTo7tk61qbYLa9"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_204 ;
+    wgs:lat "45.566693"^^xsd:decimal ;
+    wgs:long "9.145375"^^xsd:decimal .
+
+ns1:Organization_215 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Diflon"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/KhiqvoDQLCm4hp7HA"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_205 ;
+    wgs:lat "45.516521"^^xsd:decimal ;
+    wgs:long "9.846142"^^xsd:decimal .
+
+ns1:Organization_216 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Esa"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/8PxxpayR87tNjLp7A"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_206 ;
+    wgs:lat "45.634075"^^xsd:decimal ;
+    wgs:long "8.918837"^^xsd:decimal .
+
+ns1:Organization_217 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "FHT"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/i5MhxTEzEptfRtQK9"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_207 ;
+    wgs:lat "45.538311"^^xsd:decimal ;
+    wgs:long "10.100988"^^xsd:decimal .
+
+ns1:Organization_218 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "FIP/Aliaxis"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/5ifz7AwZW9htjqJV6"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_208 ;
+    wgs:lat "44.538985"^^xsd:decimal ;
+    wgs:long "8.989068"^^xsd:decimal .
+
+ns1:Organization_219 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Fluorseals"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/1PTFEHApaVH8M5vj8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_209 ;
+    wgs:lat "45.627971"^^xsd:decimal ;
+    wgs:long "9.884831"^^xsd:decimal .
+
+ns1:Organization_22 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "O.L. Seals"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "O.L. Seals"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://mcm-spa.it/fr/contact/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_21 ;
+    wgs:lat "56.01674"^^xsd:decimal ;
+    wgs:long "12.193935"^^xsd:decimal .
+
+ns1:Organization_220 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Fluorten"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/DRWWkKDHr2xiAPVLA"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_210 ;
+    wgs:lat "45.625439"^^xsd:decimal ;
+    wgs:long "9.893371"^^xsd:decimal .
+
+ns1:Organization_221 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Iris Green"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/Q785wKoqfoFBUkGWA"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_211 ;
+    wgs:lat "43.850006"^^xsd:decimal ;
+    wgs:long "11.095582"^^xsd:decimal .
+
+ns1:Organization_222 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Isoflon"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/65RVJvBK7xXC9nmF6"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_212 ;
+    wgs:lat "45.596883"^^xsd:decimal ;
+    wgs:long "5.092369"^^xsd:decimal .
+
+ns1:Organization_223 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "IVR"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/XwzysT8qZNeYBQoE7"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_213 ;
+    wgs:lat "45.661132"^^xsd:decimal ;
+    wgs:long "8.431798"^^xsd:decimal .
+
+ns1:Organization_224 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Robecchi"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/SShXkjF4tbMMSPhq8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_209 ;
+    wgs:lat "45.628584"^^xsd:decimal ;
+    wgs:long "9.885295"^^xsd:decimal .
+
+ns1:Organization_225 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Stegi"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/y7acxEE66tdq6o7L9"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_214 ;
+    wgs:lat "45.411256"^^xsd:decimal ;
+    wgs:long "9.112477"^^xsd:decimal .
+
+ns1:Organization_226 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Valvole"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/rx1Fr42wH66kjnCt9"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_215 ;
+    wgs:lat "44.77786"^^xsd:decimal ;
+    wgs:long "10.875888"^^xsd:decimal .
+
+ns1:Organization_227 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Exolum Amsterdam"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_216 ;
+    wgs:lat "52.403487"^^xsd:decimal ;
+    wgs:long "4.82941"^^xsd:decimal .
+
+ns1:Organization_228 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Neste"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_217 ;
+    wgs:lat "51.967849"^^xsd:decimal ;
+    wgs:long "4.034241"^^xsd:decimal .
+
+ns1:Organization_229 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "Unified Fire Brigade (Gezamenlijke Brandweer)"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_217 ;
+    wgs:lat "51.955693"^^xsd:decimal ;
+    wgs:long "4.027291"^^xsd:decimal .
+
+ns1:Organization_23 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluorplast"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/9r74nubXymW5ep1t8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluorplast"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.fluorplast.fi/en/ptfe-products"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_22 ;
+    wgs:lat "62.842771"^^xsd:decimal ;
+    wgs:long "21.419046"^^xsd:decimal .
+
+ns1:Organization_230 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_2> ;
+    ns1:name "mcp engineering plastics"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/bAX1xPJntjj396Tz5"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "FOI document"^^xsd:string ;
+    ns2:source_type "Authorities"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_218 ;
+    wgs:lat "51.786917"^^xsd:decimal ;
+    wgs:long "0.224593"^^xsd:decimal .
+
+ns1:Organization_24 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PRP-Plastic"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/6Js6Kv8thxnXesdD9"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PRP-Plastic"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.prpplastic.fi/en/home"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_23 ;
+    wgs:lat "60.628841"^^xsd:decimal ;
+    wgs:long "25.268249"^^xsd:decimal .
+
+ns1:Organization_25 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "3P Performance Plastics Products"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "3P "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.haute-marne.gouv.fr/content/download/10558/75640/file/AP%20n%C2%B0%201056%20du%2010%20avril%202018%203%20P%20-%20LANGRES.pdf "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_24 ;
+    wgs:lat "47.858601"^^xsd:decimal ;
+    wgs:long "5.347156"^^xsd:decimal .
+
+ns1:Organization_26 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Aberflon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Aberflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://aberflon.fr/nos-produits/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_25 ;
+    wgs:lat "48.834075"^^xsd:decimal ;
+    wgs:long "1.941592"^^xsd:decimal .
+
+ns1:Organization_27 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "BASF Agri Solutions"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/GNkboGS1G52UjF8UA"^^xsd:string ;
+    ns2:source_text "BASF Agri Solutions"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.basf.com/fr/fr/who-we-are/BASF_en_France/Strategie-et-Organisation-France/Elbeuf.html"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_26 ;
+    wgs:lat "49.310541"^^xsd:decimal ;
+    wgs:long "1.012182"^^xsd:decimal .
+
+ns1:Organization_28 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "BioEx"^^xsd:string ;
+    ns2:source_text "BioEx"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.bio-ex.com/fr/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_27 ;
+    wgs:lat "45.768166"^^xsd:decimal ;
+    wgs:long "4.703427"^^xsd:decimal .
+
+ns1:Organization_29 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "C2M Aurochs Industrie"^^xsd:string ;
+    ns2:source_text "C2M Auroch"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.c2m-aurochs-industrie.com/qui-sommes-nous/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_28 ;
+    wgs:lat "43.674642"^^xsd:decimal ;
+    wgs:long "1.415409"^^xsd:decimal .
+
+ns1:Organization_3 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Agru"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/cSD9QcvjzUhutfgv8 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Agru"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.agru.at/en/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_2 ;
+    wgs:lat "47.98403"^^xsd:decimal ;
+    wgs:long "14.272978"^^xsd:decimal .
+
+ns1:Organization_30 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "DEMGY SPN "^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/yKPVs1Md3zWc79BY7"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "DEMGY SPN "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.plastiques-nobles.com/matieres-plastiques/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_29 ;
+    wgs:lat "48.92643"^^xsd:decimal ;
+    wgs:long "2.405527"^^xsd:decimal .
+
+ns1:Organization_31 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Eau et Feu"^^xsd:string ;
+    ns2:source_text "Eau et Feu"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://eauetfeu.fr/produits/emulseurs/categorie-de-risque-feu/emulseurs-pour-feux-dhydrocarbures/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_30 ;
+    wgs:lat "49.227023"^^xsd:decimal ;
+    wgs:long "4.093472"^^xsd:decimal .
+
+ns1:Organization_32 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluor one"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluor one"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fluor-one.fr/moulage-de-ptfe/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_31 ;
+    wgs:lat "48.712197"^^xsd:decimal ;
+    wgs:long "1.371605"^^xsd:decimal .
+
+ns1:Organization_33 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluorotechnique"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/kB3cCpLrGo9RZNjm8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluorotechnique"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://fluorotechnique.fr/revetements-fluores/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_32 ;
+    wgs:lat "48.869018"^^xsd:decimal ;
+    wgs:long "2.45676"^^xsd:decimal .
+
+ns1:Organization_34 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluorotechnique"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/9aTwh8fPfi3kiFi36"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluorotechnique"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://fluorotechnique.fr/revetements-fluores/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_33 ;
+    wgs:lat "44.849789"^^xsd:decimal ;
+    wgs:long "-0.687539"^^xsd:decimal .
+
+ns1:Organization_35 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_34 ;
+    wgs:lat "46.00404"^^xsd:decimal ;
+    wgs:long "1.144256"^^xsd:decimal .
+
+ns1:Organization_36 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_24 ;
+    wgs:lat "47.856769"^^xsd:decimal ;
+    wgs:long "5.346437"^^xsd:decimal .
+
+ns1:Organization_37 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "IKV Tribology"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/W5JYpdM8hFwBv4iv5"^^xsd:string ;
+    ns2:sector "Manufacture of refined petroleum products"^^xsd:string ;
+    ns2:source_text "IKV Tribology"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.ikv.fr/en/catalog/categorie/products.html"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_35 ;
+    wgs:lat "45.114688"^^xsd:decimal ;
+    wgs:long "4.96675"^^xsd:decimal .
+
+ns1:Organization_38 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Maceplast"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Maceplast"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://maceplast.fr/en/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_36 ;
+    wgs:lat "45.730033"^^xsd:decimal ;
+    wgs:long "4.975438"^^xsd:decimal .
+
+ns1:Organization_39 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Orchidee"^^xsd:string ;
+    ns2:source_text "Orchidee"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://orchidee-fire.com/products-solutions/?_sft_product_cat=foams"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_37 ;
+    wgs:lat "49.746227"^^xsd:decimal ;
+    wgs:long "2.150166"^^xsd:decimal .
+
+ns1:Organization_4 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Agru"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/NkuHEHiEQbVAB5CJ8 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Agru"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.agru.at/en/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_3 ;
+    wgs:lat "48.032"^^xsd:decimal ;
+    wgs:long "14.225225"^^xsd:decimal .
+
+ns1:Organization_40 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Perimeter Solutions / Biogema"^^xsd:string ;
+    ns2:source_text "Perimeter Solutions / Biogema"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.perimeter-solutions.com/fr/histoire/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_38 ;
+    wgs:lat "43.492723"^^xsd:decimal ;
+    wgs:long "5.384043"^^xsd:decimal .
+
+ns1:Organization_41 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Pirep"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Pirep"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://pirep.fr/_docs/divers/Plaquette_FR.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_39 ;
+    wgs:lat "50.579856"^^xsd:decimal ;
+    wgs:long "2.505733"^^xsd:decimal .
+
+ns1:Organization_42 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "SAFI"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/GFm7hD7UxcgTUybg8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "SAFI"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.safi-valves.com/fr/reseau-et-contact/reseau-international"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_40 ;
+    wgs:lat "44.443986"^^xsd:decimal ;
+    wgs:long "4.969867"^^xsd:decimal .
+
+ns1:Organization_43 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Sectoriel"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/FqAiPm8oXgLSTAh87 "^^xsd:string ;
+    ns2:source_text "Sectoriel"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.sectoriel.com/fr/catalogsearch/result/?q=PTFE "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_41 ;
+    wgs:lat "45.642595"^^xsd:decimal ;
+    wgs:long "5.101142"^^xsd:decimal .
+
+ns1:Organization_44 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Spirel"^^xsd:string ;
+    ns2:source_text "Spirel"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.spirel.fr/en/our-products/specialty/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_42 ;
+    wgs:lat "49.204991"^^xsd:decimal ;
+    wgs:long "2.515279"^^xsd:decimal .
+
+ns1:Organization_45 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Techniflon Europe"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Techniflon Europe"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.ptfe-belt-techniflon.uk/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_43 ;
+    wgs:lat "48.616992"^^xsd:decimal ;
+    wgs:long "2.329424"^^xsd:decimal .
+
+ns1:Organization_46 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Tricoflex"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Tricoflex"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.tricoflex.com/produit/tube-ptfe/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_44 ;
+    wgs:lat "48.726471"^^xsd:decimal ;
+    wgs:long "4.603792"^^xsd:decimal .
+
+ns1:Organization_47 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Weilburger coatings"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/URTyCBR3p2sjWF8k9"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Weilburger coatings"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.weilburger.com/en/products"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_45 ;
+    wgs:lat "48.965931"^^xsd:decimal ;
+    wgs:long "2.058141"^^xsd:decimal .
+
+ns1:Organization_48 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "3P - Performance Plastics Products"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "3P "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.3pcorporate.com//wp-content/uploads/2021/10/3P-multisite_Certificate-ISO9001-2020_2023-2020.pdf "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_46 ;
+    wgs:lat "50.223409"^^xsd:decimal ;
+    wgs:long "8.765597"^^xsd:decimal .
+
+ns1:Organization_49 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "AFD Advanced Fluoropolymer Devices"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/hAK1Kfg4B6YzuT8y7"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "AFD Advanced Fluoropolymer Devices"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.advanced-fluoropolymer-devices.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_47 ;
+    wgs:lat "51.373767"^^xsd:decimal ;
+    wgs:long "6.430256"^^xsd:decimal .
+
+ns1:Organization_5 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_4 ;
+    wgs:lat "47.5944"^^xsd:decimal ;
+    wgs:long "12.18521"^^xsd:decimal .
+
+ns1:Organization_50 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "BASF"^^xsd:string ;
+    ns2:source_text "BASF"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_48 ;
+    wgs:lat "49.495463"^^xsd:decimal ;
+    wgs:long "8.434411"^^xsd:decimal .
+
+ns1:Organization_51 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Baum"^^xsd:string ;
+    ns2:maps_link "https://www.google.com/maps/place/BAUM+lined+piping+GmbH/@48.8631135,8.5764613,17z/data=!3m1!4b1!4m5!3m4!1s0x479712c7660f25e5:0xa1c1d86dec49d814!8m2!3d48.86311!4d8.57865"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Baum"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20220210021107/https://baum-lined-piping.com/ueber-uns"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_49 ;
+    wgs:lat "48.863124"^^xsd:decimal ;
+    wgs:long "8.578618"^^xsd:decimal .
+
+ns1:Organization_52 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Bernd Schwegmann"^^xsd:string ;
+    ns2:maps_link "https://g.page/bernd-schwegmann-gmbh-co--kg?share"^^xsd:string ;
+    ns2:source_text "Bernd Schwegmann"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.schwegmannnet.de/index.php/en/coating-additives/product-groups-coat/slip-levelling-and-substrate-wetting-additives/451 "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_50 ;
+    wgs:lat "50.572857"^^xsd:decimal ;
+    wgs:long "7.032201"^^xsd:decimal .
+
+ns1:Organization_53 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Byk"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/juWD2nm513b6c3ob9"^^xsd:string ;
+    ns2:source_text "Byk"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.byk.com/en/products/additives-by-name/aquacer-1550-r"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_47 ;
+    wgs:lat "51.368006"^^xsd:decimal ;
+    wgs:long "6.434873"^^xsd:decimal .
+
+ns1:Organization_54 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Byk"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/f1BoNsCgGr1iuvPF6 "^^xsd:string ;
+    ns2:source_text "Byk"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.byk.com/en/products/additives-by-name/aquacer-1550-r"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_51 ;
+    wgs:lat "51.668293"^^xsd:decimal ;
+    wgs:long "6.623023"^^xsd:decimal .
+
+ns1:Organization_55 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Central Glass Germany"^^xsd:string ;
+    ns2:source_text "Central Glass"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://cg-germany.com/index.php?id=26&L=1"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_52 ;
+    wgs:lat "52.039127"^^xsd:decimal ;
+    wgs:long "8.378872"^^xsd:decimal .
+
+ns1:Organization_56 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "CHT Bezema"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/voNxDvjnddMmkV7QA "^^xsd:string ;
+    ns2:source_text "CHT Bezema Geretsried"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20110924074317/http://alpina-silicone.com/cms/front_content.php?idcat=11 "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_53 ;
+    wgs:lat "47.858676"^^xsd:decimal ;
+    wgs:long "11.492498"^^xsd:decimal .
+
+ns1:Organization_57 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "CHT Bezema"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/jjbGF1gruTRu8JXJ8 "^^xsd:string ;
+    ns2:source_text "CHT Bezema Dusslingen"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.cht.com/fileadmin/Group/pdf/mediencenter/zertifikate/standorte/dusslingen/CHT-Informationsbroschuere-Sicherheit-Dusslingen.pdf "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_54 ;
+    wgs:lat "48.458155"^^xsd:decimal ;
+    wgs:long "9.057639"^^xsd:decimal .
+
+ns1:Organization_58 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "CHT Bezema"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/d3XqBFvpsDACLpQq6   "^^xsd:string ;
+    ns2:source_text "CHT Bezema Oyten"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.cht.com/fileadmin/Group/pdf/mediencenter/allgemein/CHT-Informationsbroschuere-Sicherheit-Oyten.pdf "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_55 ;
+    wgs:lat "53.062881"^^xsd:decimal ;
+    wgs:long "9.046385"^^xsd:decimal .
+
+ns1:Organization_59 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Ensinger"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Ensinger"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.ensingerplastics.com/en-us/about-us"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_56 ;
+    wgs:lat "48.627641"^^xsd:decimal ;
+    wgs:long "8.894782"^^xsd:decimal .
+
+ns1:Organization_6 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Technofyon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Technofyon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.dichtungen.at/de/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_5 ;
+    wgs:lat "47.469984"^^xsd:decimal ;
+    wgs:long "12.628154"^^xsd:decimal .
+
+ns1:Organization_60 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fiberflon"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fiberflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fiberflon.de/Products/PTFE-Coated-Glass-Fabrics/Page-288-17.aspx"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_57 ;
+    wgs:lat "47.673562"^^xsd:decimal ;
+    wgs:long "9.159217"^^xsd:decimal .
+
+ns1:Organization_61 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Fluor-tech Kunststoffe"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Fluor-tech Kunststoffe"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://fluor-tech.org/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_58 ;
+    wgs:lat "52.079193"^^xsd:decimal ;
+    wgs:long "7.018748"^^xsd:decimal .
+
+ns1:Organization_62 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_59 ;
+    wgs:lat "47.617548"^^xsd:decimal ;
+    wgs:long "8.053354"^^xsd:decimal .
+
+ns1:Organization_63 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_60 ;
+    wgs:lat "49.194779"^^xsd:decimal ;
+    wgs:long "9.483015"^^xsd:decimal .
+
+ns1:Organization_64 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_61 ;
+    wgs:lat "49.556773"^^xsd:decimal ;
+    wgs:long "8.661127"^^xsd:decimal .
+
+ns1:Organization_65 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_62 ;
+    wgs:lat "49.710658"^^xsd:decimal ;
+    wgs:long "8.844844"^^xsd:decimal .
+
+ns1:Organization_66 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_63 ;
+    wgs:lat "50.909745"^^xsd:decimal ;
+    wgs:long "9.203012"^^xsd:decimal .
+
+ns1:Organization_67 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg Sealing Technologies"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_64 ;
+    wgs:lat "52.437962"^^xsd:decimal ;
+    wgs:long "13.528797"^^xsd:decimal .
+
+ns1:Organization_68 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Freudenberg Sealing Technologies"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Freudenberg"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.fst.com/-/media/files/fst,-d-,com/certificates/iso_14001/castelli_calepio_iso_14001_2015_20231123.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_65 ;
+    wgs:lat "53.514245"^^xsd:decimal ;
+    wgs:long "9.980366"^^xsd:decimal .
+
+ns1:Organization_69 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Herzogenaurach"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "KHP Kunststofftechnik"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.khp-plastics.com/fluoropolymers "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_66 ;
+    wgs:lat "49.578483"^^xsd:decimal ;
+    wgs:long "10.880028"^^xsd:decimal .
+
+ns1:Organization_7 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "ANSUL"^^xsd:string ;
+    ns2:source_text "ANSUL"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.ansul.be/fr/produits"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_6 ;
+    wgs:lat "50.880471"^^xsd:decimal ;
+    wgs:long "4.268786"^^xsd:decimal .
+
+ns1:Organization_70 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Huntsman"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/e1ZBLjL2MPVavT8W6"^^xsd:string ;
+    ns2:source_text "Huntsman"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_67 ;
+    wgs:lat "48.489373"^^xsd:decimal ;
+    wgs:long "10.86854"^^xsd:decimal .
+
+ns1:Organization_71 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Kapp Chemie "^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/AwmfrdU5YUxV3XYJ8 "^^xsd:string ;
+    ns2:source_text "Kapp Chemie "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.stockmeier.com/en/products/tissue-textile/textile/effect-chemicals/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_68 ;
+    wgs:lat "50.217965"^^xsd:decimal ;
+    wgs:long "7.837522"^^xsd:decimal .
+
+ns1:Organization_72 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Klüber"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/2RJgwWeZVSHy6nKp6"^^xsd:string ;
+    ns2:sector "Manufacture of refined petroleum products"^^xsd:string ;
+    ns2:source_text "Klüber"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.klueber.com/ecomaXL/files/PFPE_Produkte_KLuber_Lubrication.PDF"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_69 ;
+    wgs:lat "48.097441"^^xsd:decimal ;
+    wgs:long "11.519929"^^xsd:decimal .
+
+ns1:Organization_73 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Lefatex Chemie "^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/UMwHv5EsDrSaJipM8"^^xsd:string ;
+    ns2:source_text "Lefatex Chemie "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.lefatex.com/en/emulsion-2/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_70 ;
+    wgs:lat "51.281794"^^xsd:decimal ;
+    wgs:long "6.180181"^^xsd:decimal .
+
+ns1:Organization_74 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Momentive"^^xsd:string ;
+    ns2:source_text "Momentive"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://sds.momentive.com/ehswww/testEbiz/e/result/report.jsp?P_LANGU=E&P_SYS=1&P_SSN=21400&P_REP=00000000000000000030&P_RES=4755&winTitle=MSET%203.1 "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_71 ;
+    wgs:lat "51.018346"^^xsd:decimal ;
+    wgs:long "6.99095"^^xsd:decimal .
+
+ns1:Organization_75 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE Competence Center"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/PTFE+Competence+Center+GmbH/@52.2926378,-13.3481808,5z/data=!4m10!1m2!2m1!1sptfe!3m6!1s0x47a79d5f7ed20889:0x21f9ede6ae80ffed!8m2!3d51.3034226!4d13.5430325!15sCgRwdGZlkgEbcGxhc3RpY19mYWJyaWNhdGlvbl9jb21wYW554AEA!16s%2Fg%2F1tjxdpfj"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE Competence Center GmbH"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221213110924/https://www.ptfe-cc.de/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_72 ;
+    wgs:lat "51.303411"^^xsd:decimal ;
+    wgs:long "13.543066"^^xsd:decimal .
+
+ns1:Organization_76 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE Nünchritz"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE Nünchritz"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.ptfe-nuenchritz.de/leistungen/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_73 ;
+    wgs:lat "51.335425"^^xsd:decimal ;
+    wgs:long "13.363737"^^xsd:decimal .
+
+ns1:Organization_77 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE Solutions"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/PTFE+Solutions+GmbH/@52.2926378,-13.3481808,5z/data=!4m10!1m2!2m1!1sptfe!3m6!1s0x47bd1180cd76ad59:0x729b0324e8582f0!8m2!3d50.1331869!4d8.8621406!15sCgRwdGZlkgETbWVjaGFuaWNhbF9lbmdpbmVlcuABAA!16s%2Fg%2F11h_fh678t"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE Solutions"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221123130639/https://www.ptfe-solutions.com/about "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_74 ;
+    wgs:lat "50.133162"^^xsd:decimal ;
+    wgs:long "8.86214"^^xsd:decimal .
+
+ns1:Organization_78 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE-Europe"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE-Europe"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.ptfe-europe.de/pfa-daten"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_75 ;
+    wgs:lat "48.785791"^^xsd:decimal ;
+    wgs:long "9.191589"^^xsd:decimal .
+
+ns1:Organization_79 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE-Europe"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE-Europe"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.ptfe-europe.de/pfa-daten"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_75 ;
+    wgs:lat "48.885115"^^xsd:decimal ;
+    wgs:long "9.181607"^^xsd:decimal .
+
+ns1:Organization_8 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Chemours"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/MNW1NRmUCFdqx6CY8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Teflon"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.chemours.com/en/-/media/files/corporate/multi-site-rc-14001-certificate.pdf?rev=a96af5b620024a09bfb2c69c81b0a835 "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_7 ;
+    wgs:lat "51.011701"^^xsd:decimal ;
+    wgs:long "4.459179"^^xsd:decimal .
+
+ns1:Organization_80 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "PTFE-Solutec"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/PTFE-Solutec+GmbH+Werkzeug-+%26+Vorrichtungsbau/@52.2926378,-13.3481808,5z/data=!4m10!1m2!2m1!1sptfe!3m6!1s0x47b92b942387e155:0x90829beaa347ccfa!8m2!3d51.1800299!4d7.248168!15sCgRwdGZlkgEcbWFjaGluZXJ5X3BhcnRzX21hbnVmYWN0dXJlcuABAA!16s%2Fg%2F1trxcsy2"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "PTFE-Solutec"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20221123130110/http://www.ptfe-solutec.de/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_76 ;
+    wgs:lat "51.180302"^^xsd:decimal ;
+    wgs:long "7.250889"^^xsd:decimal .
+
+ns1:Organization_81 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "ptfe24"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "ptfe24"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://ptfe24.de/entwicklung-und-fertigung/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_77 ;
+    wgs:lat "49.18351"^^xsd:decimal ;
+    wgs:long "9.169117"^^xsd:decimal .
+
+ns1:Organization_82 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Rudolf Chemie"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/AHeh4K68DKbSzMnx5"^^xsd:string ;
+    ns2:source_text "Rudolf Chemie"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_53 ;
+    wgs:lat "47.853964"^^xsd:decimal ;
+    wgs:long "11.488459"^^xsd:decimal .
+
+ns1:Organization_83 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Rudolf Gutbrod Kunststoffbeschichtungen"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Rudolf Gutbrod Kunststoffbeschichtungen"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.gutbrod-ptfe.de/verfahren-52.html"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_78 ;
+    wgs:lat "48.531919"^^xsd:decimal ;
+    wgs:long "9.331073"^^xsd:decimal .
+
+ns1:Organization_84 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Rühl "^^xsd:string ;
+    ns2:source_text "Rühl "^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://ruehl-flm.com/products/#foam"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_79 ;
+    wgs:lat "50.257882"^^xsd:decimal ;
+    wgs:long "8.643199"^^xsd:decimal .
+
+ns1:Organization_85 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "SAFI"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/SsVAFVtVfK6HiVhX9 "^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "SAFI"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.safi-valves.com/fr/reseau-et-contact/reseau-international"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_80 ;
+    wgs:lat "49.809816"^^xsd:decimal ;
+    wgs:long "8.567444"^^xsd:decimal .
+
+ns1:Organization_86 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Schill+Seilacher"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/vWhjUFA9no4oohiK"^^xsd:string ;
+    ns2:source_text "Schill+Seilacher"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_81 ;
+    wgs:lat "48.67021"^^xsd:decimal ;
+    wgs:long "9.037791"^^xsd:decimal .
+
+ns1:Organization_87 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Schill+Seilacher"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/sbL9cxeNTn6zLVkr5"^^xsd:string ;
+    ns2:source_text "Schill+Seilacher"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.schillseilacher.de/en/products/chemicals-for-technical-textiles/hydrophobation-oleophobization/?tx_schillseilacher_pi1%5Bcategory%5D=104&tx_schillseilacher_pi1%5Baction%5D=show&tx_schillseilacher_pi1%5Bcontroller%5D=Category&cHash=82dac00a6ea6aedde47653d5739b062a"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_82 ;
+    wgs:lat "50.91799"^^xsd:decimal ;
+    wgs:long "13.976089"^^xsd:decimal .
+
+ns1:Organization_88 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Solvay"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/iz1ofJAoEvpr99rQ6"^^xsd:string ;
+    ns2:source_text "Solvay Fluor"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.solvay.de/standorte/bad-wimpfen/produkte"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_83 ;
+    wgs:lat "49.230411"^^xsd:decimal ;
+    wgs:long "9.172701"^^xsd:decimal .
+
+ns1:Organization_89 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Spengler Fluorkunststoffe"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Spengler Fluorkunststoffe"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://spengler-fluorkunststoffe.de/eptfe/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_84 ;
+    wgs:lat "51.306683"^^xsd:decimal ;
+    wgs:long "7.251951"^^xsd:decimal .
+
+ns1:Organization_9 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "MCM"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "MCM"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://mcm-spa.it/en/products/productlist/ "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_8 ;
+    wgs:lat "50.952076"^^xsd:decimal ;
+    wgs:long "4.244628"^^xsd:decimal .
+
+ns1:Organization_90 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "STHAMER"^^xsd:string ;
+    ns2:source_text "STHAMER"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.sthamer.com/en/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_65 ;
+    wgs:lat "53.536337"^^xsd:decimal ;
+    wgs:long "10.07562"^^xsd:decimal .
+
+ns1:Organization_91 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Synthetica Fluorplastics"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "synthetica® Fluorplastics"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.synthetica.de/unternehmen/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_85 ;
+    wgs:lat "51.423667"^^xsd:decimal ;
+    wgs:long "7.710096"^^xsd:decimal .
+
+ns1:Organization_92 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "TEKU Fluorkunststoffe"^^xsd:string ;
+    ns2:maps_link "https://www.google.nl/maps/place/TEKU+GmbH+Fluorkunststoffe/@52.2926378,-13.3481808,5z/data=!4m10!1m2!2m1!1sptfe!3m6!1s0x47b8dbced3857e37:0x8b6a5b5146416fb5!8m2!3d51.3508333!4d7.0810392!15sCgRwdGZlkgEbcGxhc3RpY19mYWJyaWNhdGlvbl9jb21wYW554AEA!16s%2Fg%2F1tjt10h3"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "TEKU GmbH Fluorkunststoffe"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://web.archive.org/web/20220617083156/https://www.teku-gmbh.com/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_86 ;
+    wgs:lat "51.350863"^^xsd:decimal ;
+    wgs:long "7.081051"^^xsd:decimal .
+
+ns1:Organization_93 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Thor"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/2nJZRZoyNMRKjMU67 "^^xsd:string ;
+    ns2:source_text "Thor"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://solutions.cht.com/cht/medien.nsf/gfx/med_MJOS-BMBEB4_3972BB/$file/The-List-by-INDITEX-Edition-IV.pdf"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_87 ;
+    wgs:lat "49.335683"^^xsd:decimal ;
+    wgs:long "8.420255"^^xsd:decimal .
+
+ns1:Organization_94 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Trans-Textil"^^xsd:string ;
+    ns2:maps_link "https://g.page/trans-textil-gmbh?share "^^xsd:string ;
+    ns2:source_text "Trans-Textil"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "http://www.trans-textil.de/html/technologie/ausruestung.html"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_88 ;
+    wgs:lat "47.852596"^^xsd:decimal ;
+    wgs:long "12.964476"^^xsd:decimal .
+
+ns1:Organization_95 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Vector Foiltec"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Vector Foiltec"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.vector-foiltec.com/texlon-etfe/"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_89 ;
+    wgs:lat "53.172347"^^xsd:decimal ;
+    wgs:long "8.684534"^^xsd:decimal .
+
+ns1:Organization_96 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Wacker Chemie"^^xsd:string ;
+    ns2:sector "Manufacture of plastics in primary forms"^^xsd:string ;
+    ns2:source_text "Wacker Burghausen"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.wacker.com/cms/en-us/about-wacker/wacker-at-a-glance/production-sites/burghausen/overview.html"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_90 ;
+    wgs:lat "48.177445"^^xsd:decimal ;
+    wgs:long "12.842124"^^xsd:decimal .
+
+ns1:Organization_97 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Wacker Chemie "^^xsd:string ;
+    ns2:sector "Manufacture of plastics in primary forms"^^xsd:string ;
+    ns2:source_text "Wacker Nünchritz"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.wacker.com/cms/en-us/about-wacker/wacker-at-a-glance/production-sites/nuenchritz.html "^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_91 ;
+    wgs:lat "51.292458"^^xsd:decimal ;
+    wgs:long "13.398681"^^xsd:decimal .
+
+ns1:Organization_98 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Weilburger coatings"^^xsd:string ;
+    ns2:maps_link "https://g.page/weilburger-graphics?share"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Weilburger coatings"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.weilburger.com/en/products"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_92 ;
+    wgs:lat "49.62475"^^xsd:decimal ;
+    wgs:long "10.703724"^^xsd:decimal .
+
+ns1:Organization_99 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Weilburger coatings"^^xsd:string ;
+    ns2:maps_link "https://goo.gl/maps/d1Ny3e5MQVFNuxbD8"^^xsd:string ;
+    ns2:sector "Manufacture of rubber and plastic products"^^xsd:string ;
+    ns2:source_text "Weilburger coatings"^^xsd:string ;
+    ns2:source_type "Company"^^xsd:string ;
+    ns2:source_url "https://www.weilburger.com/en/products"^^xsd:string ;
+    ns2:type "Industrial site"^^xsd:string ;
+    ns3:RO_0001025 ns1:City_93 ;
+    wgs:lat "50.489345"^^xsd:decimal ;
+    wgs:long "8.270719"^^xsd:decimal .
+
+ns1:City_1 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Tournus"^^xsd:string .
+
+ns1:City_10 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Tongeren"^^xsd:string .
+
+ns1:City_100 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Sesto Ulteriano"^^xsd:string .
+
+ns1:City_101 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Trieste"^^xsd:string .
+
+ns1:City_102 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Luserna San Giovanni"^^xsd:string .
+
+ns1:City_103 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Pinerolo"^^xsd:string .
+
+ns1:City_104 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name " Castelli Calepio"^^xsd:string .
+
+ns1:City_106 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Ternate"^^xsd:string .
+
+ns1:City_107 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Bergame"^^xsd:string .
+
+ns1:City_108 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Monvalle"^^xsd:string .
+
+ns1:City_109 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Adrara San Martino"^^xsd:string .
+
+ns1:City_11 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Evergem"^^xsd:string .
+
+ns1:City_110 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Legnano"^^xsd:string .
+
+ns1:City_111 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Novare"^^xsd:string .
+
+ns1:City_112 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Caldarola"^^xsd:string .
+
+ns1:City_113 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Gorla Minore"^^xsd:string .
+
+ns1:City_114 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Cologno Al Serio"^^xsd:string .
+
+ns1:City_115 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Brembate di Sopra"^^xsd:string .
+
+ns1:City_116 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Milan"^^xsd:string .
+
+ns1:City_117 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Sotto Il Monte"^^xsd:string .
+
+ns1:City_118 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Kerkrade"^^xsd:string .
+
+ns1:City_119 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Deventer"^^xsd:string .
+
+ns1:City_12 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Harmignies"^^xsd:string .
+
+ns1:City_120 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Nijverdal"^^xsd:string .
+
+ns1:City_121 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Denekamp"^^xsd:string .
+
+ns1:City_122 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Oss"^^xsd:string .
+
+ns1:City_123 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Heerhugowaard"^^xsd:string .
+
+ns1:City_124 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Vorden"^^xsd:string .
+
+ns1:City_125 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Breda"^^xsd:string .
+
+ns1:City_126 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Ridderkerk"^^xsd:string .
+
+ns1:City_127 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Weesp"^^xsd:string .
+
+ns1:City_128 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Ede"^^xsd:string .
+
+ns1:City_129 a ns1:City ;
+    ns1:containedInPlace ns1:Country_11 ;
+    ns1:name "Ågotnes"^^xsd:string .
+
+ns1:City_13 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Hamme"^^xsd:string .
+
+ns1:City_130 a ns1:City ;
+    ns1:containedInPlace ns1:Country_12 ;
+    ns1:name "Falkowo"^^xsd:string .
+
+ns1:City_131 a ns1:City ;
+    ns1:containedInPlace ns1:Country_12 ;
+    ns1:name "Lodz"^^xsd:string .
+
+ns1:City_132 a ns1:City ;
+    ns1:containedInPlace ns1:Country_13 ;
+    ns1:name "Alexandria"^^xsd:string .
+
+ns1:City_133 a ns1:City ;
+    ns1:containedInPlace ns1:Country_13 ;
+    ns1:name "Otopeni"^^xsd:string .
+
+ns1:City_134 a ns1:City ;
+    ns1:containedInPlace ns1:Country_14 ;
+    ns1:name "Medvode"^^xsd:string .
+
+ns1:City_135 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Valencia"^^xsd:string .
+
+ns1:City_136 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Parets del Vallès"^^xsd:string .
+
+ns1:City_137 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Navarre"^^xsd:string .
+
+ns1:City_138 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Mieres"^^xsd:string .
+
+ns1:City_139 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Montcada i Reixac"^^xsd:string .
+
+ns1:City_14 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Waregem"^^xsd:string .
+
+ns1:City_140 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Tarragona"^^xsd:string .
+
+ns1:City_141 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Barcelona"^^xsd:string .
+
+ns1:City_142 a ns1:City ;
+    ns1:containedInPlace ns1:Country_15 ;
+    ns1:name "Olloniego"^^xsd:string .
+
+ns1:City_143 a ns1:City ;
+    ns1:containedInPlace ns1:Country_16 ;
+    ns1:name "Helsingborg"^^xsd:string .
+
+ns1:City_144 a ns1:City ;
+    ns1:containedInPlace ns1:Country_17 ;
+    ns1:name "Montlingen"^^xsd:string .
+
+ns1:City_145 a ns1:City ;
+    ns1:containedInPlace ns1:Country_17 ;
+    ns1:name "Gächlingen"^^xsd:string .
+
+ns1:City_146 a ns1:City ;
+    ns1:containedInPlace ns1:Country_17 ;
+    ns1:name "Frauenfeld"^^xsd:string .
+
+ns1:City_147 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Corby"^^xsd:string .
+
+ns1:City_149 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Welwyn Garden City"^^xsd:string .
+
+ns1:City_15 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Lier"^^xsd:string .
+
+ns1:City_150 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Swiftfields"^^xsd:string .
+
+ns1:City_151 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Bentham"^^xsd:string .
+
+ns1:City_152 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Denton"^^xsd:string .
+
+ns1:City_154 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Widnes"^^xsd:string .
+
+ns1:City_155 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Bridgwater"^^xsd:string .
+
+ns1:City_156 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Cheshire"^^xsd:string .
+
+ns1:City_157 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Haslingden"^^xsd:string .
+
+ns1:City_158 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Sheffield"^^xsd:string .
+
+ns1:City_159 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Hertford"^^xsd:string .
+
+ns1:City_16 a ns1:City ;
+    ns1:containedInPlace ns1:Country_3 ;
+    ns1:name "Opatovice nad Labem"^^xsd:string .
+
+ns1:City_160 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Rochdale"^^xsd:string .
+
+ns1:City_161 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Newcastle-upon-Tyne"^^xsd:string .
+
+ns1:City_162 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Grange-over-Sands"^^xsd:string .
+
+ns1:City_163 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Nottingham"^^xsd:string .
+
+ns1:City_164 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Cinderford "^^xsd:string .
+
+ns1:City_165 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Grantham"^^xsd:string .
+
+ns1:City_166 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Leven"^^xsd:string .
+
+ns1:City_167 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Manchester"^^xsd:string .
+
+ns1:City_168 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Aberdeenshire"^^xsd:string .
+
+ns1:City_169 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Worthing"^^xsd:string .
+
+ns1:City_17 a ns1:City ;
+    ns1:containedInPlace ns1:Country_3 ;
+    ns1:name "Liberec"^^xsd:string .
+
+ns1:City_170 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Petworth"^^xsd:string .
+
+ns1:City_171 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Holton Heath"^^xsd:string .
+
+ns1:City_172 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Slough"^^xsd:string .
+
+ns1:City_173 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Elland"^^xsd:string .
+
+ns1:City_174 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Stockport"^^xsd:string .
+
+ns1:City_175 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Thornton-Cleveleys"^^xsd:string .
+
+ns1:City_176 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Stonehouse"^^xsd:string .
+
+ns1:City_177 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Rotherham"^^xsd:string .
+
+ns1:City_178 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Middlesbrough"^^xsd:string .
+
+ns1:City_179 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Runcorn"^^xsd:string .
+
+ns1:City_18 a ns1:City ;
+    ns1:containedInPlace ns1:Country_3 ;
+    ns1:name "Klatovy"^^xsd:string .
+
+ns1:City_180 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Darmstadt"^^xsd:string .
+
+ns1:City_181 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Gendorf"^^xsd:string .
+
+ns1:City_182 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Putzbrunn"^^xsd:string .
+
+ns1:City_183 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Pleinfeld"^^xsd:string .
+
+ns1:City_184 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Dossenheim"^^xsd:string .
+
+ns1:City_185 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Hanau"^^xsd:string .
+
+ns1:City_186 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Rheinfelden"^^xsd:string .
+
+ns1:City_187 a ns1:City ;
+    ns1:containedInPlace ns1:Country_8 ;
+    ns1:name "Carrigtwohill"^^xsd:string .
+
+ns1:City_188 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Heerlen"^^xsd:string .
+
+ns1:City_189 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Livingston"^^xsd:string .
+
+ns1:City_19 a ns1:City ;
+    ns1:containedInPlace ns1:Country_3 ;
+    ns1:name "Pilsen"^^xsd:string .
+
+ns1:City_190 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Dundee"^^xsd:string .
+
+ns1:City_191 a ns1:City ;
+    ns1:containedInPlace ns1:Country_1 ;
+    ns1:name "Lenzing"^^xsd:string .
+
+ns1:City_192 a ns1:City ;
+    ns1:containedInPlace ns1:Country_4 ;
+    ns1:name "Lillerød"^^xsd:string .
+
+ns1:City_193 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Beynost"^^xsd:string .
+
+ns1:City_194 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Vohburg an der Donau"^^xsd:string .
+
+ns1:City_195 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Neustadt an der Donau"^^xsd:string .
+
+ns1:City_196 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Mannheim"^^xsd:string .
+
+ns1:City_197 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Kösching"^^xsd:string .
+
+ns1:City_198 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Wilhelmshaven"^^xsd:string .
+
+ns1:City_199 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Magdeburg"^^xsd:string .
+
+ns1:City_2 a ns1:City ;
+    ns1:containedInPlace ns1:Country_1 ;
+    ns1:name "Waldneukirchen"^^xsd:string .
+
+ns1:City_20 a ns1:City ;
+    ns1:containedInPlace ns1:Country_4 ;
+    ns1:name "Herlev"^^xsd:string .
+
+ns1:City_200 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Krefeld"^^xsd:string .
+
+ns1:City_201 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Polaveno"^^xsd:string .
+
+ns1:City_202 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Mariano Comense"^^xsd:string .
+
+ns1:City_203 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Ponte San Marco"^^xsd:string .
+
+ns1:City_204 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Bollate"^^xsd:string .
+
+ns1:City_205 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Calcio"^^xsd:string .
+
+ns1:City_206 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Marnate"^^xsd:string .
+
+ns1:City_207 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Brescia"^^xsd:string .
+
+ns1:City_208 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Casella"^^xsd:string .
+
+ns1:City_21 a ns1:City ;
+    ns1:containedInPlace ns1:Country_4 ;
+    ns1:name "Helsinge"^^xsd:string .
+
+ns1:City_210 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Castelli Calepio"^^xsd:string .
+
+ns1:City_211 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Prato"^^xsd:string .
+
+ns1:City_212 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Diémoz"^^xsd:string .
+
+ns1:City_213 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Boca"^^xsd:string .
+
+ns1:City_214 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Buccinasco"^^xsd:string .
+
+ns1:City_215 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Carpi"^^xsd:string .
+
+ns1:City_216 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Amsterdam"^^xsd:string .
+
+ns1:City_218 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Matching Green"^^xsd:string .
+
+ns1:City_22 a ns1:City ;
+    ns1:containedInPlace ns1:Country_5 ;
+    ns1:name "Petolahti"^^xsd:string .
+
+ns1:City_23 a ns1:City ;
+    ns1:containedInPlace ns1:Country_5 ;
+    ns1:name "Mäntsälä"^^xsd:string .
+
+ns1:City_25 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Plaisir"^^xsd:string .
+
+ns1:City_26 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Saint-Aubin-lès-Elbeuf"^^xsd:string .
+
+ns1:City_27 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Sainte-Consorce"^^xsd:string .
+
+ns1:City_28 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Aucamville"^^xsd:string .
+
+ns1:City_29 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "La Courneuve"^^xsd:string .
+
+ns1:City_3 a ns1:City ;
+    ns1:containedInPlace ns1:Country_1 ;
+    ns1:name "Bad Hall"^^xsd:string .
+
+ns1:City_30 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Reims"^^xsd:string .
+
+ns1:City_31 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Vernouillet"^^xsd:string .
+
+ns1:City_32 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Montreuil"^^xsd:string .
+
+ns1:City_33 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Mérignac"^^xsd:string .
+
+ns1:City_34 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Chamborêt"^^xsd:string .
+
+ns1:City_35 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Saint-Donat-sur-l'Herbasse"^^xsd:string .
+
+ns1:City_36 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Lyon"^^xsd:string .
+
+ns1:City_37 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Conty"^^xsd:string .
+
+ns1:City_38 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Aix en Provence"^^xsd:string .
+
+ns1:City_39 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Busnes"^^xsd:string .
+
+ns1:City_4 a ns1:City ;
+    ns1:containedInPlace ns1:Country_1 ;
+    ns1:name "Kufstein"^^xsd:string .
+
+ns1:City_40 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Taulignan"^^xsd:string .
+
+ns1:City_41 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Saint-Quentin-Fallavier"^^xsd:string .
+
+ns1:City_42 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Vineuil-Saint-Firmin"^^xsd:string .
+
+ns1:City_43 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Le Plessis-Pâte"^^xsd:string .
+
+ns1:City_44 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Vitry-le-François"^^xsd:string .
+
+ns1:City_45 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Achères"^^xsd:string .
+
+ns1:City_46 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Karben"^^xsd:string .
+
+ns1:City_48 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Ludwigshafen"^^xsd:string .
+
+ns1:City_49 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Birkenfeld"^^xsd:string .
+
+ns1:City_5 a ns1:City ;
+    ns1:containedInPlace ns1:Country_1 ;
+    ns1:name "Hochfilzen"^^xsd:string .
+
+ns1:City_50 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Grafschaft-Gelsdorf"^^xsd:string .
+
+ns1:City_51 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Wesel"^^xsd:string .
+
+ns1:City_52 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Halle"^^xsd:string .
+
+ns1:City_54 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Dusslingen"^^xsd:string .
+
+ns1:City_55 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Oyten"^^xsd:string .
+
+ns1:City_56 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Nufringen"^^xsd:string .
+
+ns1:City_57 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Konstanz"^^xsd:string .
+
+ns1:City_58 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Ahaus"^^xsd:string .
+
+ns1:City_59 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Görwihl"^^xsd:string .
+
+ns1:City_6 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Dilbeek"^^xsd:string .
+
+ns1:City_60 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Öhringen"^^xsd:string .
+
+ns1:City_61 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Weinheim"^^xsd:string .
+
+ns1:City_62 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Reichelsheim"^^xsd:string .
+
+ns1:City_63 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Schwalmstadt"^^xsd:string .
+
+ns1:City_64 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Berlin"^^xsd:string .
+
+ns1:City_66 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "KHP Kunststofftechnik"^^xsd:string .
+
+ns1:City_67 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Langweid"^^xsd:string .
+
+ns1:City_68 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Miehlen"^^xsd:string .
+
+ns1:City_69 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Münich"^^xsd:string .
+
+ns1:City_7 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Mechelen"^^xsd:string .
+
+ns1:City_70 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Brüggen"^^xsd:string .
+
+ns1:City_71 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Leverkusen"^^xsd:string .
+
+ns1:City_72 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Grossenhain"^^xsd:string .
+
+ns1:City_73 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Glaubitz"^^xsd:string .
+
+ns1:City_74 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Maintal"^^xsd:string .
+
+ns1:City_76 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Remscheid"^^xsd:string .
+
+ns1:City_77 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Heilbronn"^^xsd:string .
+
+ns1:City_78 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Dettingen an der Erms"^^xsd:string .
+
+ns1:City_79 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Friedrichsdorf"^^xsd:string .
+
+ns1:City_8 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Merchtem"^^xsd:string .
+
+ns1:City_80 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Pfungstadt"^^xsd:string .
+
+ns1:City_81 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Böblingen"^^xsd:string .
+
+ns1:City_82 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Pirna"^^xsd:string .
+
+ns1:City_83 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Bad Wimpfen"^^xsd:string .
+
+ns1:City_84 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Wuppertal"^^xsd:string .
+
+ns1:City_85 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Iserlohn"^^xsd:string .
+
+ns1:City_86 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Velbert"^^xsd:string .
+
+ns1:City_87 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Speyer"^^xsd:string .
+
+ns1:City_88 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Freilassing"^^xsd:string .
+
+ns1:City_89 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Bremen"^^xsd:string .
+
+ns1:City_9 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Willebroek"^^xsd:string .
+
+ns1:City_90 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Burghausen"^^xsd:string .
+
+ns1:City_91 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Nünchritz"^^xsd:string .
+
+ns1:City_92 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Gerhardshofen"^^xsd:string .
+
+ns1:City_93 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Weilburg"^^xsd:string .
+
+ns1:City_94 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Vreden"^^xsd:string .
+
+ns1:City_95 a ns1:City ;
+    ns1:containedInPlace ns1:Country_7 ;
+    ns1:name "Kecskemét-Kadafalva"^^xsd:string .
+
+ns1:City_96 a ns1:City ;
+    ns1:containedInPlace ns1:Country_7 ;
+    ns1:name "Lajosmizse"^^xsd:string .
+
+ns1:City_97 a ns1:City ;
+    ns1:containedInPlace ns1:Country_8 ;
+    ns1:name "Kilrush"^^xsd:string .
+
+ns1:City_98 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Rodano"^^xsd:string .
+
+ns1:Country_11 a ns1:Country ;
+    ns1:name "Norway"^^xsd:string .
+
+ns1:Country_14 a ns1:Country ;
+    ns1:name "Slovenia"^^xsd:string .
+
+ns1:Country_16 a ns1:Country ;
+    ns1:name "Sweden"^^xsd:string .
+
+ns1:City_0 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Rumilly"^^xsd:string .
+
+ns1:City_105 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Castelli Calepio Bergamo"^^xsd:string .
+
+ns1:City_148 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Huddersfield"^^xsd:string .
+
+ns1:City_153 a ns1:City ;
+    ns1:containedInPlace ns1:Country_18 ;
+    ns1:name "Bolton"^^xsd:string .
+
+ns1:City_209 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Grumello del Monte"^^xsd:string .
+
+ns1:City_217 a ns1:City ;
+    ns1:containedInPlace ns1:Country_10 ;
+    ns1:name "Maasvlakte Rotterdam"^^xsd:string .
+
+ns1:City_24 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Langres"^^xsd:string .
+
+ns1:City_47 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Kempen"^^xsd:string .
+
+ns1:City_53 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Geretsried"^^xsd:string .
+
+ns1:City_65 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Hamburg"^^xsd:string .
+
+ns1:City_75 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Stuttgart"^^xsd:string .
+
+ns1:City_99 a ns1:City ;
+    ns1:containedInPlace ns1:Country_9 ;
+    ns1:name "Calderara di Reno"^^xsd:string .
+
+ns1:Country_12 a ns1:Country ;
+    ns1:name "Poland"^^xsd:string .
+
+ns1:Country_13 a ns1:Country ;
+    ns1:name "Romania"^^xsd:string .
+
+ns1:Country_5 a ns1:Country ;
+    ns1:name "Finland"^^xsd:string .
+
+ns1:Country_7 a ns1:Country ;
+    ns1:name "Hungary"^^xsd:string .
+
+ns1:Country_8 a ns1:Country ;
+    ns1:name "Ireland"^^xsd:string .
+
+ns1:Country_17 a ns1:Country ;
+    ns1:name "Switzerland"^^xsd:string .
+
+ns1:Country_4 a ns1:Country ;
+    ns1:name "Denmark"^^xsd:string .
+
+ns1:Country_3 a ns1:Country ;
+    ns1:name "Czechia"^^xsd:string .
+
+ns1:Country_1 a ns1:Country ;
+    ns1:name "Austria"^^xsd:string .
+
+ns1:Country_15 a ns1:Country ;
+    ns1:name "Spain"^^xsd:string .
+
+ns1:Country_2 a ns1:Country ;
+    ns1:name "Belgium"^^xsd:string .
+
+<https://www.w3.org/ns/dcat#Dataset_1> a <https://www.w3.org/ns/dcat#Dataset> ;
+    ns4:resource_title "Press inquiry"^^xsd:string .
+
+ns1:Country_10 a ns1:Country ;
+    ns1:name "Netherlands"^^xsd:string .
+
+ns1:Country_0 a ns1:Country ;
+    ns1:name "France"^^xsd:string .
+
+<https://www.w3.org/ns/dcat#Dataset_2> a <https://www.w3.org/ns/dcat#Dataset> ;
+    ns4:resource_title "FOI"^^xsd:string .
+
+ns1:Country_9 a ns1:Country ;
+    ns1:name "Italy"^^xsd:string .
+
+ns1:Country_18 a ns1:Country ;
+    ns1:name "United Kingdom"^^xsd:string .
+
+ns1:Country_6 a ns1:Country ;
+    ns1:name "Germany"^^xsd:string .
+
+<https://www.w3.org/ns/dcat#Dataset_0> a <https://www.w3.org/ns/dcat#Dataset> ;
+    ns4:resource_title "OSINT"^^xsd:string .
+

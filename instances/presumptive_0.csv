@@ -1,0 +1,6 @@
+category,lat,lon,name,city,country,type,sector,source_type,data_collection_method,source_text,source_url,dataset_id,dataset_name,pfas_values,unit,pfas_sum,details,matrix,date,year
+Presumptive,46.85749,1.733495,C2FPA,Châteauroux,France,Firefighting incident / training,,OSINT,OSINT,C2FPA,https://www.c2fpa.fr/,8,AFFF from France,[],,,{},,,
+Presumptive,43.68738,0.602538,EFORSA,Auch,France,Firefighting incident / training,,OSINT,OSINT,EFORSA,http://www.eforsa.eu/,8,AFFF from France,[],,,{},,,
+Presumptive,45.360375,4.795161,Gesip Centre Roussillon ,Roussillon,France,Firefighting incident / training,,OSINT,OSINT,GESIP centre Roussillon,https://fr.calameo.com/gesip/read/007107531fd7cec69650a?authid=NoYZ5EuTmHbG,8,AFFF from France,[],,,{},,,
+Presumptive,43.477071,4.9482,PTRI CFD SDIS13,Fos-sur-Mer,France,Firefighting incident / training,,OSINT,OSINT,PTRI CFD SDIS13,https://www.formation-sdis13.fr/risques-industriels/,8,AFFF from France,[],,,{},,,
+Presumptive,49.095886,1.410346,Vernon Gesip,Saint Marcel,France,Firefighting incident / training,,Scientific article,OSINT,Dauchy 2019,https://doi.org/10.1016/j.chemosphere.2018.10.003,8,AFFF from France,[],,,{},,,

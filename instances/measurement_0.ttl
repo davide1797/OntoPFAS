@@ -1,0 +1,364 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <https://w3id.org/OntoPFAS#> .
+@prefix ns2: <http://schema/org/> .
+@prefix ns3: <https://www.w3.org/TR/vocab-dcat-3/#Property:> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+ns1:site a owl:DatatypeProperty .
+
+ns1:type a owl:DatatypeProperty .
+
+ns1:sector a owl:DatatypeProperty .
+
+ns1:source_type a owl:DatatypeProperty .
+
+ns1:source_text a owl:DatatypeProperty .
+
+ns1:source_url a owl:DatatypeProperty .
+
+ns1:value a owl:DatatypeProperty .
+
+sosa:resultTime a owl:DatatypeProperty .
+
+wgs:lat a owl:DatatypeProperty .
+
+wgs:long a owl:DatatypeProperty .
+
+ns2:name a owl:DatatypeProperty .
+
+ns1:matrix a owl:ObjectProperty .
+
+ns1:measuredIn a owl:ObjectProperty .
+
+ns2:containedInPlace a owl:ObjectProperty .
+
+ns1:measuredPfas a owl:ObjectProperty .
+
+dc:source a owl:ObjectProperty .
+
+ns2:City_0 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Zwevegem"^^xsd:string .
+
+ns2:City_1 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Dendermonde"^^xsd:string .
+
+ns2:City_2 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Deinze"^^xsd:string .
+
+ns2:City_3 a ns2:City ;
+    ns2:containedInPlace ns2:Country_1 ;
+    ns2:name "Hamminkeln-Dingden"^^xsd:string .
+
+ns2:City_4 a ns2:City ;
+    ns2:containedInPlace ns2:Country_1 ;
+    ns2:name "Wolfstein"^^xsd:string .
+
+ns2:City_5 a ns2:City ;
+    ns2:containedInPlace ns2:Country_1 ;
+    ns2:name "Schüttorf"^^xsd:string .
+
+ns2:City_6 a ns2:City ;
+    ns2:containedInPlace ns2:Country_2 ;
+    ns2:name "Tollegno"^^xsd:string .
+
+ns2:City_7 a ns2:City ;
+    ns2:containedInPlace ns2:Country_3 ;
+    ns2:name "Vila Nova de Famalicão"^^xsd:string .
+
+ns2:City_8 a ns2:City ;
+    ns2:containedInPlace ns2:Country_4 ;
+    ns2:name "Kinna"^^xsd:string .
+
+sosa:Observation_00 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2018" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_0> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <1763-23-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Maes"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "40.0"^^xsd:decimal .
+
+sosa:Observation_01 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2018" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_0> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:maps_link "{}"^^xsd:string ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Maes"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "90.0"^^xsd:decimal .
+
+sosa:Observation_10 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2017" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_1> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Tarkett"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "200.0"^^xsd:decimal .
+
+sosa:Observation_20 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2016" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_2> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Ververijen Escotex"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "41400.0"^^xsd:decimal .
+
+sosa:Observation_21 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2016" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_2> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <1763-23-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Ververijen Escotex"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "500.0"^^xsd:decimal .
+
+sosa:Observation_22 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2016" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_2> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <307-24-4> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Ververijen Escotex"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "500.0"^^xsd:decimal .
+
+sosa:Observation_30 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2017" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_3> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Gerhard Van Clewe"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "30.0"^^xsd:decimal .
+
+sosa:Observation_31 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2017" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_3> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <1763-23-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Gerhard Van Clewe"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "20.0"^^xsd:decimal .
+
+sosa:Observation_40 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2018" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_4> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <307-24-4> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "KOB Karl Otto Braun"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "500.0"^^xsd:decimal .
+
+sosa:Observation_41 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2018" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_4> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "KOB Karl Otto Braun"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "80.0"^^xsd:decimal .
+
+sosa:Observation_50 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2017" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_5> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Rofa"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "160.0"^^xsd:decimal .
+
+sosa:Observation_51 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2017" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_5> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <1763-23-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Rofa"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "10.0"^^xsd:decimal .
+
+sosa:Observation_60 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2018" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_6> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Tollegno 1900"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "100.0"^^xsd:decimal .
+
+sosa:Observation_61 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2018" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_6> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <307-24-4> ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Tollegno 1900"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "30.0"^^xsd:decimal .
+
+sosa:Observation_70 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2018" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_7> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <335-67-1> ;
+    ns1:maps_link "{}"^^xsd:string ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Faria & Coelho"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "40.0"^^xsd:decimal .
+
+sosa:Observation_80 a sosa:Observation ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    sosa:resultTime "2017" ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_8> ;
+    ns1:matrix <http://purl.obolibrary.org/obo/ENVO_01000408_0> ;
+    ns1:measuredPfas <1763-23-1> ;
+    ns1:maps_link "{}"^^xsd:string ;
+    ns1:sector "Finishing of textiles"^^xsd:string ;
+    ns1:site "Almedahl-Kinna"^^xsd:string ;
+    ns1:source_text "European Commission Joint Research Center"^^xsd:string ;
+    ns1:source_type "Authorities"^^xsd:string ;
+    ns1:source_url "https://drive.google.com/drive/folders/1CKxJ5Q1Q-VqctdDvvnFPM8mHPYOyj_qo"^^xsd:string ;
+    ns1:type "Industrial site"^^xsd:string ;
+    ns1:value "30.2" .
+
+ns2:Country_2 a ns2:Country ;
+    ns2:name "Italy"^^xsd:string .
+
+ns2:Country_3 a ns2:Country ;
+    ns2:name "Poland"^^xsd:string .
+
+ns2:Country_4 a ns2:Country ;
+    ns2:name "Sweden"^^xsd:string .
+
+<https://www.w3.org/2003/01/geo/location_0> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "50.808932"^^xsd:decimal ;
+    wgs:long "3.352552"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_1> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "51.016507"^^xsd:decimal ;
+    wgs:long "4.088303"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_2> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "51.042282"^^xsd:decimal ;
+    wgs:long "3.548967"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_3> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "51.771554"^^xsd:decimal ;
+    wgs:long "6.605953"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_4> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "49.590101"^^xsd:decimal ;
+    wgs:long "7.603395"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_5> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "52.319134"^^xsd:decimal ;
+    wgs:long "7.228233"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_6> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "45.585137"^^xsd:decimal ;
+    wgs:long "8.053703"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_7> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "41.407306"^^xsd:decimal ;
+    wgs:long "-8.387184"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_8> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "57.503802"^^xsd:decimal ;
+    wgs:long "12.698008"^^xsd:decimal .
+
+ns2:Country_0 a ns2:Country ;
+    ns2:name "Belgium"^^xsd:string .
+
+ns2:Country_1 a ns2:Country ;
+    ns2:name "Germany"^^xsd:string .
+
+<1763-23-1> a ns1:Pfos .
+
+<307-24-4> a ns1:Pfas .
+
+<335-67-1> a ns1:Pfoa .
+
+<http://purl.obolibrary.org/obo/ENVO_01000408_0> a <http://purl.obolibrary.org/obo/ENVO_01000408> .
+
+<https://www.w3.org/ns/dcat#Dataset_0> a <https://www.w3.org/ns/dcat#Dataset> ;
+    ns3:resource_title "FOI"^^xsd:string .
+

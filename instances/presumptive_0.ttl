@@ -1,1 +1,123 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <https://w3id.org/OntoPFAS#> .
+@prefix ns2: <http://schema/org/> .
+@prefix ns3: <https://www.w3.org/TR/vocab-dcat-3/#Property:> .
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+ns1:site a owl:DatatypeProperty .
+
+ns1:type a owl:DatatypeProperty .
+
+ns1:sector a owl:DatatypeProperty .
+
+ns1:source_type a owl:DatatypeProperty .
+
+ns1:source_text a owl:DatatypeProperty .
+
+ns1:source_url a owl:DatatypeProperty .
+
+wgs:lat a owl:DatatypeProperty .
+
+wgs:long a owl:DatatypeProperty .
+
+ns2:name a owl:DatatypeProperty .
+
+ns1:measuredIn a owl:ObjectProperty .
+
+ns2:containedInPlace a owl:ObjectProperty .
+
+ns1:measuredPfas a owl:ObjectProperty .
+
+dc:source a owl:ObjectProperty .
+
+ns2:City_0 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Châteauroux"^^xsd:string .
+
+ns2:City_1 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Auch"^^xsd:string .
+
+ns2:City_2 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Roussillon"^^xsd:string .
+
+ns2:City_3 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Fos-sur-Mer"^^xsd:string .
+
+ns2:City_4 a ns2:City ;
+    ns2:containedInPlace ns2:Country_0 ;
+    ns2:name "Saint Marcel"^^xsd:string .
+
+ns1:Presumptive_0 a ns1:Presumptive ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_0> ;
+    ns1:site "C2FPA"^^xsd:string ;
+    ns1:source_text "C2FPA"^^xsd:string ;
+    ns1:source_type "OSINT"^^xsd:string ;
+    ns1:source_url "https://www.c2fpa.fr/"^^xsd:string ;
+    ns1:type "Firefighting incident / training"^^xsd:string .
+
+ns1:Presumptive_1 a ns1:Presumptive ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_1> ;
+    ns1:site "EFORSA"^^xsd:string ;
+    ns1:source_text "EFORSA"^^xsd:string ;
+    ns1:source_type "OSINT"^^xsd:string ;
+    ns1:source_url "http://www.eforsa.eu/"^^xsd:string ;
+    ns1:type "Firefighting incident / training"^^xsd:string .
+
+ns1:Presumptive_2 a ns1:Presumptive ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_2> ;
+    ns1:site "Gesip Centre Roussillon "^^xsd:string ;
+    ns1:source_text "GESIP centre Roussillon"^^xsd:string ;
+    ns1:source_type "OSINT"^^xsd:string ;
+    ns1:source_url "https://fr.calameo.com/gesip/read/007107531fd7cec69650a?authid=NoYZ5EuTmHbG"^^xsd:string ;
+    ns1:type "Firefighting incident / training"^^xsd:string .
+
+ns1:Presumptive_3 a ns1:Presumptive ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_3> ;
+    ns1:site "PTRI CFD SDIS13"^^xsd:string ;
+    ns1:source_text "PTRI CFD SDIS13"^^xsd:string ;
+    ns1:source_type "OSINT"^^xsd:string ;
+    ns1:source_url "https://www.formation-sdis13.fr/risques-industriels/"^^xsd:string ;
+    ns1:type "Firefighting incident / training"^^xsd:string .
+
+ns1:Presumptive_4 a ns1:Presumptive ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:measuredIn <https://www.w3.org/2003/01/geo/location_4> ;
+    ns1:site "Vernon Gesip"^^xsd:string ;
+    ns1:source_text "Dauchy 2019"^^xsd:string ;
+    ns1:source_type "Scientific article"^^xsd:string ;
+    ns1:source_url "https://doi.org/10.1016/j.chemosphere.2018.10.003"^^xsd:string ;
+    ns1:type "Firefighting incident / training"^^xsd:string .
+
+<https://www.w3.org/2003/01/geo/location_0> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "46.85749"^^xsd:decimal ;
+    wgs:long "1.733495"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_1> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "43.68738"^^xsd:decimal ;
+    wgs:long "0.602538"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_2> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "45.360375"^^xsd:decimal ;
+    wgs:long "4.795161"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_3> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "43.477071"^^xsd:decimal ;
+    wgs:long "4.9482"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_4> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "49.095886"^^xsd:decimal ;
+    wgs:long "1.410346"^^xsd:decimal .
+
+ns2:Country_0 a ns2:Country ;
+    ns2:name "France"^^xsd:string .
+
+<https://www.w3.org/ns/dcat#Dataset_0> a <https://www.w3.org/ns/dcat#Dataset> ;
+    ns3:resource_title "OSINT"^^xsd:string .
 

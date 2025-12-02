@@ -1,0 +1,302 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://schema/org/> .
+@prefix ns2: <https://w3id.org/OntoPFAS#> .
+@prefix ns3: <https://www.w3.org/TR/vocab-dcat-3/#Property:> .
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+ns2:type a owl:DatatypeProperty .
+
+ns2:source_type a owl:DatatypeProperty .
+
+ns2:source_text a owl:DatatypeProperty .
+
+wgs:lat a owl:DatatypeProperty .
+
+wgs:long a owl:DatatypeProperty .
+
+ns1:name a owl:DatatypeProperty .
+
+ns1:containedInPlace a owl:ObjectProperty .
+
+dc:source a owl:ObjectProperty .
+
+ns1:City_0 a ns1:City ;
+    ns1:containedInPlace ns1:Country_0 ;
+    ns1:name "Zaramillo"^^xsd:string .
+
+ns1:City_1 a ns1:City ;
+    ns1:containedInPlace ns1:Country_1 ;
+    ns1:name "Trissino"^^xsd:string .
+
+ns1:City_10 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Frankfurt am Main"^^xsd:string .
+
+ns1:City_11 a ns1:City ;
+    ns1:containedInPlace ns1:Country_7 ;
+    ns1:name "Zwijndrecht"^^xsd:string .
+
+ns1:City_12 a ns1:City ;
+    ns1:containedInPlace ns1:Country_1 ;
+    ns1:name "Spinetta-Marengo"^^xsd:string .
+
+ns1:City_13 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Bad Wimpfen"^^xsd:string .
+
+ns1:City_14 a ns1:City ;
+    ns1:containedInPlace ns1:Country_4 ;
+    ns1:name "Pierre-Bénite"^^xsd:string .
+
+ns1:City_15 a ns1:City ;
+    ns1:containedInPlace ns1:Country_4 ;
+    ns1:name "Tavaux"^^xsd:string .
+
+ns1:City_16 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Thornton-Cleveleys"^^xsd:string .
+
+ns1:City_2 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Leverkusen"^^xsd:string .
+
+ns1:City_3 a ns1:City ;
+    ns1:containedInPlace ns1:Country_3 ;
+    ns1:name "Tarnów"^^xsd:string .
+
+ns1:City_4 a ns1:City ;
+    ns1:containedInPlace ns1:Country_4 ;
+    ns1:name "Villers Saint-Paul"^^xsd:string .
+
+ns1:City_5 a ns1:City ;
+    ns1:containedInPlace ns1:Country_4 ;
+    ns1:name "Salindres"^^xsd:string .
+
+ns1:City_6 a ns1:City ;
+    ns1:containedInPlace ns1:Country_2 ;
+    ns1:name "Gendorf"^^xsd:string .
+
+ns1:City_7 a ns1:City ;
+    ns1:containedInPlace ns1:Country_5 ;
+    ns1:name "Dordrecht"^^xsd:string .
+
+ns1:City_8 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Preston"^^xsd:string .
+
+ns1:City_9 a ns1:City ;
+    ns1:containedInPlace ns1:Country_6 ;
+    ns1:name "Runcorn"^^xsd:string .
+
+ns1:Organization_0 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Arkema"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_1 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Miteni"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_10 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Daikin Refrigerants"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_11 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "3M"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_12 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Daikin"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_13 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "W. L. Gore"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_14 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Asahi Glass Company (AGC)"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_2 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Lanxess"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_3 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Grupa Azoty"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_4 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Chemours"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_5 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Solvay"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_6 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Dyneon"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_7 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Archroma"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_8 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "F2 Chemicals"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+ns1:Organization_9 a ns1:Organization ;
+    dc:source <https://www.w3.org/ns/dcat#Dataset_0> ;
+    ns1:name "Koura"^^xsd:string ;
+    ns2:source_text "Manual compilation during the FPP project"^^xsd:string ;
+    ns2:source_type "OSINT"^^xsd:string ;
+    ns2:type "PFAS production facility"^^xsd:string .
+
+<https://www.w3.org/2003/01/geo/location_0> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "43.235473"^^xsd:decimal ;
+    wgs:long "-3.015786"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_1> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "45.552799"^^xsd:decimal ;
+    wgs:long "11.387419"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_10> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "53.314531"^^xsd:decimal ;
+    wgs:long "-2.718751"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_11> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "50.095532"^^xsd:decimal ;
+    wgs:long "8.53974"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_12> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "51.234273"^^xsd:decimal ;
+    wgs:long "4.334542"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_13> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "44.883784"^^xsd:decimal ;
+    wgs:long "8.668563"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_14> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "49.229924"^^xsd:decimal ;
+    wgs:long "9.172846"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_15> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "45.710831"^^xsd:decimal ;
+    wgs:long "4.824097"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_16> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "48.178934"^^xsd:decimal ;
+    wgs:long "12.721952"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_17> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "47.056373"^^xsd:decimal ;
+    wgs:long "5.413534"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_18> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "45.708018"^^xsd:decimal ;
+    wgs:long "4.825798"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_19> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "53.879144"^^xsd:decimal ;
+    wgs:long "-2.999966"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_2> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "51.027349"^^xsd:decimal ;
+    wgs:long "6.982524"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_3> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "50.020295"^^xsd:decimal ;
+    wgs:long "20.924575"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_4> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "49.291133"^^xsd:decimal ;
+    wgs:long "2.507522"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_5> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "44.171105"^^xsd:decimal ;
+    wgs:long "4.152092"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_6> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "48.179018"^^xsd:decimal ;
+    wgs:long "12.724147"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_7> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "51.816086"^^xsd:decimal ;
+    wgs:long "4.727333"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_8> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "48.178519"^^xsd:decimal ;
+    wgs:long "12.721714"^^xsd:decimal .
+
+<https://www.w3.org/2003/01/geo/location_9> a <https://www.w3.org/2003/01/geo/location> ;
+    wgs:lat "53.775587"^^xsd:decimal ;
+    wgs:long "-2.797009"^^xsd:decimal .
+
+ns1:Country_0 a ns1:Country ;
+    ns1:name "Spain"^^xsd:string .
+
+ns1:Country_3 a ns1:Country ;
+    ns1:name "Poland"^^xsd:string .
+
+ns1:Country_5 a ns1:Country ;
+    ns1:name "Netherlands"^^xsd:string .
+
+ns1:Country_7 a ns1:Country ;
+    ns1:name "Belgium"^^xsd:string .
+
+ns1:Country_1 a ns1:Country ;
+    ns1:name "Italy"^^xsd:string .
+
+ns1:Country_6 a ns1:Country ;
+    ns1:name "United Kingdom"^^xsd:string .
+
+ns1:Country_2 a ns1:Country ;
+    ns1:name "Germany"^^xsd:string .
+
+ns1:Country_4 a ns1:Country ;
+    ns1:name "France"^^xsd:string .
+
+<https://www.w3.org/ns/dcat#Dataset_0> a <https://www.w3.org/ns/dcat#Dataset> ;
+    ns3:resource_title "OSINT"^^xsd:string .
+
