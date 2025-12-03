@@ -111,10 +111,9 @@ ORDER BY ?time
 ",
 Which human beings are exposed to a given PFAS?,"SELECT ?person
 WHERE {
-  ?exposureStimulus ontopfas:stimulatedBy ontopfas:pfas_X
-  ?exposureStimulus ontopfas:exposureStimulusOf schema:Person .
-}
-",
+  ?exposureStimulus ontopfas:stimulatedBy ontopfas:pfas_X ;
+    ontopfas:exposureStimulusOf schema:Person .
+}",
 What is the current PFAS concentration at a given site?,"SELECT (SUM((?v)) AS ?sumV)
 WHERE {
   {
@@ -192,13 +191,16 @@ WHERE {
 ",RO_0002219 → surrounded by
 Which activities are close to a PFAS measurement?,"SELECT ?activity ?distance
 WHERE {
+
   sosa:observation_X ontopfas:measuredIn ?loc1 .
   ?loc1 a geo:Location ; geo:lat ?lat1 ; geo:lon ?lon1 .
 
   ?activity a schema:Organization ; ro:RO_0001025 ?place .
+
   ?place a schema:Place ; geo:lat ?lat2 ; geo:lon ?lon2 .
 
-  FILTER(?loc1 < ?loc2)   # avoids duplicate A–B and B–A
+  # Optional duplicate filtering: compare strings
+  FILTER( STR(?loc1) < STR(?place) )
 
   #############################
   # Haversine distance formula
@@ -212,11 +214,15 @@ WHERE {
 
   BIND(
     fn:sin(?dLat / 2) * fn:sin(?dLat / 2) + 
-    fn:cos(?lat1Rad) * fn:cos(?lat2Rad) *
+    fn:cos(?lat1Rad) * fn:cos(?lat2Rad) * 
     fn:sin(?dLon / 2) * fn:sin(?dLon / 2) AS ?a
   )
 
-  BIND(2 * fn:atan2(fn:sqrt(?a), fn:sqrt(1 - ?a)) AS ?c)",
+  BIND(2 * fn:atan2(fn:sqrt(?a), fn:sqrt(1 - ?a)) AS ?c)
+
+  # Earth radius in km
+  BIND(?c * 6371 AS ?distance)
+}",
 Which is the dataset containing most measurements?,"SELECT ?dataset (COUNT(?m) AS ?countM)
 WHERE {
   ?m a sosa:Observation ; dc:source ?dataset .
