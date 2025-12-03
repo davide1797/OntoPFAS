@@ -19,7 +19,7 @@ This ontology mainly represents these three different aspects of the PFAS concer
 
 ## Evaluation
 
-A static evaluation has been assessed by evaluating the following aspects:
+A static [evaluation](https://github.com/davide1797/OntoPFAS/tree/main/evaluation) has been assessed by evaluating the following aspects:
 - [answers](ontology/competency_questions.csv) to the competency questions,
 - the correct information distribution measured by the [OntoMetrics](https://ontometrics.informatik.uni-rostock.de/ontologymetrics/),
 - the avoidance of conceptual pitfalls measured by [OOPS](https://oops.linkeddata.es/),
