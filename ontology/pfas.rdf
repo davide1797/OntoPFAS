@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/OntoPFAS#"
      xml:base="https://w3id.org/OntoPFAS"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mod="https://w3id.org/mod#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
@@ -21,21 +22,26 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ontopfas="https://w3id.org/OntoPFAS#">
     <owl:Ontology rdf:about="https://w3id.org/OntoPFAS#">
-        <owl:versionIRI rdf:resource="https://w3id.org/ontopfas/"/>
         <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
         <dcterms:accessRights>public</dcterms:accessRights>
+        <dcterms:bibliographicCitation rdf:resource="https://github.com/davide1797/OntoPFAS"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-8081-3292"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-8081-3292"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2025/02/12</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:rights>This ontology is openly available under CC BY 4.0.</dcterms:rights>
+        <dcterms:source>Project DAE-PFAS</dcterms:source>
         <dcterms:title>OntoPFAS</dcterms:title>
         <pav:version>1.0</pav:version>
         <vann:preferredNamespacePrefix>ontopfas</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/ontopfas/</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.orgOntoPFAS/</vann:preferredNamespaceUri>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <odrl:hasPolicy rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <prov:wasGeneratedBy rdf:resource="https://github.com/davide1797/OntoPFAS"/>
         <schema:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2025/02/12</schema:dateCreated>
+        <schema:description>OntoPFAS is a conceptualization of the PFAS domain, concerning its exposure, measurement, and spread aspects.</schema:description>
+        <schema:publisher>INRAE MISTEA Computer Science axis </schema:publisher>
+        <mod:status>In review</mod:status>
     </owl:Ontology>
     
 
@@ -81,6 +87,18 @@
     
 
 
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
@@ -102,6 +120,12 @@
     <!-- http://purl.org/dc/terms/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -243,6 +267,12 @@
     
 
 
+    <!-- https://schema.org/description -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/description"/>
+    
+
+
     <!-- https://schema.org/domainIncludes -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/domainIncludes"/>
@@ -252,6 +282,18 @@
     <!-- https://schema.org/license -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/license"/>
+    
+
+
+    <!-- https://schema.org/publisher -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/publisher"/>
+    
+
+
+    <!-- https://w3id.org/mod#status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#status"/>
     
 
 
