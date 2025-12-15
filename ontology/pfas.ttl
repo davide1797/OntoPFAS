@@ -3,9 +3,12 @@
 @prefix mod: <https://w3id.org/mod#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix swrl: <http://www.w3.org/2003/11/swrl#> .
@@ -29,12 +32,12 @@
                               dcterms:rights "This ontology is openly available under CC BY 4.0." ;
                               dcterms:source "Project DAE-PFAS" ;
                               dcterms:title "OntoPFAS" ;
-                              <http://purl.org/pav/version> "1.0" ;
-                              vann:preferredNamespacePrefix "OntoPFAS" ;
-                              vann:preferredNamespaceUri "https://w3id.org/OntoPFAS/" ;
+                              pav:version "1.0" ;
+                              vann:preferredNamespacePrefix "ontopfas" ;
+                              vann:preferredNamespaceUri "https://w3id.orgOntoPFAS/" ;
                               owl:versionInfo 1.0 ;
-                              <http://www.w3.org/ns/odrl/2/hasPolicy> <https://creativecommons.org/licenses/by/4.0/> ;
-                              <http://www.w3.org/ns/prov#wasGeneratedBy> <https://github.com/davide1797/OntoPFAS> ;
+                              odrl:hasPolicy <https://creativecommons.org/licenses/by/4.0/> ;
+                              prov:wasGeneratedBy <https://github.com/davide1797/OntoPFAS> ;
                               schema:dateCreated "2025/02/12"^^xsd:datetime ;
                               schema:description "OntoPFAS is a conceptualization of the PFAS domain, concerning its exposure, measurement, and spread aspects." ;
                               schema:publisher "INRAE MISTEA Computer Science axis " ;
@@ -97,7 +100,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/pav/version
-<http://purl.org/pav/version> rdf:type owl:AnnotationProperty .
+pav:version rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -173,11 +176,11 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/odrl/2/hasPolicy
-<http://www.w3.org/ns/odrl/2/hasPolicy> rdf:type owl:AnnotationProperty .
+odrl:hasPolicy rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#wasGeneratedBy
-<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:AnnotationProperty .
+prov:wasGeneratedBy rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/dateCreated
@@ -387,22 +390,22 @@ dc:source rdf:type owl:ObjectProperty ;
 
 
 ###  http://www.w3.org/ns/prov#used
-<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty ;
-                                 owl:inverseOf ontopfas:usedBy ;
-                                 rdfs:domain schema:Organization ;
-                                 rdfs:range schema:Product ;
-                                 rdfs:label "used" ;
-                                 owl:versionInfo 1.0 ;
-                                 skos:definition "Relation to indicate the use of a PFAS by an organization." .
+prov:used rdf:type owl:ObjectProperty ;
+          owl:inverseOf ontopfas:usedBy ;
+          rdfs:domain schema:Organization ;
+          rdfs:range schema:Product ;
+          rdfs:label "used" ;
+          owl:versionInfo 1.0 ;
+          skos:definition "Relation to indicate the use of a PFAS by an organization." .
 
 
 ###  http://www.w3.org/ns/prov#wasAttributedTo
-<http://www.w3.org/ns/prov#wasAttributedTo> rdf:type owl:ObjectProperty ;
-                                            owl:inverseOf ontopfas:attributesTo ;
-                                            rdfs:domain schema:Organization ;
-                                            rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
-                                            rdfs:label "was attributed to" ;
-                                            skos:definition "Attribution is the ascribing of an entity to an agent." .
+prov:wasAttributedTo rdf:type owl:ObjectProperty ;
+                     owl:inverseOf ontopfas:attributesTo ;
+                     rdfs:domain schema:Organization ;
+                     rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                     rdfs:label "was attributed to" ;
+                     skos:definition "Attribution is the ascribing of an entity to an agent." .
 
 
 ###  https://schema.org/containedInPlace
@@ -1443,6 +1446,31 @@ ontopfas:FunctionalGroup rdf:type owl:Class ;
 
 ###  https://w3id.org/OntoPFAS#LongChainPfas
 ontopfas:LongChainPfas rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Class ;
+                                             owl:unionOf ( [ owl:intersectionOf ( ontopfas:Pfca
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty obo:BFO_0000050 ;
+                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                                         owl:minCardinality "8"^^xsd:nonNegativeInteger
+                                                                                                       ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ]
+                                                           [ owl:intersectionOf ( ontopfas:Pfsa
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty obo:BFO_0000050 ;
+                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                                         owl:minCardinality "6"^^xsd:nonNegativeInteger
+                                                                                                       ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ]
+                                                         )
+                                           ] ;
                        rdfs:subClassOf ontopfas:Pfas ;
                        owl:disjointWith ontopfas:ShortChainPfas ;
                        rdfs:label "Long chain Pfas" ;
@@ -1535,6 +1563,31 @@ ontopfas:PolymerPfas rdf:type owl:Class ;
 
 ###  https://w3id.org/OntoPFAS#ShortChainPfas
 ontopfas:ShortChainPfas rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Class ;
+                                              owl:unionOf ( [ owl:intersectionOf ( ontopfas:Pfca
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty obo:BFO_0000050 ;
+                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                                          owl:maxCardinality "7"^^xsd:nonNegativeInteger
+                                                                                                        ]
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ]
+                                                            [ owl:intersectionOf ( ontopfas:Pfsa
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty obo:BFO_0000050 ;
+                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                                          owl:maxCardinality "5"^^xsd:nonNegativeInteger
+                                                                                                        ]
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ]
+                                                          )
+                                            ] ;
                         rdfs:subClassOf ontopfas:Pfas ;
                         rdfs:label "Short chain Pfas" ;
                         owl:versionInfo 1.0 ;
@@ -1543,6 +1596,21 @@ ontopfas:ShortChainPfas rdf:type owl:Class ;
 
 ###  https://w3id.org/OntoPFAS#UltraShortChainPfas
 ontopfas:UltraShortChainPfas rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                          owl:unionOf ( ontopfas:Pfca
+                                                                                        ontopfas:Pfsa
+                                                                                      )
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty obo:BFO_0000050 ;
+                                                                          owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                               owl:maxCardinality "3"^^xsd:nonNegativeInteger
+                                                                                             ]
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
                              rdfs:subClassOf ontopfas:ShortChainPfas ;
                              rdfs:label "Ultra short chain Pfas" ;
                              owl:versionInfo 1.0 ;
@@ -1569,6 +1637,14 @@ ontopfas:VulnerablePerson rdf:type owl:Class ;
                                     rdfs:label "Presumptive" ;
                                     owl:versionInfo 1.0 ;
                                     skos:definition "Presumptive PFAS observation." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/OntoPFAS#a
+ontopfas:a rdf:type owl:NamedIndividual .
 
 
 #################################################################
