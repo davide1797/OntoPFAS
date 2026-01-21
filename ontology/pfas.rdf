@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/OntoPFAS#"
      xml:base="https://w3id.org/OntoPFAS"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,7 +21,6 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ontopfas="https://w3id.org/OntoPFAS#">
     <owl:Ontology rdf:about="https://w3id.org/OntoPFAS#">
-        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
         <dcterms:accessRights>public</dcterms:accessRights>
         <dcterms:bibliographicCitation rdf:resource="https://github.com/davide1797/OntoPFAS"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-8081-3292"/>
@@ -66,18 +64,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/type -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 
@@ -125,7 +111,9 @@
 
     <!-- http://purl.org/dc/terms/source -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -528,15 +516,11 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/source -->
+    <!-- http://purl.org/dc/terms/source -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/source">
         <owl:inverseOf rdf:resource="https://w3id.org/OntoPFAS#sourceOf"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <rdfs:comment>The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</rdfs:comment>
-        <rdfs:label>source</rdfs:label>
-        <skos:definition>A related resource from which the described resource is derived.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -732,6 +716,10 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoPFAS#exposureStimulusOf">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ExO_0000022"/>
         <rdfs:range rdf:resource="https://schema.org/Person"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/OntoPFAS#affects"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001015"/>
+        </owl:propertyChainAxiom>
         <rdfs:label>exposure stimulus of</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <skos:definition>A relationship between an exposure event or process and any agent, stimulus, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event.</skos:definition>
@@ -1354,7 +1342,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoPFAS#unit">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:label>unit</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <skos:definition>Scale of a value, e.g. 1000 for kilo or 0.001 for mili.</skos:definition>
@@ -1902,12 +1890,16 @@ This class represents the actual dataset as published by the dataset provider. I
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/OntoPFAS#Pfca"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
                                 <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
-                                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:minCardinality>
-                                    </owl:Restriction>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
@@ -1916,12 +1908,16 @@ This class represents the actual dataset as published by the dataset provider. I
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/OntoPFAS#Pfsa"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
                                 <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
-                                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:minCardinality>
-                                    </owl:Restriction>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
@@ -2061,12 +2057,16 @@ This class represents the actual dataset as published by the dataset provider. I
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/OntoPFAS#Pfca"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
                                 <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
-                                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:maxCardinality>
-                                    </owl:Restriction>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
@@ -2075,12 +2075,16 @@ This class represents the actual dataset as published by the dataset provider. I
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/OntoPFAS#Pfsa"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                                <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
                                 <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
-                                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
-                                    </owl:Restriction>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
@@ -2109,12 +2113,16 @@ This class represents the actual dataset as published by the dataset provider. I
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
                         <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/OntoPFAS#numberOfCarbons"/>
-                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxCardinality>
-                            </owl:Restriction>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
                         </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2158,21 +2166,19 @@ This class represents the actual dataset as published by the dataset provider. I
     </owl:Class>
     
 
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Individuals
+    // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- https://w3id.org/OntoPFAS#a -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoPFAS#a"/>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:comment>The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</rdfs:comment>
+        <rdfs:label>source</rdfs:label>
+        <skos:definition>A related resource from which the described resource is derived.</skos:definition>
+    </rdf:Description>
     
 
 

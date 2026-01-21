@@ -1,5 +1,4 @@
 @prefix : <https://w3id.org/OntoPFAS#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -22,7 +21,6 @@
 @base <https://w3id.org/OntoPFAS#> .
 
 <https://w3id.org/OntoPFAS#> rdf:type owl:Ontology ;
-                              dc:license "https://creativecommons.org/licenses/by/4.0/" ;
                               dcterms:accessRights "public" ;
                               dcterms:bibliographicCitation <https://github.com/davide1797/OntoPFAS> ;
                               dcterms:contributor <https://orcid.org/0000-0002-8081-3292> ;
@@ -55,14 +53,6 @@ obo:IAO_0000114 rdf:type owl:AnnotationProperty .
 obo:IAO_0000115 rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/elements/1.1/license
-dc:license rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/type
-dc:type rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/accessRights
 dcterms:accessRights rdf:type owl:AnnotationProperty .
 
@@ -92,7 +82,8 @@ dcterms:rights rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
+dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:range <http://www.w3.org/ns/dcat#Dataset> .
 
 
 ###  http://purl.org/dc/terms/title
@@ -371,14 +362,10 @@ obo:SCDO_1000202 rdf:type owl:ObjectProperty ;
                  skos:definition "A relationship between a condition (a phenotype or disease) and an entity (e.g. environment) or condition (phenotype or disease) which could be an existing condition or an event, where the entity or second condition has a causal role for the condition being described." .
 
 
-###  http://purl.org/dc/elements/1.1/source
-dc:source rdf:type owl:ObjectProperty ;
-          owl:inverseOf ontopfas:sourceOf ;
-          rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
-          rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
-          rdfs:comment "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system." ;
-          rdfs:label "source" ;
-          skos:definition "A related resource from which the described resource is derived." .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:ObjectProperty ;
+               owl:inverseOf ontopfas:sourceOf ;
+               rdfs:domain <http://www.w3.org/ns/sosa/Observation> .
 
 
 ###  http://semanticscience.org/resource/SIO_000655
@@ -526,6 +513,9 @@ ontopfas:environmentSubjectTo rdf:type owl:ObjectProperty ;
 ontopfas:exposureStimulusOf rdf:type owl:ObjectProperty ;
                             rdfs:domain obo:ExO_0000022 ;
                             rdfs:range schema:Person ;
+                            owl:propertyChainAxiom ( ontopfas:affects
+                                                     obo:RO_0001015
+                                                   ) ;
                             rdfs:label "exposure stimulus of" ;
                             owl:versionInfo 1.0 ;
                             skos:definition "A relationship between an exposure event or process and any agent, stimulus, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event." .
@@ -991,7 +981,7 @@ ontopfas:type rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/OntoPFAS#unit
 ontopfas:unit rdf:type owl:DatatypeProperty ;
               rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
-              rdfs:range xsd:string ;
+              rdfs:range xsd:decimal ;
               rdfs:label "unit" ;
               owl:versionInfo 1.0 ;
               skos:definition "Scale of a value, e.g. 1000 for kilo or 0.001 for mili." .
@@ -1449,10 +1439,12 @@ ontopfas:LongChainPfas rdf:type owl:Class ;
                        owl:equivalentClass [ rdf:type owl:Class ;
                                              owl:unionOf ( [ owl:intersectionOf ( ontopfas:Pfca
                                                                                   [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty obo:BFO_0000050 ;
-                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty ontopfas:numberOfCarbons ;
-                                                                                                         owl:minCardinality "8"^^xsd:nonNegativeInteger
+                                                                                    owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                         owl:onDatatype xsd:nonNegativeInteger ;
+                                                                                                         owl:withRestrictions ( [ xsd:minExclusive "7"^^xsd:nonNegativeInteger
+                                                                                                                                ]
+                                                                                                                              )
                                                                                                        ]
                                                                                   ]
                                                                                 ) ;
@@ -1460,10 +1452,12 @@ ontopfas:LongChainPfas rdf:type owl:Class ;
                                                            ]
                                                            [ owl:intersectionOf ( ontopfas:Pfsa
                                                                                   [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty obo:BFO_0000050 ;
-                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty ontopfas:numberOfCarbons ;
-                                                                                                         owl:minCardinality "6"^^xsd:nonNegativeInteger
+                                                                                    owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                         owl:onDatatype xsd:nonNegativeInteger ;
+                                                                                                         owl:withRestrictions ( [ xsd:minExclusive "5"^^xsd:nonNegativeInteger
+                                                                                                                                ]
+                                                                                                                              )
                                                                                                        ]
                                                                                   ]
                                                                                 ) ;
@@ -1566,10 +1560,12 @@ ontopfas:ShortChainPfas rdf:type owl:Class ;
                         owl:equivalentClass [ rdf:type owl:Class ;
                                               owl:unionOf ( [ owl:intersectionOf ( ontopfas:Pfca
                                                                                    [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty obo:BFO_0000050 ;
-                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                          owl:onProperty ontopfas:numberOfCarbons ;
-                                                                                                          owl:maxCardinality "7"^^xsd:nonNegativeInteger
+                                                                                     owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                          owl:onDatatype xsd:nonNegativeInteger ;
+                                                                                                          owl:withRestrictions ( [ xsd:maxExclusive "8"^^xsd:nonNegativeInteger
+                                                                                                                                 ]
+                                                                                                                               )
                                                                                                         ]
                                                                                    ]
                                                                                  ) ;
@@ -1577,10 +1573,12 @@ ontopfas:ShortChainPfas rdf:type owl:Class ;
                                                             ]
                                                             [ owl:intersectionOf ( ontopfas:Pfsa
                                                                                    [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty obo:BFO_0000050 ;
-                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                          owl:onProperty ontopfas:numberOfCarbons ;
-                                                                                                          owl:maxCardinality "5"^^xsd:nonNegativeInteger
+                                                                                     owl:onProperty ontopfas:numberOfCarbons ;
+                                                                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                          owl:onDatatype xsd:nonNegativeInteger ;
+                                                                                                          owl:withRestrictions ( [ xsd:maxExclusive "6"^^xsd:nonNegativeInteger
+                                                                                                                                 ]
+                                                                                                                               )
                                                                                                         ]
                                                                                    ]
                                                                                  ) ;
@@ -1602,10 +1600,12 @@ ontopfas:UltraShortChainPfas rdf:type owl:Class ;
                                                                                       )
                                                                         ]
                                                                         [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty obo:BFO_0000050 ;
-                                                                          owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                                               owl:onProperty ontopfas:numberOfCarbons ;
-                                                                                               owl:maxCardinality "3"^^xsd:nonNegativeInteger
+                                                                          owl:onProperty ontopfas:numberOfCarbons ;
+                                                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                               owl:onDatatype xsd:nonNegativeInteger ;
+                                                                                               owl:withRestrictions ( [ xsd:maxExclusive "4"^^xsd:nonNegativeInteger
+                                                                                                                      ]
+                                                                                                                    )
                                                                                              ]
                                                                         ]
                                                                       ) ;
@@ -1640,11 +1640,12 @@ ontopfas:VulnerablePerson rdf:type owl:Class ;
 
 
 #################################################################
-#    Individuals
+#    Annotations
 #################################################################
 
-###  https://w3id.org/OntoPFAS#a
-ontopfas:a rdf:type owl:NamedIndividual .
+dcterms:source rdfs:comment "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system." ;
+               rdfs:label "source" ;
+               skos:definition "A related resource from which the described resource is derived." .
 
 
 #################################################################
