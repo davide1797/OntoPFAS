@@ -82,6 +82,6 @@ This ratio indicates the balance between conceptual entities (classes) and their
 | ChEBI    |           0.000000 |                   NA |              0.000026 |             0.587754 |
 | PKO      |           0.810811 |             0.324324 |              0.851852 |             0.456790 |
 | COVIDO   |           0.587156 |             0.834862 |              0.340580 |             0.789855 
-| OntoPFAS |           0.761905 |             0.738095 |              0.655556 |             0.466667 |
+| OntoPFAS |           0.738095 |             0.738095 |              0.666667 |             0.451613 |
 
 **Note:** For *ChEBI*, Inheritance Richness is reported as *NA* because the computation required much computational power.
