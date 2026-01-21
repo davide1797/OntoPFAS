@@ -2,14 +2,14 @@
 
 This document explains four common **ontometrics** used to characterize the structural properties of ontologies, and then reports their values for several example ontologies.
 
----
-
 ## 1. Attribute Richness (AR)
 
 **Formula**
-\[
-\text{Attribute Richness} = \frac{\text{Number of attributes (data properties)}}{\text{Number of classes}}
-\]
+$`
+\text{AR} = \frac{\text{ATT}}{\text{C}}
+`$
+
+ It is computed as the number attributes for all classes (ATT) divided by the number of classes (C). 
 
 **Meaning**
 Attribute Richness measures how much *descriptive information* is attached to classes. A higher value indicates that classes are richly described with data properties (e.g., labels, measurements, identifiers, annotations).
@@ -20,14 +20,14 @@ Attribute Richness measures how much *descriptive information* is attached to cl
 * The ontology may rely almost exclusively on class hierarchies rather than detailed class descriptions.
 * Reduced usefulness for data annotation and instance-level reasoning.
 
----
-
 ## 2. Inheritance Richness (IR)
 
 **Formula**
-[
-\text{Inheritance Richness} = \frac{\text{Number of subclass relations}}{\text{Number of classes}}
-]
+$`
+\text{IR} = \frac{\sum_{C_i \in C}{|H^C(C_1, C_i)|}}{\text{C}}
+`$
+
+The inheritance richness of the schema (IR) is defined as the average number of subclasses per class. The number of subclasses of a class is defined as |$`H^C(C_1,C_i)`$|. H is the number of inheritance relationships. 
 
 **Meaning**
 Inheritance Richness reflects how classes are organized into a hierarchy. High values indicate deep or broad taxonomies, while low values suggest a flatter structure.
@@ -38,14 +38,14 @@ Inheritance Richness reflects how classes are organized into a hierarchy. High v
 * Poor support for reasoning based on subsumption.
 * Ontology may behave more like a controlled vocabulary than a taxonomy.
 
----
-
 ## 3. Relationship Richness (RR)
 
 **Formula**
-[
-\text{Relationship Richness} = \frac{\text{Number of non-inheritance relationships}}{\text{Total number of relationships}}
-]
+$`
+\text{RR} = \frac{\text{|P|}}{\text{|H| + |P|}}
+`$
+
+The relationship richness (RR) of a schema is defined as the ratio of the number of (non-inheritance) relationships (P), divided by the total number of relationships defined in the schema (the sum of the number of inheritance relationships (H) and non-inheritance relationships (P)). 
 
 **Meaning**
 Relationship Richness measures the diversity of semantic relations beyond simple *is-a* links (e.g., part-of, regulates, causes). Higher values indicate richer semantic modeling.
@@ -56,14 +56,12 @@ Relationship Richness measures the diversity of semantic relations beyond simple
 * Limited ability to represent complex domain interactions.
 * Reduced expressiveness for querying and reasoning.
 
----
-
 ## 4. Class / Relation Ratio (CRR)
 
 **Formula**
-[
+$`
 \text{Class/Relation Ratio} = \frac{\text{Number of classes}}{\text{Number of relationships}}
-]
+`$
 
 **Meaning**
 This ratio indicates the balance between conceptual entities (classes) and their connections (relations). Lower values imply a more highly connected ontology.
@@ -74,7 +72,6 @@ This ratio indicates the balance between conceptual entities (classes) and their
 * Limited semantic integration.
 * Harder to exploit graph-based reasoning or traversal.
 
----
 
 ## Ontometrics Comparison Table
 
