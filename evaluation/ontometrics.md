@@ -7,9 +7,9 @@ This document explains four common **ontometrics** used to characterize the stru
 ## 1. Attribute Richness (AR)
 
 **Formula**
-[
+\[
 \text{Attribute Richness} = \frac{\text{Number of attributes (data properties)}}{\text{Number of classes}}
-]
+\]
 
 **Meaning**
 Attribute Richness measures how much *descriptive information* is attached to classes. A higher value indicates that classes are richly described with data properties (e.g., labels, measurements, identifiers, annotations).
