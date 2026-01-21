@@ -408,14 +408,14 @@ td {
             <dt>
               <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">Preferred Namespace Prefix</a>
             </dt>
-            <dd><p>OntoPFAS</p></dd>
+            <dd><p>ontopfas</p></dd>
           </div>
           <div>
             <dt>
               <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
             </dt>
             <dd>
-              <a href="https://w3id.org/OntoPFAS/">https://w3id.org/OntoPFAS/</a>
+              <a href="https://w3id.orgOntoPFAS/">https://w3id.orgOntoPFAS/</a>
             </dd>
           </div>
           <div>
@@ -1399,7 +1399,7 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="http://purl.org/dc/elements/1.1/source">source</a>
+                      <a href="http://purl.org/dc/terms/source">Source</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1447,7 +1447,7 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="http://purl.org/dc/elements/1.1/source">source</a>
+                      <a href="http://purl.org/dc/terms/source">Source</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -3829,7 +3829,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://purl.org/dc/elements/1.1/source</code>
+                <code>http://purl.org/dc/terms/source</code>
               </td>
             </tr>
             <tr>
@@ -6569,7 +6569,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+                <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a>
               </td>
             </tr>
           </table>
@@ -6717,32 +6717,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="license">
-          <h3>license
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://purl.org/dc/elements/1.1/license</code>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="type1">
-          <h3>type
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://purl.org/dc/elements/1.1/type</code>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="accessRights">
           <h3>access rights
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
@@ -6808,7 +6782,7 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="license1">
+        <div class="property entity" id="license">
           <h3>license
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
           </h3>
@@ -6834,7 +6808,7 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="source1">
+        <div class="property entity" id="source">
           <h3>source
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
           </h3>
@@ -6843,6 +6817,39 @@ td {
               <th>IRI</th>
               <td>
                 <code>http://purl.org/dc/terms/source</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</p></li>
+                  <li><p>A related resource from which the described resource is derived.</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/ns/sosa/Observation">Observation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/ns/dcat#Dataset">Conjunto de datos</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
@@ -6895,19 +6902,6 @@ td {
               <th>IRI</th>
               <td>
                 <code>http://purl.org/vocab/vann/preferredNamespaceUri</code>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="isRuleEnabled">
-          <h3>is rule enabled
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled</code>
               </td>
             </tr>
           </table>
@@ -7215,9 +7209,9 @@ td {
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id="dc">dc</dt>
+          <dt id=":">:</dt>
           <dd>
-            <code>http://purl.org/dc/elements/1.1/</code>
+            <code>https://w3id.org/OntoPFAS#</code>
           </dd>
           <dt id="dcterms">dcterms</dt>
           <dd>
@@ -7235,13 +7229,21 @@ td {
           <dd>
             <code>http://www.geneontology.org/formats/oboInOwl#</code>
           </dd>
-          <dt id="ontopfas">ontopfas</dt>
+          <dt id="odrl">odrl</dt>
           <dd>
-            <code>https://w3id.org/OntoPFAS#</code>
+            <code>http://www.w3.org/ns/odrl/2/</code>
           </dd>
           <dt id="owl">owl</dt>
           <dd>
             <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="pav">pav</dt>
+          <dd>
+            <code>http://purl.org/pav/</code>
+          </dd>
+          <dt id="prov">prov</dt>
+          <dd>
+            <code>http://www.w3.org/ns/prov#</code>
           </dd>
           <dt id="rdf">rdf</dt>
           <dd>
@@ -7258,14 +7260,6 @@ td {
           <dt id="skos">skos</dt>
           <dd>
             <code>http://www.w3.org/2004/02/skos/core#</code>
-          </dd>
-          <dt id="swrl">swrl</dt>
-          <dd>
-            <code>http://www.w3.org/2003/11/swrl#</code>
-          </dd>
-          <dt id="swrla">swrla</dt>
-          <dd>
-            <code>http://swrl.stanford.edu/ontologies/3.3/swrla.owl#</code>
           </dd>
           <dt id="vann">vann</dt>
           <dd>
@@ -7745,12 +7739,6 @@ td {
               <a href="#IAO_0000115">Iao_0000115</a>
             </li>
             <li>
-              <a href="#license">license</a>
-            </li>
-            <li>
-              <a href="#type1">type</a>
-            </li>
-            <li>
               <a href="#accessRights">access rights</a>
             </li>
             <li>
@@ -7766,13 +7754,13 @@ td {
               <a href="#issued">issued</a>
             </li>
             <li>
-              <a href="#license1">license</a>
+              <a href="#license">license</a>
             </li>
             <li>
               <a href="#rights">rights</a>
             </li>
             <li>
-              <a href="#source1">source</a>
+              <a href="#source">source</a>
             </li>
             <li>
               <a href="#title1">title</a>
@@ -7785,9 +7773,6 @@ td {
             </li>
             <li>
               <a href="#preferredNamespaceUri">preferred namespace uri</a>
-            </li>
-            <li>
-              <a href="#isRuleEnabled">is rule enabled</a>
             </li>
             <li>
               <a href="#created_by">created_by</a>
@@ -7866,7 +7851,7 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#dc">dc</a>
+              <a href="#"></a>
             </li>
             <li>
               <a href="#dcterms">dcterms</a>
@@ -7881,10 +7866,16 @@ td {
               <a href="#oboInOwl">oboInOwl</a>
             </li>
             <li>
-              <a href="#ontopfas">ontopfas</a>
+              <a href="#odrl">odrl</a>
             </li>
             <li>
               <a href="#owl">owl</a>
+            </li>
+            <li>
+              <a href="#pav">pav</a>
+            </li>
+            <li>
+              <a href="#prov">prov</a>
             </li>
             <li>
               <a href="#rdf">rdf</a>
@@ -7897,12 +7888,6 @@ td {
             </li>
             <li>
               <a href="#skos">skos</a>
-            </li>
-            <li>
-              <a href="#swrl">swrl</a>
-            </li>
-            <li>
-              <a href="#swrla">swrla</a>
             </li>
             <li>
               <a href="#vann">vann</a>
