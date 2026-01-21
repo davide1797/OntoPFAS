@@ -9,7 +9,7 @@ $`
 \text{AR} = \frac{\text{ATT}}{\text{C}}
 `$
 
- It is computed as the number attributes for all classes (ATT) divided by the number of classes (C). 
+ It is computed as the number of attributes for all classes (ATT) divided by the number of classes (C). 
 
 **Meaning**
 Attribute Richness measures how much *descriptive information* is attached to classes. A higher value indicates that classes are richly described with data properties (e.g., labels, measurements, identifiers, annotations).
