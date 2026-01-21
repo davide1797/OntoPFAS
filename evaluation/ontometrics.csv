@@ -1,6 +1,6 @@
 Metric,Value
-Axioms,877
-Logical axioms count,247
+Axioms,878
+Logical axioms count,248
 Class count,42
 Total classes count,42
 Object property count,56
@@ -12,7 +12,7 @@ DL expressivity,SRI(D)
 SubClassOf axioms count,31
 SubObjectPropertyOf axioms count,3
 Inverse object properties axioms count,27
-Transitive object property axioms count,3
+Transitive object property axioms count,5
 Symmetric object property axioms count,2
 Object property domain axioms count,56
 Object property range axioms count,56
@@ -24,6 +24,6 @@ Inheritance richness:,0.738095
 Relationship richness:,0.666667
 Attribute class ratio:,0
 Equivalence ratio:,0.071429
-Axiom/class ratio:,20.880952
+Axiom/class ratio:,20.904762
 Inverse relations ratio:,0.482143
 Class/relation ratio:,0.451613
