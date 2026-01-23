@@ -317,8 +317,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.allotrope.org/ontologies/property#AFX_0001048">
         <owl:inverseOf rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0001049"/>
-        <rdfs:domain rdf:resource="https://schema.org/Product"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoPFAS#Pfas"/>
         <rdfs:label>contains</rdfs:label>
         <skos:definition>The relation between a container and its physical content. A material entity a contains a material entity b if b is located in some cavity of a.</skos:definition>
     </owl:ObjectProperty>
@@ -359,8 +357,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-        <rdfs:domain rdf:resource="https://schema.org/Place"/>
-        <rdfs:range rdf:resource="https://schema.org/Organization"/>
         <rdfs:label>location of</rdfs:label>
         <skos:definition>A relation between two independent continuants, the target and the location, in which the target is entirely within the location.</skos:definition>
     </owl:ObjectProperty>
@@ -817,7 +813,7 @@
         <rdfs:range rdf:resource="https://schema.org/Person"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/OntoPFAS#affects"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001015"/>
+            <rdf:Description rdf:about="https://w3id.org/OntoPFAS#homeLocationOf"/>
         </owl:propertyChainAxiom>
         <rdfs:label>exposure stimulus of</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>

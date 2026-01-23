@@ -213,8 +213,6 @@ xsd:datetime rdf:type rdfs:Datatype .
 ###  http://purl.allotrope.org/ontologies/property#AFX_0001048
 <http://purl.allotrope.org/ontologies/property#AFX_0001048> rdf:type owl:ObjectProperty ;
                                                             owl:inverseOf <http://purl.allotrope.org/ontologies/property#AFX_0001049> ;
-                                                            rdfs:domain schema:Product ;
-                                                            rdfs:range ontopfas:Pfas ;
                                                             rdfs:label "contains" ;
                                                             skos:definition "The relation between a container and its physical content. A material entity a contains a material entity b if b is located in some cavity of a." .
 
@@ -243,8 +241,6 @@ obo:BFO_0000051 rdf:type owl:ObjectProperty ,
 ###  http://purl.obolibrary.org/obo/RO_0001015
 obo:RO_0001015 rdf:type owl:ObjectProperty ;
                owl:inverseOf obo:RO_0001025 ;
-               rdfs:domain schema:Place ;
-               rdfs:range schema:Organization ;
                rdfs:label "location of" ;
                skos:definition "A relation between two independent continuants, the target and the location, in which the target is entirely within the location." .
 
@@ -584,7 +580,7 @@ ontopfas:exposureStimulusOf rdf:type owl:ObjectProperty ;
                             rdfs:domain obo:ExO_0000022 ;
                             rdfs:range schema:Person ;
                             owl:propertyChainAxiom ( ontopfas:affects
-                                                     obo:RO_0001015
+                                                     ontopfas:homeLocationOf
                                                    ) ;
                             rdfs:label "exposure stimulus of" ;
                             owl:versionInfo 1.0 ;
