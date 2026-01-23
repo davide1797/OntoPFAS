@@ -1,6 +1,6 @@
 Metric,Value
-Axioms,1005
-Logical axioms count,288
+Axioms,1001
+Logical axioms count,284
 Class count,42
 Total classes count,42
 Object property count,79
@@ -14,16 +14,17 @@ SubObjectPropertyOf axioms count,24
 Inverse object properties axioms count,35
 Transitive object property axioms count,7
 Symmetric object property axioms count,3
-Object property domain axioms count,60
-Object property range axioms count,60
+Object property domain axioms count,58
+Object property range axioms count,58
+SubPropertyChainOf axioms count,1
 Data property domain axioms count,31
 Data property range axioms count,31
+Annotation axioms count,19
 Annotation assertion axioms count,527
 Attribute richness:,0.738095
 Inheritance richness:,0.714286
 Relationship richness:,0.73913
-Attribute class ratio:,0
 Equivalence ratio:,0.071429
-Axiom/class ratio:,23.928571
+Axiom/class ratio:,23.833333
 Inverse relations ratio:,0.443038
 Class/relation ratio:,0.365217
