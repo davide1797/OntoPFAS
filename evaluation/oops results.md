@@ -1,5 +1,14 @@
 # OOPS Results
 
+## Results for P04: Creating unconnected ontology elements (1 case). 
+
+Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.
+
+• This pitfall appears in the following elements:
+› http://purl.obolibrary.org/obo/ExO_0000003
+
+### Explanation: OOPS detects the classe as unconnected because it is not explicitly mentioned as the domain or range. In fact, it is connected through the property 'causes' for which the domain and range were not specified.  
+
 ## Results for P11: Missing domain or range in properties (20 cases). 
 
 Object and/or datatype properties without domain or range (or none of them) are included in the ontology.
@@ -7,7 +16,6 @@ Object and/or datatype properties without domain or range (or none of them) are 
 • This pitfall appears in the following elements:
 › http://purl.obolibrary.org/obo/SCDO_1000202
 › http://purl.obolibrary.org/obo/RO_0002219
-› http://www.w3.org/ns/prov#wasAttributedTo
 › http://purl.obolibrary.org/obo/RO_0003302
 › http://purl.allotrope.org/ontologies/property#AFX_0001048
 › http://purl.obolibrary.org/obo/RO_0002020
@@ -23,24 +31,18 @@ Object and/or datatype properties without domain or range (or none of them) are 
 › http://purl.org/dc/terms/source
 › http://purl.obolibrary.org/obo/RO_0001015
 › http://purl.obolibrary.org/obo/RO_0002309
+› http://semanticscience.org/resource/SIO_000652
 › http://purl.obolibrary.org/obo/RO_0002170
 › http://purl.obolibrary.org/obo/RO_0002494
 
-## Results for P13: Inverse relationships not explicitly declared (5 cases).
-
-This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.
-
-• This pitfall appears in the following elements:
-› http://purl.obolibrary.org/obo/RO_0002309
-› http://purl.org/dc/terms/source
-› http://www.w3.org/ns/prov#used
-› http://purl.obolibrary.org/obo/RO_0002020
-› http://www.w3.org/ns/prov#wasAttributedTo
+### Explanation: They are all imported concepts, and the idea of not specifying domain and range is quite common when the goal is to define higher levels of generalisations.
 
 ## Results for P22: Using different naming conventions in the ontology.
 
 The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as "-" or "_") . Some notions about naming conventions are provided in [2].
 
 *This pitfall applies to the ontology in general instead of specific elements.  
+
+### Explanation: Different naming conventions are present in the different ontologies we imported, and it is quite unavoidable in general. 
 
 
