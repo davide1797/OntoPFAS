@@ -221,8 +221,6 @@ xsd:datetime rdf:type rdfs:Datatype .
 
 ###  http://purl.allotrope.org/ontologies/property#AFX_0001049
 <http://purl.allotrope.org/ontologies/property#AFX_0001049> rdf:type owl:ObjectProperty ;
-                                                            rdfs:domain ontopfas:Pfas ;
-                                                            rdfs:range schema:Product ;
                                                             rdfs:label "contained in" ;
                                                             skos:definition "Inverse of contains." .
 
@@ -231,8 +229,6 @@ xsd:datetime rdf:type rdfs:Datatype .
 obo:BFO_0000050 rdf:type owl:ObjectProperty ;
                 owl:inverseOf obo:BFO_0000051 ;
                 rdf:type owl:TransitiveProperty ;
-                rdfs:domain obo:CHEBI_24431 ;
-                rdfs:range obo:CHEBI_24431 ;
                 rdfs:label "part of" ;
                 skos:definition "A core relation that holds between a part and its whole." .
 
@@ -240,8 +236,6 @@ obo:BFO_0000050 rdf:type owl:ObjectProperty ;
 ###  http://purl.obolibrary.org/obo/BFO_0000051
 obo:BFO_0000051 rdf:type owl:ObjectProperty ,
                          owl:TransitiveProperty ;
-                rdfs:domain obo:CHEBI_24431 ;
-                rdfs:range obo:CHEBI_24431 ;
                 rdfs:label "has part" ;
                 skos:definition "A core relation that holds between a part and its whole." .
 
@@ -257,17 +251,12 @@ obo:RO_0001015 rdf:type owl:ObjectProperty ;
 
 ###  http://purl.obolibrary.org/obo/RO_0001025
 obo:RO_0001025 rdf:type owl:ObjectProperty ;
-               rdfs:domain schema:Organization ;
-               rdfs:range schema:Place ;
                rdfs:label "located in" ;
                skos:definition "A relation between two independent continuants, the target and the location, in which the target is entirely within the location." .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002020
 obo:RO_0002020 rdf:type owl:ObjectProperty ;
-               owl:inverseOf ontopfas:transportedBy ;
-               rdfs:domain obo:PCO_0000031 ;
-               rdfs:range ontopfas:Pfas ;
                rdfs:label "transports" ;
                skos:definition "Holds between p and c when p is a transport process or transporter activity and the outcome of this p is to move c from one location to another." .
 
@@ -276,8 +265,6 @@ obo:RO_0002020 rdf:type owl:ObjectProperty ;
 obo:RO_0002170 rdf:type owl:ObjectProperty ,
                         owl:SymmetricProperty ,
                         owl:TransitiveProperty ;
-               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
-               rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
                rdfs:label "connected to" ;
                skos:definition "A is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b." .
 
@@ -285,25 +272,18 @@ obo:RO_0002170 rdf:type owl:ObjectProperty ,
 ###  http://purl.obolibrary.org/obo/RO_0002219
 obo:RO_0002219 rdf:type owl:ObjectProperty ;
                owl:inverseOf obo:RO_0002221 ;
-               rdfs:domain obo:ENVO_01000408 ;
-               rdfs:range obo:ENVO_01000408 ;
                rdfs:label "surrounded by" ;
                skos:definition "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x." .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002221
 obo:RO_0002221 rdf:type owl:ObjectProperty ;
-               rdfs:domain obo:ENVO_01000408 ;
-               rdfs:range obo:ENVO_01000408 ;
                rdfs:label "surrounds" ;
                skos:definition "inverse of surrounded by." .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002309
 obo:RO_0002309 rdf:type owl:ObjectProperty ;
-               owl:inverseOf ontopfas:exposureStimulusOf ;
-               rdfs:domain schema:Person ;
-               rdfs:range obo:ExO_0000022 ;
                rdfs:label "has exposure stimulus" ;
                skos:definition "A relationship between an exposure event or process and any agent, stimulus, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event." .
 
@@ -311,8 +291,6 @@ obo:RO_0002309 rdf:type owl:ObjectProperty ;
 ###  http://purl.obolibrary.org/obo/RO_0002494
 obo:RO_0002494 rdf:type owl:ObjectProperty ;
                owl:inverseOf <http://semanticscience.org/resource/SIO_000655> ;
-               rdfs:domain ontopfas:Pfaa ;
-               rdfs:range ontopfas:PfasPrecursor ;
                rdfs:label "transformation of" ;
                skos:definition "x transformation of y if x is the immediate transformation of y, or is linked to y through a chain of transformation relationships" .
 
@@ -320,8 +298,6 @@ obo:RO_0002494 rdf:type owl:ObjectProperty ;
 ###  http://purl.obolibrary.org/obo/RO_0003000
 obo:RO_0003000 rdf:type owl:ObjectProperty ;
                owl:inverseOf obo:RO_0003001 ;
-               rdfs:domain schema:Organization ;
-               rdfs:range schema:Product ;
                rdfs:comment "Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue." ;
                rdfs:label "produces" ;
                skos:definition "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." .
@@ -329,8 +305,6 @@ obo:RO_0003000 rdf:type owl:ObjectProperty ;
 
 ###  http://purl.obolibrary.org/obo/RO_0003001
 obo:RO_0003001 rdf:type owl:ObjectProperty ;
-               rdfs:domain schema:Product ;
-               rdfs:range schema:Organization ;
                rdfs:label "produced by" ;
                skos:definition "a produced_by b iff some process that occurs_in b has_output a." .
 
@@ -338,59 +312,35 @@ obo:RO_0003001 rdf:type owl:ObjectProperty ;
 ###  http://purl.obolibrary.org/obo/RO_0003302
 obo:RO_0003302 rdf:type owl:ObjectProperty ;
                owl:inverseOf obo:SCDO_1000202 ;
-               rdfs:domain obo:ExO_0000022 ;
-               rdfs:range obo:ExO_0000003 ;
                rdfs:comment "Genetic variations can span any level of granularity from a full genome or genotype to an individual gene or sequence alteration. These variations can be represented at the physical level (DNA/RNA macromolecules or their parts, as in the ChEBI ontology and Molecular Sequence Ontology) or at the abstract level (generically dependent continuant sequence features that are carried by these macromolecules, as in the Sequence Ontology and Genotype Ontology). The causal relations in this hierarchy can be used in linking either physical or abstract genetic variations to phenotypes or diseases they cause or contribute to. Environmental exposures include those imposed by natural environments, experimentally applied conditions, or clinical interventions." ;
                rdfs:label "causes" ;
                skos:definition "A relationship between an entity (e.g. a genotype, genetic variation, chemical, or environmental exposure) and a condition (a phenotype or disease), where the entity has some causal or contributing role that influences the condition." .
 
 
-###  http://purl.obolibrary.org/obo/RO_0017005
-obo:RO_0017005 rdf:type owl:ObjectProperty ;
-               owl:inverseOf ontopfas:measuredIn ;
-               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
-               rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
-               rdfs:label "contains measured amount" ;
-               skos:definition "A relation between a container and measurement datum that specifies the actual amount of material in the container." .
-
-
 ###  http://purl.obolibrary.org/obo/SCDO_1000202
 obo:SCDO_1000202 rdf:type owl:ObjectProperty ;
-                 rdfs:domain obo:ExO_0000003 ;
-                 rdfs:range obo:ExO_0000022 ;
                  rdfs:label "caused by" ;
                  skos:definition "A relationship between a condition (a phenotype or disease) and an entity (e.g. environment) or condition (phenotype or disease) which could be an existing condition or an event, where the entity or second condition has a causal role for the condition being described." .
 
 
 ###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:ObjectProperty ;
-               owl:inverseOf ontopfas:sourceOf ;
-               rdfs:domain <http://www.w3.org/ns/sosa/Observation> .
+dcterms:source rdf:type owl:ObjectProperty .
 
 
 ###  http://semanticscience.org/resource/SIO_000655
 <http://semanticscience.org/resource/SIO_000655> rdf:type owl:ObjectProperty ;
-                                                 rdfs:domain ontopfas:PfasPrecursor ;
-                                                 rdfs:range ontopfas:Pfaa ;
                                                  rdfs:label "transforms into" ;
                                                  skos:definition "A transitive temporal relation in which an entity mainstains identity from one state to another." .
 
 
 ###  http://www.w3.org/ns/prov#used
 prov:used rdf:type owl:ObjectProperty ;
-          owl:inverseOf ontopfas:usedBy ;
-          rdfs:domain schema:Organization ;
-          rdfs:range schema:Product ;
           rdfs:label "used" ;
-          owl:versionInfo 1.0 ;
-          skos:definition "Relation to indicate the use of a PFAS by an organization." .
+          skos:definition "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity." .
 
 
 ###  http://www.w3.org/ns/prov#wasAttributedTo
 prov:wasAttributedTo rdf:type owl:ObjectProperty ;
-                     owl:inverseOf ontopfas:attributesTo ;
-                     rdfs:domain schema:Organization ;
-                     rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
                      rdfs:label "was attributed to" ;
                      skos:definition "Attribution is the ascribing of an entity to an agent." .
 
@@ -398,6 +348,7 @@ prov:wasAttributedTo rdf:type owl:ObjectProperty ;
 ###  https://schema.org/containedInPlace
 schema:containedInPlace rdf:type owl:ObjectProperty ;
                         owl:inverseOf schema:containsPlace ;
+                        rdf:type owl:TransitiveProperty ;
                         rdfs:domain schema:Place ;
                         rdfs:range schema:Place ;
                         rdfs:label "contained in place" ;
@@ -405,7 +356,8 @@ schema:containedInPlace rdf:type owl:ObjectProperty ;
 
 
 ###  https://schema.org/containsPlace
-schema:containsPlace rdf:type owl:ObjectProperty ;
+schema:containsPlace rdf:type owl:ObjectProperty ,
+                              owl:TransitiveProperty ;
                      rdfs:domain schema:Place ;
                      rdfs:range schema:Place ;
                      rdfs:label "contains place" ;
@@ -431,6 +383,17 @@ ontopfas:actiivtyInEnvironment rdf:type owl:ObjectProperty ;
                                skos:definition "Relationship describing the environment surrounding an activity." .
 
 
+###  https://w3id.org/OntoPFAS#activityInPlace
+ontopfas:activityInPlace rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf obo:RO_0001025 ;
+                         owl:inverseOf ontopfas:containsActivity ;
+                         rdfs:domain schema:Organization ;
+                         rdfs:range schema:Place ;
+                         rdfs:label "activity in place" ;
+                         owl:versionInfo 1.0 ;
+                         skos:definition "A relation between two independent continuants, the activity and the location, in which the target is entirely within the location." .
+
+
 ###  https://w3id.org/OntoPFAS#affectedBy
 ontopfas:affectedBy rdf:type owl:ObjectProperty ;
                     owl:inverseOf ontopfas:affects ;
@@ -452,6 +415,7 @@ ontopfas:affects rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/OntoPFAS#attributesTo
 ontopfas:attributesTo rdf:type owl:ObjectProperty ;
+                      owl:inverseOf ontopfas:wasAttributedTo ;
                       rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
                       rdfs:range schema:Organization ;
                       rdfs:label "attributes to" ;
@@ -459,15 +423,110 @@ ontopfas:attributesTo rdf:type owl:ObjectProperty ;
                       skos:definition "Attribution is the ascribing of an entity to an agent." .
 
 
-###  https://w3id.org/OntoPFAS#directlyConnectedTo
-ontopfas:directlyConnectedTo rdf:type owl:ObjectProperty ;
+###  https://w3id.org/OntoPFAS#causedByExposure
+ontopfas:causedByExposure rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf obo:SCDO_1000202 ;
+                          owl:inverseOf ontopfas:causesOutcome ;
+                          rdfs:domain obo:ExO_0000003 ;
+                          rdfs:range obo:ExO_0000022 ;
+                          rdfs:label "caused by exposure" ;
+                          owl:versionInfo 1.0 ;
+                          skos:definition "A relationship between a condition (a phenotype or disease) and an entity (e.g. environment) or condition (phenotype or disease) which could be an existing condition or an event, where the entity or second condition has a causal role for the condition being described." .
+
+
+###  https://w3id.org/OntoPFAS#causesOutcome
+ontopfas:causesOutcome rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf obo:RO_0003302 ;
+                       rdfs:domain obo:ExO_0000022 ;
+                       rdfs:range obo:ExO_0000003 ;
+                       rdfs:label "causes outcome" ;
+                       owl:versionInfo 1.0 ;
+                       skos:definition "A relationship between an entity (e.g. a genotype, genetic variation, chemical, or environmental exposure) and a condition (a phenotype or disease), where the entity has some causal or contributing role that influences the condition." .
+
+
+###  https://w3id.org/OntoPFAS#chemicalPartOf
+ontopfas:chemicalPartOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf obo:BFO_0000050 ;
+                        owl:inverseOf ontopfas:hasChemicalEntity ;
+                        rdfs:domain obo:CHEBI_24431 ;
+                        rdfs:range obo:CHEBI_24431 ;
+                        rdfs:label "chemical part of" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "A core relation that holds between a chemical part and its whole." .
+
+
+###  https://w3id.org/OntoPFAS#connectedToLocation
+ontopfas:connectedToLocation rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf obo:RO_0002170 ;
-                             rdf:type owl:SymmetricProperty ;
+                             rdf:type owl:SymmetricProperty ,
+                                      owl:TransitiveProperty ;
                              rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
                              rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
-                             rdfs:label "directly connected to" ;
+                             rdfs:label "connected to location" ;
                              owl:versionInfo 1.0 ;
-                             skos:definition "A is connected to b if and only if a and b are adjacent structures." .
+                             skos:definition "A is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b." .
+
+
+###  https://w3id.org/OntoPFAS#containedInProduct
+ontopfas:containedInProduct rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf <http://purl.allotrope.org/ontologies/property#AFX_0001049> ;
+                            owl:inverseOf ontopfas:containsPfas ;
+                            rdfs:domain ontopfas:Pfas ;
+                            rdfs:range schema:Product ;
+                            rdfs:label "contained in product" ;
+                            owl:versionInfo 1.0 ;
+                            skos:definition "Inverse of contains." .
+
+
+###  https://w3id.org/OntoPFAS#containsActivity
+ontopfas:containsActivity rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf obo:RO_0001015 ;
+                          rdfs:domain schema:Place ;
+                          rdfs:range schema:Organization ;
+                          rdfs:label "contains activity" ;
+                          owl:versionInfo 1.0 ;
+                          skos:definition "Inverse of location in environment." .
+
+
+###  https://w3id.org/OntoPFAS#containsLocation
+ontopfas:containsLocation rdf:type owl:ObjectProperty ;
+                          owl:inverseOf ontopfas:locationInPlace ;
+                          rdfs:domain schema:Place ;
+                          rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                          rdfs:label "contains location" ;
+                          owl:versionInfo 1.0 ;
+                          skos:definition "A relation indicating the geographical presence of a location within an area." .
+
+
+###  https://w3id.org/OntoPFAS#containsMeasurement
+ontopfas:containsMeasurement rdf:type owl:ObjectProperty ;
+                             owl:inverseOf ontopfas:measuredIn ;
+                             rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                             rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
+                             rdfs:label "contains measurement" ;
+                             owl:versionInfo 1.0 ;
+                             skos:definition "A relation between a location and a PFAS measurement." .
+
+
+###  https://w3id.org/OntoPFAS#containsPfas
+ontopfas:containsPfas rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <http://purl.allotrope.org/ontologies/property#AFX_0001048> ;
+                      rdfs:domain schema:Product ;
+                      rdfs:range ontopfas:Pfas ;
+                      rdfs:label "contains pfas" ;
+                      owl:versionInfo 1.0 ;
+                      skos:definition "The relation between a container and its physical content. A material entity a contains a material entity b if b is located in some cavity of a." .
+
+
+###  https://w3id.org/OntoPFAS#directlyConnectedToLocation
+ontopfas:directlyConnectedToLocation rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf obo:RO_0002170 ;
+                                     rdf:type owl:SymmetricProperty ;
+                                     rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                                     rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                                     rdfs:label "directly connected to location" ;
+                                     owl:versionInfo 1.0 ;
+                                     skos:definition "A is connected to b if and only if a and b are adjacent structures." .
 
 
 ###  https://w3id.org/OntoPFAS#environmentOfActivity
@@ -509,6 +568,17 @@ ontopfas:environmentSubjectTo rdf:type owl:ObjectProperty ;
                               skos:definition "Relation identifying the validity of a guideline in an environment." .
 
 
+###  https://w3id.org/OntoPFAS#exposedTo
+ontopfas:exposedTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf obo:RO_0002309 ;
+                   owl:inverseOf ontopfas:exposureStimulusOf ;
+                   rdfs:domain schema:Person ;
+                   rdfs:range obo:ExO_0000022 ;
+                   rdfs:label "exposed to" ;
+                   owl:versionInfo 1.0 ;
+                   skos:definition "Inverse of exposure stimulus of." .
+
+
 ###  https://w3id.org/OntoPFAS#exposureStimulusOf
 ontopfas:exposureStimulusOf rdf:type owl:ObjectProperty ;
                             rdfs:domain obo:ExO_0000022 ;
@@ -523,7 +593,7 @@ ontopfas:exposureStimulusOf rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/OntoPFAS#functionalGroup
 ontopfas:functionalGroup rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf obo:BFO_0000050 ;
+                         rdfs:subPropertyOf ontopfas:chemicalPartOf ;
                          owl:inverseOf ontopfas:functionalGroupOf ;
                          rdfs:domain ontopfas:Pfas ;
                          rdfs:range ontopfas:FunctionalGroup ;
@@ -534,12 +604,23 @@ ontopfas:functionalGroup rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/OntoPFAS#functionalGroupOf
 ontopfas:functionalGroupOf rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf obo:BFO_0000051 ;
+                           rdfs:subPropertyOf ontopfas:hasChemicalEntity ;
                            rdfs:domain ontopfas:FunctionalGroup ;
                            rdfs:range ontopfas:Pfas ;
                            rdfs:label "functional group of" ;
                            owl:versionInfo 1.0 ;
                            skos:definition "Property to express the functional group of a PFAS." .
+
+
+###  https://w3id.org/OntoPFAS#hasChemicalEntity
+ontopfas:hasChemicalEntity rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf obo:BFO_0000051 ;
+                           rdf:type owl:TransitiveProperty ;
+                           rdfs:domain obo:CHEBI_24431 ;
+                           rdfs:range obo:CHEBI_24431 ;
+                           rdfs:label "has chemical entity" ;
+                           owl:versionInfo 1.0 ;
+                           skos:definition "A relation that holds between a part of a chemical entity and its whole." .
 
 
 ###  https://w3id.org/OntoPFAS#homeLocationOf
@@ -558,6 +639,15 @@ ontopfas:locationInEnvironment rdf:type owl:ObjectProperty ;
                                rdfs:label "location in environment" ;
                                owl:versionInfo 1.0 ;
                                skos:definition "Relation to indicate in which environment the location is present." .
+
+
+###  https://w3id.org/OntoPFAS#locationInPlace
+ontopfas:locationInPlace rdf:type owl:ObjectProperty ;
+                         rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                         rdfs:range schema:Place ;
+                         rdfs:label "location in place" ;
+                         owl:versionInfo 1.0 ;
+                         skos:definition "Inverse of contains location." .
 
 
 ###  https://w3id.org/OntoPFAS#matrix
@@ -626,6 +716,17 @@ ontopfas:mobilityOf rdf:type owl:ObjectProperty ;
                     skos:definition "Relation identifying the level of mobility of a PFAS." .
 
 
+###  https://w3id.org/OntoPFAS#observationSource
+ontopfas:observationSource rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf dcterms:source ;
+                           owl:inverseOf ontopfas:sourceOfObservation ;
+                           rdfs:domain <http://www.w3.org/ns/sosa/Observation> ;
+                           rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                           rdfs:label "observation source" ;
+                           owl:versionInfo 1.0 ;
+                           skos:definition "A related resource from which the described observation comes from." .
+
+
 ###  https://w3id.org/OntoPFAS#pfasMeasuredIn
 ontopfas:pfasMeasuredIn rdf:type owl:ObjectProperty ;
                         rdfs:domain ontopfas:Pfas ;
@@ -643,6 +744,27 @@ ontopfas:placeSubjectTo rdf:type owl:ObjectProperty ;
                         rdfs:label "place subject to" ;
                         owl:versionInfo 1.0 ;
                         skos:definition "Relation identifying the validity of a guideline in a continent." .
+
+
+###  https://w3id.org/OntoPFAS#producedByActivity
+ontopfas:producedByActivity rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf obo:RO_0003001 ;
+                            owl:inverseOf ontopfas:producesProduct ;
+                            rdfs:domain schema:Product ;
+                            rdfs:range schema:Organization ;
+                            rdfs:label "produced by activity" ;
+                            owl:versionInfo 1.0 ;
+                            skos:definition "a produced_by_activity b iff some process that occurs_in b has_output a." .
+
+
+###  https://w3id.org/OntoPFAS#producesProduct
+ontopfas:producesProduct rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf obo:RO_0003000 ;
+                         rdfs:domain schema:Organization ;
+                         rdfs:range schema:Product ;
+                         rdfs:label "produces product" ;
+                         owl:versionInfo 1.0 ;
+                         skos:definition "a produces b if some process that occurs_in a has_output b, where a and b are activity and product." .
 
 
 ###  https://w3id.org/OntoPFAS#restrictedBy
@@ -664,14 +786,14 @@ ontopfas:restricts rdf:type owl:ObjectProperty ;
                    skos:definition "Relation identifying the restriction of a guideline to a PFAS." .
 
 
-###  https://w3id.org/OntoPFAS#sourceOf
-ontopfas:sourceOf rdf:type owl:ObjectProperty ;
-                  rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
-                  rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
-                  rdfs:comment "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system." ;
-                  rdfs:label "source of" ;
-                  owl:versionInfo 1.0 ;
-                  skos:definition "A related resource from which the described resource is derived." .
+###  https://w3id.org/OntoPFAS#sourceOfObservation
+ontopfas:sourceOfObservation rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+                             rdfs:range <http://www.w3.org/ns/sosa/Observation> ;
+                             rdfs:label "source of observation" ;
+                             owl:versionInfo 1.0 ;
+                             skos:definition "Inverse of observation source." .
 
 
 ###  https://w3id.org/OntoPFAS#stimulatedBy
@@ -693,8 +815,51 @@ ontopfas:stimulates rdf:type owl:ObjectProperty ;
                     skos:definition "Relation indicating what is the exposed PFAS." .
 
 
+###  https://w3id.org/OntoPFAS#surroundedByZone
+ontopfas:surroundedByZone rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf obo:RO_0002219 ;
+                          owl:inverseOf ontopfas:surroundsZone ;
+                          rdfs:domain obo:ENVO_01000408 ;
+                          rdfs:range obo:ENVO_01000408 ;
+                          rdfs:label "surrounded by zone" ;
+                          owl:versionInfo 1.0 ;
+                          skos:definition "x surrounded_by_zone y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x." .
+
+
+###  https://w3id.org/OntoPFAS#surroundsZone
+ontopfas:surroundsZone rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf obo:RO_0002221 ;
+                       rdfs:domain obo:ENVO_01000408 ;
+                       rdfs:range obo:ENVO_01000408 ;
+                       rdfs:label "surrounds zone" ;
+                       owl:versionInfo 1.0 ;
+                       skos:definition "Inverse of surrounded by zone." .
+
+
+###  https://w3id.org/OntoPFAS#transformationOfPrecursor
+ontopfas:transformationOfPrecursor rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf obo:RO_0002494 ;
+                                   owl:inverseOf ontopfas:transformsIntoPfas ;
+                                   rdfs:domain ontopfas:Pfaa ;
+                                   rdfs:range ontopfas:PfasPrecursor ;
+                                   rdfs:label "transformation of precursor" ;
+                                   owl:versionInfo 1.0 ;
+                                   skos:definition "x transformation of y if x is the immediate transformation of y, or is linked to y through a chain of transformation relationships" .
+
+
+###  https://w3id.org/OntoPFAS#transformsIntoPfas
+ontopfas:transformsIntoPfas rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000655> ;
+                            rdfs:domain ontopfas:PfasPrecursor ;
+                            rdfs:range ontopfas:Pfaa ;
+                            rdfs:label "transforms into pfas" ;
+                            owl:versionInfo 1.0 ;
+                            skos:definition "A transitive temporal relation in which an entity mainstains identity from one state to another." .
+
+
 ###  https://w3id.org/OntoPFAS#transportedBy
 ontopfas:transportedBy rdf:type owl:ObjectProperty ;
+                       owl:inverseOf ontopfas:transportsPfas ;
                        rdfs:domain ontopfas:Pfas ;
                        rdfs:range obo:PCO_0000031 ;
                        rdfs:label "transported by" ;
@@ -702,13 +867,34 @@ ontopfas:transportedBy rdf:type owl:ObjectProperty ;
                        skos:definition "Holds between p and c when p is a transport process or transporter activity and the outcome of this p is to move c from one location to another." .
 
 
-###  https://w3id.org/OntoPFAS#usedBy
-ontopfas:usedBy rdf:type owl:ObjectProperty ;
-                rdfs:domain schema:Product ;
-                rdfs:range schema:Organization ;
-                rdfs:label "used by" ;
-                owl:versionInfo 1.0 ;
-                skos:definition "Relation to indicate the use of a PFAS by an organization." .
+###  https://w3id.org/OntoPFAS#transportsPfas
+ontopfas:transportsPfas rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf obo:RO_0002020 ;
+                        rdfs:domain obo:PCO_0000031 ;
+                        rdfs:range ontopfas:Pfas ;
+                        rdfs:label "transports pfas" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "Holds between p and c when p is a transport process or transporter activity and the outcome of this p is to move c from one location to another." .
+
+
+###  https://w3id.org/OntoPFAS#usedByActivity
+ontopfas:usedByActivity rdf:type owl:ObjectProperty ;
+                        owl:inverseOf ontopfas:usedProduct ;
+                        rdfs:domain schema:Product ;
+                        rdfs:range schema:Organization ;
+                        rdfs:label "used by activity" ;
+                        owl:versionInfo 1.0 ;
+                        skos:definition "Relation to indicate the use of a PFAS by an organization." .
+
+
+###  https://w3id.org/OntoPFAS#usedProduct
+ontopfas:usedProduct rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf prov:used ;
+                     rdfs:domain schema:Organization ;
+                     rdfs:range schema:Product ;
+                     rdfs:label "used product" ;
+                     owl:versionInfo 1.0 ;
+                     skos:definition "Relation to indicate the use of a PFAS by an organization." .
 
 
 ###  https://w3id.org/OntoPFAS#validInEnvironment
@@ -727,6 +913,16 @@ ontopfas:validInPlace rdf:type owl:ObjectProperty ;
                       rdfs:comment "Relation identifying the validity of a guideline in a place." ;
                       rdfs:label "valid in place" ;
                       owl:versionInfo 1.0 .
+
+
+###  https://w3id.org/OntoPFAS#wasAttributedTo
+ontopfas:wasAttributedTo rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf prov:wasAttributedTo ;
+                         rdfs:domain schema:Organization ;
+                         rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                         rdfs:label "was attributed to dataset" ;
+                         owl:versionInfo 1.0 ;
+                         skos:definition "Attribution is the ascribing of an activity to a dataset." .
 
 
 #################################################################
@@ -1414,7 +1610,6 @@ schema:Person rdf:type owl:Class ;
 
 ###  https://schema.org/Place
 schema:Place rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
              rdfs:label "Place" ;
              skos:definition "Physical place (city, region, country, continent)." .
 
@@ -1647,44 +1842,5 @@ dcterms:source rdfs:comment "The described resource may be derived from the rela
                rdfs:label "source" ;
                skos:definition "A related resource from which the described resource is derived." .
 
-
-#################################################################
-#    Rules
-#################################################################
-
-<urn:absolute:ontopfas#person> rdf:type swrl:Variable .
-
-<urn:absolute:ontopfas#place> rdf:type swrl:Variable .
-
-<urn:absolute:ontopfas#stimulus> rdf:type swrl:Variable .
-
-[ swrla:isRuleEnabled "true"^^xsd:boolean ;
-   rdfs:comment "" ;
-   rdfs:label "ontopfas:exposureStimulusOf" ;
-   rdf:type swrl:Imp ;
-   swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate schema:homeLocation ;
-                           swrl:argument1 <urn:absolute:ontopfas#person> ;
-                           swrl:argument2 <urn:absolute:ontopfas#place>
-                         ] ;
-               rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                                      swrl:propertyPredicate ontopfas:affects ;
-                                      swrl:argument1 <urn:absolute:ontopfas#stimulus> ;
-                                      swrl:argument2 <urn:absolute:ontopfas#place>
-                                    ] ;
-                          rdf:rest rdf:nil
-                        ]
-             ] ;
-   swrl:head [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate ontopfas:exposureStimulusOf ;
-                           swrl:argument1 <urn:absolute:ontopfas#stimulus> ;
-                           swrl:argument2 <urn:absolute:ontopfas#person>
-                         ] ;
-               rdf:rest rdf:nil
-             ]
- ] .
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
