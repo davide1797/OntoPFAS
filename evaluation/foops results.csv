@@ -4,7 +4,7 @@ VER1: A version IRI is declared in the ontology metadata,0
 OM1: Ontology minimum metadata is declared,83
 F3: metadata clearly and explicitly include the identifier of the data it describes,100
 Accessible: No checks were run for this category (ontology code or file was submitted),/
-RDF1: Ontology is available in RDF (TTL, N3, RDF/XML or JSON-LD),100
+"RDF1: Ontology is available in RDF (TTL, N3, RDF/XML or JSON-LD)",100
 VOC1: Ontology reuses existing vocabularies for metadata annotations,100
 VOC2: Ontology imports or reuses well established vocabularies,100
 OM2: Ontology declares recommended metadata,100
