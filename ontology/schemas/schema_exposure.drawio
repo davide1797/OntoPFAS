@@ -93,7 +93,7 @@
             <mxPoint x="54" y="730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-uMTFL-2nARgWwCAiy3B-94" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;fillColor=#DAE8FC;strokeColor=#36393d;" value="schema: Person" vertex="1">
+        <mxCell id="-uMTFL-2nARgWwCAiy3B-94" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=14;fillColor=#FAD9D5;strokeColor=#AE4132;" value="schema: Person" vertex="1">
           <mxGeometry height="30" width="180" x="190" y="-30" as="geometry">
             <mxRectangle height="26" width="170" x="340" y="380" as="alternateBounds" />
           </mxGeometry>
