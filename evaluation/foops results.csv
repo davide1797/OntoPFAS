@@ -1,18 +1,18 @@
 Feature,Score (0-100)
 PURL1: Ontology has a persistent URL,100
-VER1: A version IRI is declared in the ontology metadata,100
+VER1: A version IRI is declared in the ontology metadata,0
 OM1: Ontology minimum metadata is declared,83
 F3: metadata clearly and explicitly include the identifier of the data it describes,100
 Accessible: No checks were run for this category (ontology code or file was submitted),/
-"RDF1: Ontology is available in RDF (TTL, N3, RDF/XML or JSON-LD) ",100
-VOC1: Ontology reuses existing vocabularies for metadata annotations ,100
-VOC2: Ontology imports or reuses well established vocabularies ,100
-OM2: Ontology declares recommended metadata ,75
-OM3: Ontology declares detailed metadata ,17
-VOC3: Ontology documentation: all terms have labels ,100
-VOC4: Ontology documentation: all terms have definitions ,100
-OM4_1: Ontology has a license available ,100
-OM4_2: Ontology license is resolvable ,100
-OM5_1: Ontology declares basic provenance metadata ,100
-OM5_2: Ontology declares detailed provenance metadata ,50
-Overall,88
+RDF1: Ontology is available in RDF (TTL, N3, RDF/XML or JSON-LD),100
+VOC1: Ontology reuses existing vocabularies for metadata annotations,100
+VOC2: Ontology imports or reuses well established vocabularies,100
+OM2: Ontology declares recommended metadata,100
+OM3: Ontology declares detailed metadata,67
+VOC3: Ontology documentation: all terms have labels,100
+VOC4: Ontology documentation: all terms have definitions,100
+OM4_1: Ontology has a license available,100
+OM4_2: Ontology license is resolvable,100
+OM5_1: Ontology declares basic provenance metadata,100
+OM5_2: Ontology declares detailed provenance metadata,100
+Overall,90
