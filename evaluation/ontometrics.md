@@ -77,11 +77,18 @@ This ratio indicates the balance between conceptual entities (classes) and their
 
 | Ontology  | Attribute Richness | Inheritance Richness | Relationship Richness | Class/Relation Ratio |
 | --------- | -----------------: | -------------------: | --------------------: | -------------------: |
-| ExO [1]   |           0.000000 |             0.776978 |              0.255172 |             0.958621 |
-| ENVO [2]  |           0.000142 |             1.663727 |              0.112528 |             0.533424 |
-| ChEBI [3] |           0.000000 |                   NA |              0.000026 |             0.587754 |
-| PKO [4]   |           0.810811 |             0.324324 |              0.851852 |             0.456790 |
-| COVIDO [5]|           0.587156 |             0.834862 |              0.340580 |             0.789855 |
+| ExO<sup>1</sup>   |           0.000000 |             0.776978 |              0.255172 |             0.958621 |
+| ENVO<sup>2</sup>  |           0.000142 |             1.663727 |              0.112528 |             0.533424 |
+| ChEBI<sup>3</sup> |           0.000000 |                   NA |              0.000026 |             0.587754 |
+| PKO<sup>4</sup>   |           0.810811 |             0.324324 |              0.851852 |             0.456790 |
+| COVIDO<sup>5</sup>|           0.587156 |             0.834862 |              0.340580 |             0.789855 |
 | OntoPFAS  |           0.738095 |             0.714286 |              0.739130 |             0.365217 |
 
 **Note:** For *ChEBI*, Inheritance Richness is reported as *NA* because the computation required much computational power.
+
+## 
+<sup>1</sup>https://bioportal.bioontology.org/ontologies/EXO
+<sup>2</sup>https://www.ebi.ac.uk/ols4/ontologies/envo
+<sup>3</sup>https://www.ebi.ac.uk/chebi/
+<sup>4</sup>https://github.com/perks-project/pk-ontology
+<sup>5</sup>https://dl.acm.org/doi/10.1007/s11227-023-05509-4
