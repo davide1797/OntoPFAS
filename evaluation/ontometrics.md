@@ -88,7 +88,11 @@ This ratio indicates the balance between conceptual entities (classes) and their
 
 ## 
 <sup>1</sup>https://bioportal.bioontology.org/ontologies/EXO
+
 <sup>2</sup>https://www.ebi.ac.uk/ols4/ontologies/envo
+
 <sup>3</sup>https://www.ebi.ac.uk/chebi/
+
 <sup>4</sup>https://github.com/perks-project/pk-ontology
+
 <sup>5</sup>https://dl.acm.org/doi/10.1007/s11227-023-05509-4
