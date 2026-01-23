@@ -1,6 +1,6 @@
 # OOPS Results
 
-## Results for P11: Missing domain or range in properties. 
+## Results for P11: Missing domain or range in properties (20 cases). 
 
 Object and/or datatype properties without domain or range (or none of them) are included in the ontology.
 
@@ -9,6 +9,7 @@ Object and/or datatype properties without domain or range (or none of them) are 
 › http://purl.obolibrary.org/obo/RO_0002219
 › http://www.w3.org/ns/prov#wasAttributedTo
 › http://purl.obolibrary.org/obo/RO_0003302
+› http://purl.allotrope.org/ontologies/property#AFX_0001048
 › http://purl.obolibrary.org/obo/RO_0002020
 › http://purl.obolibrary.org/obo/RO_0003001
 › http://purl.obolibrary.org/obo/RO_0002221
@@ -20,11 +21,12 @@ Object and/or datatype properties without domain or range (or none of them) are 
 › http://purl.allotrope.org/ontologies/property#AFX_0001049
 › http://purl.obolibrary.org/obo/RO_0001025
 › http://purl.org/dc/terms/source
+› http://purl.obolibrary.org/obo/RO_0001015
 › http://purl.obolibrary.org/obo/RO_0002309
 › http://purl.obolibrary.org/obo/RO_0002170
 › http://purl.obolibrary.org/obo/RO_0002494
 
-## Results for P13: Inverse relationships not explicitly declared.
+## Results for P13: Inverse relationships not explicitly declared (5 cases).
 
 This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.
 
